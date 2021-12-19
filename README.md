@@ -1,4 +1,6 @@
 ## Bonjour et bienvenue sur mon portfolio !
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/portfolio/main/main.py)
+
 ---
 # Mathieu Golos
 > Polyvalent avec un profil orienté vers les sciences et la programmation, je suis un travailleur altruiste et créatif.
