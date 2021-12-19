@@ -36,7 +36,7 @@ def projets():
             Production d'une application de reconnaissance de race d'images de chiens  
             **[ Deep Learning / Transfert Learning ]**
         ---
-        * Segmentation de clients d'un site e-commerce 
+        * Segmentation de clients d'un site e-commerce  
             **[ k-means / HCA / DBSCAN ]**
         ---
         * Anticipation de la consommation électrique et émissions CO² d'une ville  
