@@ -30,20 +30,20 @@ def projets():
           [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=question-tagging)  
             Production d'une application pour l'automatisation d'étiquetage multiple de questions en utilisant les algorithmes les plus récents/performants.  
             **[ État de l'art / NLP / XMC / Deep Learning ]**
-            
+        ---
         * [Breed Classifier](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/breed_classifier) :
           [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=breed-classifier)  
             Production d'une application de reconnaissance de race d'images de chiens  
             **[ Deep Learning / Transfert Learning ]**
-            
+        ---
         * Segmentation de clients d'un site e-commerce 
             **[ k-means / HCA / DBSCAN ]**
-            
+        ---
         * Anticipation de la consommation électrique et émissions CO² d'une ville  
             **[ SVM, Forêt aléatoires, Boosting ]**
-            
+        ---
         * Conception d'une application sur des données nutritionnelles  
-        
+        ---
         (Nettoyage en cours)
         """)
     
@@ -75,6 +75,7 @@ def contact():
         Cependant, je liste ici les autres moyens de me joindre.  
         N'hésitez pas à me contacter sur l'un d'entre eux !
         
+        ---
         [![](https://img.icons8.com/fluent/48/000000/phone.png)+336 11 47 89 01](tel:+33611478901)  
         [![](https://img.icons8.com/officel/48/000000/email.png)mathieu.golos@gmail.com](mail:mathieu.golos@gmail.com)  
         [![](https://img.icons8.com/color/48/000000/linkedin.png)LinkedIn](https://www.linkedin.com/in/mathieu-golos-25055b77/)  
