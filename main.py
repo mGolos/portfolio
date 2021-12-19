@@ -171,7 +171,7 @@ def contact(language="fr"):
         st.markdown('''
             # Contact
             > The best way to contact me is by email.  
-            However, I have listed my various other profiles below.  
+            However, I have listed few other methods below.  
             Feel free to contact me on any of them !
             ''')
         
