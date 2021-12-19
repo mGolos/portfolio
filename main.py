@@ -89,16 +89,16 @@ def projets(language="fr"):
             ---
             * [Breed Classifier](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/breed_classifier) :
             [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=breed-classifier)  
-                Production d'une application de reconnaissance de race d'images de chiens  
+                Production d'une application de reconnaissance de race d'images de chiens.  
                 **[ Deep Learning / Transfert Learning ]**
             ---
-            * Segmentation de clients d'un site e-commerce 
+            * Segmentation de clients d'un site e-commerce.  
                 **[ k-means / HCA / DBSCAN ]**
             ---
-            * Anticipation de la consommation électrique et émissions CO² d'une ville  
+            * Anticipation de la consommation électrique et émissions CO² d'une ville.  
                 **[ SVM, Forêt aléatoires, Boosting ]**
             ---
-            * Conception d'une application sur des données nutritionnelles  
+            * Conception d'une application sur des données nutritionnelles.  
             ---
             (Nettoyage en cours)
             """)
@@ -112,44 +112,19 @@ def projets(language="fr"):
             ---
             * [Breed Classifier](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/breed_classifier) :
             [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=breed-classifier)  
-                Produce an application for race recognition of dog images  
+                Produce an application for race recognition of dog images.  
                 **[ Deep Learning / Transfert Learning ]**
             ---
-            * Segmenting customers of an e-commerce website  
+            * Segmenting customers of an e-commerce website.  
                 **[ k-means / HCA / DBSCAN ]**
             ---
-            * Anticipating a city's electricity consumption and CO² emissions  
+            * Anticipating a city's electricity consumption and CO² emissions.  
                 **[ SVM, Random Forest, Boosting ]**
             ---
-            * Design of an application on nutritional data for public health  
+            * Design of an application on nutritional data for public health.  
             ---
             (Cleaning in progress)
             """)
-
-
-def projets():
-    st.markdown("""
-        # Projets
-        * [Question Tagging](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/question_tagging) :
-          [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=question-tagging)  
-            Production d'une application pour l'automatisation d'étiquetage multiple de questions en utilisant les algorithmes les plus récents/performants.  
-            **[ État de l'art / NLP / XMC / Deep Learning ]**
-        ---
-        * [Breed Classifier](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/breed_classifier) :
-          [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=breed-classifier)  
-            Production d'une application de reconnaissance de race d'images de chiens.  
-            **[ Deep Learning / Transfert Learning ]**
-        ---
-        * Segmentation de clients d'un site e-commerce.  
-            **[ k-means / HCA / DBSCAN ]**
-        ---
-        * Anticipation de la consommation électrique et émissions CO² d'une ville.  
-            **[ SVM, Forêt aléatoires, Boosting ]**
-        ---
-        * Conception d'une application sur des données nutritionnelles.  
-        ---
-        (Nettoyage en cours)
-        """)
 
 
 def publications(language="fr"):
