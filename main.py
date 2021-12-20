@@ -7,8 +7,6 @@ def apropos(language="fr"):
     if language == "fr":
         st.markdown("""
             ## Bonjour et bienvenue sur mon portfolio !
-            [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/portfolio/main/main.py)
-
             ---
             # Mathieu Golos
             > Polyvalent avec un profil orienté vers les sciences et la programmation, je suis un travailleur altruiste et créatif.
@@ -25,14 +23,12 @@ def apropos(language="fr"):
     elif language == "en":
         st.markdown("""
             ## Hello and welcome on my portfolio !
-            [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/portfolio/main/main.py)
-
             ---
             # Mathieu Golos
             > Versatile with a profile oriented towards science and programming, I am an altruistic and creative worker.
             I like my autonomy, but I flourish within a team with which it is essential for me to create links.
 
-            > I have always had a keen interest in scientific disciplines and satisfied this with multidisciplinary
+            > I always had a keen interest in scientific disciplines and satisfied this with multidisciplinary
             training which led me to a master's degree specializing in Scientific Modeling and Computing. 
             Trained in Intensive Computing, I did an enriching thesis in Computational Neuroscience, working on Neural Networks or Machine Learning.
             
@@ -67,7 +63,7 @@ def parcours(language="fr"):
             # Experiences
             * [2021] (8 months) - **Machine Learning Engineer (Internship)**, OpenClassrooms** *(Lille)*
             * [2019 - 2020] (7 months) - **DevOps Engineer**, Alpha Conseils *(St-Germain-en-Laye)*
-            * [2013 - 2017] (4 years) - **PdH Candidate in Computational Neurosciences**, INS/INSERM 1106 *(Marseille)*
+            * [2013 - 2017] (4 years) - **PhD Candidate in Computational Neurosciences**, INS/INSERM 1106 *(Marseille)*
             * [2013] (9 months) - **Assistant Engineer**, INS, INSERM 1106 *(Marseille)*
             
             # Education
@@ -171,7 +167,7 @@ def contact(language="fr"):
         st.markdown('''
             # Contact
             > The best way to contact me is by email.  
-            However, I have listed my various other profiles below.  
+            However, I have listed few other methods below.  
             Feel free to contact me on any of them !
             ''')
         
@@ -210,7 +206,7 @@ def main():
 
 if __name__ == "__main__":
     st.set_page_config(
-        page_title='Golos',
+        page_title='Golos Mathieu',
         initial_sidebar_state="auto",
         page_icon=None,
         layout="centered"
