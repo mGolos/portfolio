@@ -63,7 +63,7 @@ def parcours(language="fr"):
             # Experiences
             * [2021] (8 months) - **Machine Learning Engineer (Internship)**, OpenClassrooms** *(Lille)*
             * [2019 - 2020] (7 months) - **DevOps Engineer**, Alpha Conseils *(St-Germain-en-Laye)*
-            * [2013 - 2017] (4 years) - **PdH Candidate in Computational Neurosciences**, INS/INSERM 1106 *(Marseille)*
+            * [2013 - 2017] (4 years) - **PhD Candidate in Computational Neurosciences**, INS/INSERM 1106 *(Marseille)*
             * [2013] (9 months) - **Assistant Engineer**, INS, INSERM 1106 *(Marseille)*
             
             # Education
