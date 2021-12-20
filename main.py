@@ -206,7 +206,7 @@ def main():
 
 if __name__ == "__main__":
     st.set_page_config(
-        page_title='Golos',
+        page_title='Golos Mathieu',
         initial_sidebar_state="auto",
         page_icon=None,
         layout="centered"
