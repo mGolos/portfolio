@@ -21,9 +21,6 @@ def apropos(language="fr"):
 
             > J'ai récemment fini un stage en tant qu'ingénieur en Apprentissage Automatique
             et je cherche actuellement à aller de l'avant dans plusieurs de ses domaines au cours de la prochaine décennie.
-
-            ---
-            ![](https://avatars.githubusercontent.com/u/5382676?s=400&u=bf6cd18bf51ffa5add7d5249487899e86f9df028&v=4)
         """)
     elif language == "en":
         st.markdown("""
@@ -41,10 +38,13 @@ def apropos(language="fr"):
             
             > I recently completed an internship as a Machine Learning Engineer and 
             am currently looking to move forward in several of its areas over the next decade.
-
-            ---
-            ![](https://avatars.githubusercontent.com/u/5382676?s=400&u=bf6cd18bf51ffa5add7d5249487899e86f9df028&v=4)
         """)
+    st.markdown("""
+        ---
+        <img src="https://drive.google.com/uc?export=view&id=1W3Bax_Fkwl4zKR4DCY_GLWXJ20qkcxxT" alt="drawing" width="700"/>
+        """,
+        unsafe_allow_html =True)
+        
     
     
 def parcours(language="fr"):
