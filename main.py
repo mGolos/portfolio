@@ -31,7 +31,7 @@ def apropos(language="fr"):
             > Versatile with a profile oriented towards science and programming, I am an altruistic and creative worker.
             I like my autonomy, but I flourish within a team with which it is essential for me to create links.
 
-            > I have always had a keen interest in scientific disciplines and satisfied this with multidisciplinary
+            > I always had a keen interest in scientific disciplines and satisfied this with multidisciplinary
             training which led me to a master's degree specializing in Scientific Modeling and Computing. 
             Trained in Intensive Computing, I did an enriching thesis in Computational Neuroscience, working on Neural Networks or Machine Learning.
             
