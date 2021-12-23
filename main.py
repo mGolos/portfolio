@@ -30,7 +30,7 @@ def apropos(language="fr"):
 
             > I always had a keen interest in scientific disciplines and satisfied this with multidisciplinary
             training which led me to a master's degree specializing in Scientific Modeling and Computing. 
-            Trained in Intensive Computing, I did an enriching thesis in Computational Neuroscience, working on Neural Networks or Machine Learning.
+            Trained in Intensive Computing, I did an enriching thesis in Computational Neurosciences, working on Neural Networks and Machine Learning.
             
             > I recently completed an internship as a Machine Learning Engineer and 
             am currently looking to move forward in several of its areas over the next decade.
