@@ -14,8 +14,8 @@ def apropos(language="fr"):
 
             > J’ai toujours voué un vif intérêt aux disciplines scientifiques et satisfait celui-ci par des formations pluridisciplinaires 
             qui m’ont amené vers un master spécialisé dans la Modélisation et les Calculs Scientifiques. 
-            Formé sur les Calculs Intensifs, j'ai fait une thèse enrichissante en Neurosciences Computationnelle, 
-            en travaillant sur des Réseaux Neuronaux ou l'Apprentissage Automatique.  
+            Formé sur les Calculs Intensifs, j'ai fait une thèse enrichissante en Neurosciences Computationnelles, 
+            en travaillant sur des Réseaux Neuronaux et l'Apprentissage Automatique.  
 
             > J'ai récemment fini un stage en tant qu'ingénieur en Apprentissage Automatique
             et je cherche actuellement à aller de l'avant dans plusieurs de ses domaines au cours de la prochaine décennie.
