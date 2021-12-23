@@ -47,7 +47,7 @@ def parcours(language="fr"):
     if language == "fr":
         st.markdown("""
             # Expériences
-            * [2021] (8 mois) - **Stage Ingénieur Machine Learning**, OpenClassrooms** *(Lille)*
+            * [2021] (8 mois) - **Stage Ingénieur Machine Learning**, OpenClassrooms *(Lille)*
             * [2019 - 2020] (7 mois) - **Ingénieur DevOps**, Alpha Conseils *(St-Germain-en-Laye)*
             * [2013 - 2017] (4 ans) - **Doctorant en Neurosciences Computationnelles**, INS/INSERM 1106 *(Marseille)*
             * [2013] (9 mois) - **Assistant Ingénieur**, INS, INSERM 1106 *(Marseille)*
