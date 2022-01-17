@@ -47,30 +47,30 @@ def parcours(language="fr"):
     if language == "fr":
         st.markdown("""
             # Expériences
-            * [2021] (8 mois) - **Stage Ingénieur Machine Learning**, OpenClassrooms *(Lille)*
-            * [2019 - 2020] (7 mois) - **Ingénieur DevOps**, Alpha Conseils *(St-Germain-en-Laye)*
-            * [2013 - 2017] (4 ans) - **Doctorant en Neurosciences Computationnelles**, INS/INSERM 1106 *(Marseille)*
-            * [2013] (9 mois) - **Assistant Ingénieur**, INS, INSERM 1106 *(Marseille)*
+            * `[2021] (8 mois)` - **Stage Ingénieur Machine Learning**, OpenClassrooms *(Lille)*
+            * `[2019 - 2020] (7 mois)` - **Ingénieur DevOps**, Alpha Conseils *(St-Germain-en-Laye)*
+            * `[2013 - 2017] (4 ans)` - **Doctorant en Neurosciences Computationnelles**, INS/INSERM 1106 *(Marseille)*
+            * `[2013] (9 mois)` - **Assistant Ingénieur**, INS, INSERM 1106 *(Marseille)*
             
             # Formations
-            * [2021] - **Master Ingénieur Machine Learning**, Centrale Supélec *(Paris)*
-            * [2012] - **Master Modélisation et Calculs Scientifiques**, Rennes1 *(Rennes)*
-            * [2010] - **Licence Physique Fondamentale**, Lille1 *(Lille)*
-            * [2008] - **DUT Mesures Physiques - Génie des matériaux** *(Valenciennes)*
+            * `[2021]` - **Master Ingénieur Machine Learning**, Centrale Supélec *(Paris)*
+            * `[2012]` - **Master Modélisation et Calculs Scientifiques**, Rennes1 *(Rennes)*
+            * `[2010]` - **Licence Physique Fondamentale**, Lille1 *(Lille)*
+            * `[2008]` - **DUT Mesures Physiques - Génie des matériaux** *(Valenciennes)*
         """)
     elif language == "en":
         st.markdown("""
             # Experiences
-            * [2021] (8 months) - **Machine Learning Engineer (Internship)**, OpenClassrooms *(Lille)*
-            * [2019 - 2020] (7 months) - **DevOps Engineer**, Alpha Conseils *(St-Germain-en-Laye)*
-            * [2013 - 2017] (4 years) - **PhD Candidate in Computational Neurosciences**, INS/INSERM 1106 *(Marseille)*
-            * [2013] (9 months) - **Assistant Engineer**, INS, INSERM 1106 *(Marseille)*
+            * `[2021] (8 months)` - **Machine Learning Engineer (Internship)**, OpenClassrooms *(Lille)*
+            * `[2019 - 2020] (7 months)` - **DevOps Engineer**, Alpha Conseils *(St-Germain-en-Laye)*
+            * `[2013 - 2017] (4 years)` - **PhD Candidate in Computational Neurosciences**, INS/INSERM 1106 *(Marseille)*
+            * `[2013] (9 months)` - **Assistant Engineer**, INS, INSERM 1106 *(Marseille)*
             
             # Education
-            * [2021] - **Master degree in Machine Learning Engineer**, Centrale Supélec *(Paris)*
-            * [2012] - **Master degree in Modeling and Scientists Calculus**, Rennes1 *(Rennes)*
-            * [2010] - **Degree in Fundamental Physics**, Lille1 *(Lille)*
-            * [2008] - **Technical degree in Physical Measurements - Material Engineering** *(Valenciennes)*
+            * `[2021]` - **Master degree in Machine Learning Engineer**, Centrale Supélec *(Paris)*
+            * `[2012]` - **Master degree in Modeling and Scientists Calculus**, Rennes1 *(Rennes)*
+            * `[2010]` - **Degree in Fundamental Physics**, Lille1 *(Lille)*
+            * `[2008]` - **Technical degree in Physical Measurements - Material Engineering** *(Valenciennes)*
         """)
         
     
@@ -81,18 +81,18 @@ def projets(language="fr"):
             * [Question Tagging](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/question_tagging) :
             [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=question-tagging)  
                 Production d'une application pour l'automatisation d'étiquetage multiple de questions en utilisant les algorithmes les plus récents/performants.  
-                **[ État de l'art / NLP / XMC / Deep Learning ]**
+                `[ État de l'art / NLP / XMC / Deep Learning ]`
             ---
             * [Breed Classifier](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/breed_classifier) :
             [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=breed-classifier)  
                 Production d'une application de reconnaissance de race d'images de chiens.  
-                **[ Deep Learning / Transfert Learning ]**
+                `[ Deep Learning / Transfert Learning ]`
             ---
             * Segmentation de clients d'un site e-commerce.  
-                **[ k-means / HCA / DBSCAN ]**
+                `[ k-means / HCA / DBSCAN ]`
             ---
             * Anticipation de la consommation électrique et émissions CO² d'une ville.  
-                **[ SVM, Forêt aléatoires, Boosting ]**
+                `[ SVM / Forêt aléatoires / Boosting ]`
             ---
             * Conception d'une application sur des données nutritionnelles.  
             ---
@@ -104,18 +104,18 @@ def projets(language="fr"):
             * [Question Tagging](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/question_tagging) :
             [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=question-tagging)  
                 Produce an application for automatic multi-tagging of questions using state of the art algorithms.  
-                **[ SOTA / NLP / XMC / Deep Learning ]**
+                `[ SOTA / NLP / XMC / Deep Learning ]`
             ---
             * [Breed Classifier](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/breed_classifier) :
             [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=breed-classifier)  
                 Produce an application for race recognition of dog images.  
-                **[ Deep Learning / Transfert Learning ]**
+                `[ Deep Learning / Transfert Learning ]`
             ---
             * Segmenting customers of an e-commerce website.  
-                **[ k-means / HCA / DBSCAN ]**
+                `[ k-means / HCA / DBSCAN ]`
             ---
             * Anticipating a city's electricity consumption and CO² emissions.  
-                **[ SVM, Random Forest, Boosting ]**
+                `[ SVM / Random Forest / Boosting ]`
             ---
             * Design of an application on nutritional data for public health.  
             ---
