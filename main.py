@@ -143,7 +143,7 @@ def cv(language="fr"):
                     "[Télécharger la version anglaise](https://1drv.ms/b/s!Ah3jei6FBtQIhOUsGOshMy3LKxTFVw?e=DeMrkI)")
         components.iframe(
             src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178505&authkey=ACciPtwGdV60lf4&em=2",
-            width=None, height=None, scrolling=True)
+            width=None, height=1060, scrolling=True)
 #         st.markdown(
 #             '''<iframe src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178505&authkey=ACciPtwGdV60lf4&em=2"*
 #             width="100%" height="142%" frameborder="0" scrolling="no"></iframe>''',
@@ -153,7 +153,7 @@ def cv(language="fr"):
                     "[Download the french version](https://1drv.ms/b/s!Ah3jei6FBtQIhOUpb7Wx-3nUGQrTWQ?e=5qYyve)")
         st.markdown(
             '''<iframe src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178508&authkey=APB7Ex6E01QEURo&em=2"*
-            width="100%" height="200%" frameborder="0" scrolling="no"></iframe>''',
+            width="100%" height="200%" frameborder="0" transform=scale(1.41) scrolling="no"></iframe>''',
             unsafe_allow_html =True)
     
     
