@@ -154,7 +154,7 @@ def cv(language="fr"):
     
     
 def recommandation(language="fr"):
-    tab1, tab2 = st.tabs(["INS", "XRator"])
+    tab1, tab2 = st.tabs(["INS (En)", "XRator"])
     with tab1:
         st.markdown(
             '''<iframe src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2149593&authkey=AGqw88JCpvqX2_Q&em=2"*
@@ -218,21 +218,6 @@ def main():
             "Recommendations": recommandation,
             "Contact": contact,
         })(language="en")
-
-        
-def add_logo():
-    st.markdown(
-        """
-        <style>
-            [data-testid="stSidebarNav"] {
-                background-image: url(https://raw.githubusercontent.com/mGolos/portfolio/main/hands.png);
-                background-repeat: no-repeat;
-                padding-top: 120px;
-                background-position: 20px 20px;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True)
     
     
 if __name__ == "__main__":
@@ -243,8 +228,7 @@ if __name__ == "__main__":
         layout="centered"
     )
     st.write('<style>div.block-container{padding-top:0rem;}</style>', unsafe_allow_html=True)
-#     add_logo()
-    st.sidebar.image('hands.png')
+    st.sidebar.image('hands.png', use_column_width=True)
     with open('.streamlit/style.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
         
