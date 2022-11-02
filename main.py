@@ -160,24 +160,23 @@ def contact(language="fr"):
         st.markdown('''
             # Contactez-moi
             > La meilleur façon de me joindre est par email.  
-            Cependant, je liste ici les autres moyens de me joindre.  
+            Cependant, je liste ici les différents moyens de me joindre.  
             N'hésitez pas à me contacter sur l'un d'entre eux !
             ''')
     elif language == "en":
         st.markdown('''
             # Contact
             > The best way to contact me is by email.  
-            However, I have listed few other methods below.  
+            However, I list here the different methods.  
             Feel free to contact me on any of them !
             ''')
         
     st.markdown('''
         ---
-        [![](https://img.icons8.com/dusk/48/000000/worldwide-location.png)Lille (FRANCE)](https://goo.gl/maps/eXC8BJh9qGXWBgZDA)  
-        [![](https://img.icons8.com/fluent/48/000000/phone.png)+336 11 47 89 01](tel:+33611478901)  
         [![](https://img.icons8.com/officel/48/000000/email.png)mathieu.golos@gmail.com](mail:mathieu.golos@gmail.com)  
+        [![](https://img.icons8.com/fluent/48/000000/phone.png)+336 11 47 89 01](tel:+33611478901)  
         [![](https://img.icons8.com/color/48/000000/linkedin.png)LinkedIn](https://www.linkedin.com/in/mathieu-golos-25055b77/)  
-        [![](https://img.icons8.com/bubbles/50/000000/github.png)GitHub](https://github.com/mGolos)
+        [![](https://img.icons8.com/dusk/48/000000/worldwide-location.png)Lille (FRANCE)](https://goo.gl/maps/eXC8BJh9qGXWBgZDA)  
         ''')
 
 
