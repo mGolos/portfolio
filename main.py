@@ -228,7 +228,7 @@ if __name__ == "__main__":
         layout="centered"
     )
     st.write('<style>div.block-container{padding-top:0rem;}</style>', unsafe_allow_html=True)
-    st.sidebar.image('hands.png', use_column_width='always')
+    st.sidebar.image('hands.png', width=200)
     with open('.streamlit/style.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
         
