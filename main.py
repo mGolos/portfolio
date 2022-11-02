@@ -170,15 +170,15 @@ def contact(language="fr"):
         st.markdown('''
             # Contactez-moi
             > La meilleur façon de me joindre est par email.  
-            Cependant, je liste ici les différents moyens de me joindre.  
-            N'hésitez pas à me contacter sur l'un d'entre eux !
+            > Cependant, je liste ici les différents moyens de me joindre.  
+            > N'hésitez pas à me contacter sur l'un d'entre eux !
             ''')
     elif language == "en":
         st.markdown('''
             # Contact
             > The best way to contact me is by email.  
-            However, I list here the different methods.  
-            Feel free to contact me on any of them !
+            > However, I list here the different methods.  
+            > Feel free to contact me on any of them !
             ''')
         
     st.markdown('''
