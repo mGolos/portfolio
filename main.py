@@ -30,7 +30,7 @@ def apropos(language="fr"):
             > I always had a keen interest in scientific disciplines and satisfied this with multidisciplinary training which led me to a master's degree specializing in Scientific Modeling and Computing.
             > Trained in Intensive Computing, I did an enriching thesis in Computational Neurosciences, working on Neural Networks and Machine Learning.  
             
-            > After an internship as a Machine Learning engineer, I worked as a Data Scientist at XRator who approaches cyber risks in a preventive way.
+            > After an internship as a Machine Learning engineer, I worked as a Data Scientist at XRator which approaches cyber risks in a preventive way.
             > I am currently looking to learn more in certain areas over the next decade for a long-term project.
         """)
     st.markdown("""
