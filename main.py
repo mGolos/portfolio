@@ -231,7 +231,7 @@ if __name__ == "__main__":
         page_icon=None,
         layout="centered"
     )
-    st.write('<style>div.block-container{padding-top:0rem;}</style>', unsafe_allow_html=True)
+    st.write('<style>div.block-container{padding-top:1rem;}</style>', unsafe_allow_html=True)
     st.sidebar.image('hands.png', width=170)
     with open('.streamlit/style.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
