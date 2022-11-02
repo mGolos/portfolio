@@ -204,6 +204,7 @@ def main():
             "Projets": projets,
             "Publications": publications,
             "Curriculum vitae": cv,
+            "Recommandations": recommandation,
             "Contactez-moi": contact,
         })(language="fr")
         
@@ -214,6 +215,7 @@ def main():
             "Projects": projets,
             "Publications": publications,
             "Curriculum vitae": cv,
+            "Recommendations": recommandation,
             "Contact": contact,
         })(language="en")
 
