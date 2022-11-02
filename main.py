@@ -225,7 +225,7 @@ def add_logo():
         """
         <style>
             [data-testid="stSidebarNav"] {
-                background-image: url(https://github.com/mGolos/portfolio/blob/main/hands.png?raw=true);
+                background-image: url(https://raw.githubusercontent.com/mGolos/portfolio/main/hands.png);
                 background-repeat: no-repeat;
                 padding-top: 120px;
                 background-position: 20px 20px;
@@ -235,14 +235,7 @@ def add_logo():
         unsafe_allow_html=True)
     
     
-def set_page_container_style(
-        max_width: int=1100, max_width_100_percent: bool=False,
-        padding_top: int=1, padding_right: int=10, padding_left: int=1, padding_bottom: int=10
-    ):
-    if max_width_100_percent:
-        max_width_str = f'max-width: 100%;'
-    else:
-        max_width_str = f'max-width: {max_width}px;'
+def set_page_container_style(padding_top=0, padding_bottom=10, padding_left=1, padding_right=10):
     st.markdown(
         f'''
         <style>
@@ -250,16 +243,14 @@ def set_page_container_style(
                 padding-top: {padding_top}rem;
             }}
             .reportview-container .main .block-container {{
-                {max_width_str}
                 padding-top: {padding_top}rem;
                 padding-right: {padding_right}rem;
                 padding-left: {padding_left}rem;
                 padding-bottom: {padding_bottom}rem;
             }}
         </style>
-        ''',
-        unsafe_allow_html=True)
-        
+        ''', unsafe_allow_html=True)
+    
         
 if __name__ == "__main__":
     st.set_page_config(
@@ -269,6 +260,7 @@ if __name__ == "__main__":
         layout="centered"
     )
 #     set_page_container_style()
+    st.write('<style>div.block-container{padding-top:2rem;}</style>', unsafe_allow_html=True)
     add_logo()
 #     st.sidebar.image('hands.png')
 #     with open('.streamlit/style.css') as f:
