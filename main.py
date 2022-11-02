@@ -36,14 +36,11 @@ def apropos(language="fr"):
             > I recently completed an internship as a Machine Learning Engineer and 
             am currently looking to move forward in several of its areas over the next decade.
         """)
-    components.iframe(
-        src="https://drive.google.com/uc?export=view&id=1W3Bax_Fkwl4zKR4DCY_GLWXJ20qkcxxT", width=None)
     st.markdown("""
         ---
         <img src="https://drive.google.com/uc?export=view&id=1W3Bax_Fkwl4zKR4DCY_GLWXJ20qkcxxT" alt="drawing" width="100%"/>
         """,
         unsafe_allow_html =True)
-        
     
     
 def parcours(language="fr"):
