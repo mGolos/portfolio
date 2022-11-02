@@ -37,7 +37,7 @@ def apropos(language="fr"):
             am currently looking to move forward in several of its areas over the next decade.
         """)
     components.iframe(
-        src="https://drive.google.com/uc?export=view&id=1W3Bax_Fkwl4zKR4DCY_GLWXJ20qkcxxT")
+        src="https://drive.google.com/uc?export=view&id=1W3Bax_Fkwl4zKR4DCY_GLWXJ20qkcxxT", width="100%")
     st.markdown("""
         ---
         <img src="https://drive.google.com/uc?export=view&id=1W3Bax_Fkwl4zKR4DCY_GLWXJ20qkcxxT" alt="drawing" width="100%"/>
@@ -145,20 +145,20 @@ def cv(language="fr"):
                     "[Télécharger la version anglaise](https://1drv.ms/b/s!Ah3jei6FBtQIhOUsGOshMy3LKxTFVw?e=DeMrkI)")
         components.iframe(
             src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178505&authkey=ACciPtwGdV60lf4&em=2",
-            width=None, height=1000, scrolling=True)
+            width=None, height=1020, scrolling=True)
     elif language == "en":
         st.markdown("[Download the english version](https://1drv.ms/b/s!Ah3jei6FBtQIhOUsGOshMy3LKxTFVw?e=DeMrkI) | "
                     "[Download the french version](https://1drv.ms/b/s!Ah3jei6FBtQIhOUpb7Wx-3nUGQrTWQ?e=5qYyve)")
         components.iframe(
             src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178508&authkey=APB7Ex6E01QEURo&em=2",
-            width=None, height=1000, scrolling=True)
+            width=None, height=1020, scrolling=True)
     
 def recommandation(language="fr"):
     tab1, tab2 = st.tabs(["INS (En)", "XRator"])
     with tab1:
         components.iframe(
             src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2149593&authkey=AGqw88JCpvqX2_Q&em=2",
-            width=None, height=1000, scrolling=True)
+            width=None, height=1020, scrolling=True)
     with tab2:
         st.markdown("Soon...")
     
