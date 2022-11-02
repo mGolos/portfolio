@@ -261,7 +261,7 @@ if __name__ == "__main__":
     )
     st.write('<style>div.block-container{padding-top:0rem;}</style>', unsafe_allow_html=True)
     set_page_container_style() 
-#     add_logo()
+    add_logo()
 #     st.sidebar.image('hands.png')
 #     with open('.streamlit/style.css') as f:
 #         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
