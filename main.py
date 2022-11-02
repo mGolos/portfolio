@@ -37,7 +37,7 @@ def apropos(language="fr"):
             am currently looking to move forward in several of its areas over the next decade.
         """)
     components.iframe(
-        src="https://drive.google.com/uc?export=view&id=1W3Bax_Fkwl4zKR4DCY_GLWXJ20qkcxxT", width="100%")
+        src="https://drive.google.com/uc?export=view&id=1W3Bax_Fkwl4zKR4DCY_GLWXJ20qkcxxT", width=None)
     st.markdown("""
         ---
         <img src="https://drive.google.com/uc?export=view&id=1W3Bax_Fkwl4zKR4DCY_GLWXJ20qkcxxT" alt="drawing" width="100%"/>
