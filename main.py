@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 from pathlib import Path
 from utils import st_query_radio
 
@@ -140,10 +141,13 @@ def cv(language="fr"):
     if language == "fr":
         st.markdown("[Télécharger la version française](https://1drv.ms/b/s!Ah3jei6FBtQIhOUpb7Wx-3nUGQrTWQ?e=5qYyve) | "
                     "[Télécharger la version anglaise](https://1drv.ms/b/s!Ah3jei6FBtQIhOUsGOshMy3LKxTFVw?e=DeMrkI)")
-        st.markdown(
-            '''<iframe src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178505&authkey=ACciPtwGdV60lf4&em=2"*
-            width="100%" height="142%" frameborder="0" scrolling="no"></iframe>''',
-            unsafe_allow_html =True)
+        components.iframe(
+            src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178505&authkey=ACciPtwGdV60lf4&em=2",
+            width=None, height=None, scrolling=True)
+#         st.markdown(
+#             '''<iframe src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178505&authkey=ACciPtwGdV60lf4&em=2"*
+#             width="100%" height="142%" frameborder="0" scrolling="no"></iframe>''',
+#             unsafe_allow_html =True)
     elif language == "en":
         st.markdown("[Download the english version](https://1drv.ms/b/s!Ah3jei6FBtQIhOUsGOshMy3LKxTFVw?e=DeMrkI) | "
                     "[Download the french version](https://1drv.ms/b/s!Ah3jei6FBtQIhOUpb7Wx-3nUGQrTWQ?e=5qYyve)")
