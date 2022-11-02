@@ -235,23 +235,6 @@ def add_logo():
         unsafe_allow_html=True)
     
     
-def set_page_container_style(padding_top=0, padding_bottom=10, padding_left=1, padding_right=10):
-    st.write(
-        f'''
-        <style>
-            .reportview-container .sidebar-content {{
-                padding-top: {padding_top}rem;
-            }}
-            .reportview-container .main .block-container {{
-                padding-top: {padding_top}rem;
-                padding-right: {padding_right}rem;
-                padding-left: {padding_left}rem;
-                padding-bottom: {padding_bottom}rem;
-            }}
-        </style>
-        ''', unsafe_allow_html=True)
-    
-    
 if __name__ == "__main__":
     st.set_page_config(
         page_title='Golos Mathieu',
@@ -260,10 +243,9 @@ if __name__ == "__main__":
         layout="centered"
     )
     st.write('<style>div.block-container{padding-top:0rem;}</style>', unsafe_allow_html=True)
-    set_page_container_style() 
 #     add_logo()
     st.sidebar.image('hands.png')
-#     with open('.streamlit/style.css') as f:
-#         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    with open('.streamlit/style.css') as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
         
     main()
