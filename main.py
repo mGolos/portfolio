@@ -161,6 +161,7 @@ def recommandation(language="fr"):
             width="750" height="1060" frameborder="0" scrolling="no"></iframe>''',
             unsafe_allow_html =True)
     with tab2:
+        st.markdown("Soon...")
         st.markdown(
             '''<iframe src=""*
             width="750" height="1060" frameborder="0" scrolling="no"></iframe>''',
