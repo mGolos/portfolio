@@ -11,15 +11,10 @@ def apropos(language="fr"):
             ---
             # Mathieu Golos
             > Polyvalent avec un profil orienté vers les sciences et la programmation, je suis un travailleur altruiste et créatif.
-            > J'aime l'autonomie et m'épanouir au sein d'une équipe avec laquelle il m'est indispensable de créer des liens.  
-
-            > J’ai toujours voué un vif intérêt aux disciplines scientifiques et satisfait celui-ci par des formations pluridisciplinaires 
-            > qui m’ont amené vers un master spécialisé dans la Modélisation et les Calculs Scientifiques. 
-            > Formé sur les Calculs Intensifs, j'ai fait une thèse enrichissante en Neurosciences Computationnelles, 
-            > en travaillant sur des Réseaux Neuronaux et l'Apprentissage Automatique.  
-
-            > J'ai récemment fini un stage en tant qu'ingénieur en Apprentissage Automatique
-            > et je cherche actuellement à aller de l'avant dans plusieurs de ses domaines au cours de la prochaine décennie.
+            > Autonome, je m'épanouis pleinement au sein d'une équipe avec laquelle il m'est indispensable de créer des liens.  
+            > J’ai toujours voué un vif intérêt aux disciplines scientifiques et satisfait celui-ci par des formations pluridisciplinaires qui m’ont amené vers un master spécialisé dans la Modélisation et les Calculs Scientifiques.
+            > Formé sur les Calculs Intensifs, j'ai fait une thèse enrichissante en Neurosciences Computationnelles, en travaillant sur des Réseaux Neuronaux et l'Apprentissage Automatique.  
+            > J'ai récemment fini un stage en tant qu'ingénieur en Apprentissage Automatique et je cherche actuellement à aller de l'avant dans plusieurs de ses domaines au cours de la prochaine décennie.
         """)
     elif language == "en":
         st.markdown("""
@@ -27,14 +22,12 @@ def apropos(language="fr"):
             ---
             # Mathieu Golos
             > Versatile with a profile oriented towards science and programming, I am an altruistic and creative worker.
-            I like my autonomy, but I flourish within a team with which it is essential for me to create links.
+            > I like my autonomy but I flourish within a team with which it is essential for me to create links.  
 
-            > I always had a keen interest in scientific disciplines and satisfied this with multidisciplinary
-            training which led me to a master's degree specializing in Scientific Modeling and Computing. 
-            Trained in Intensive Computing, I did an enriching thesis in Computational Neurosciences, working on Neural Networks and Machine Learning.
+            > I always had a keen interest in scientific disciplines and satisfied this with multidisciplinary training which led me to a master's degree specializing in Scientific Modeling and Computing.
+            > Trained in Intensive Computing, I did an enriching thesis in Computational Neurosciences, working on Neural Networks and Machine Learning.  
             
-            > I recently completed an internship as a Machine Learning Engineer and 
-            am currently looking to move forward in several of its areas over the next decade.
+            > I recently completed an internship as a Machine Learning Engineer and am currently looking to move forward in several of its areas over the next decade.
         """)
     st.markdown("""
         ---
