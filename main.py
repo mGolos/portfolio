@@ -138,15 +138,15 @@ def publications(language="fr"):
     
 def cv(language="fr"):
     if language == "fr":
-        st.markdown("[Télécharger la version française](https://1drv.ms/b/s!Ah3jei6FBtQIhOUpb7Wx-3nUGQrTWQ?e=5qYyve)")
-        st.markdown("[Télécharger la version anglaise](https://1drv.ms/b/s!Ah3jei6FBtQIhMJeW4W22lFIeqCtBw)")
+        st.markdown("[Télécharger la version française](https://1drv.ms/b/s!Ah3jei6FBtQIhOUpb7Wx-3nUGQrTWQ?e=5qYyve) | "
+                    "[Télécharger la version anglaise](https://1drv.ms/b/s!Ah3jei6FBtQIhMJeW4W22lFIeqCtBw)")
         st.markdown(
             '''<iframe src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178505&authkey=ACciPtwGdV60lf4&em=2"*
             width="750" height="1060" frameborder="0" scrolling="no"></iframe>''',
             unsafe_allow_html =True)
     elif language == "en":
-        st.markdown("[Download the english version](https://1drv.ms/b/s!Ah3jei6FBtQIhMJeW4W22lFIeqCtBw)")
-        st.markdown("[Download the french version](https://1drv.ms/b/s!Ah3jei6FBtQIhOUpb7Wx-3nUGQrTWQ?e=5qYyve)")
+        st.markdown("[Download the english version](https://1drv.ms/b/s!Ah3jei6FBtQIhMJeW4W22lFIeqCtBw) | "
+                    "[Download the french version](https://1drv.ms/b/s!Ah3jei6FBtQIhOUpb7Wx-3nUGQrTWQ?e=5qYyve)")
         st.markdown(
             '''<iframe src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=08D406852E7AE31D%2174078&authkey=AC2omFEhyM6IYdI&em=2"*
             width="750" height="1060" frameborder="0" scrolling="no"></iframe>''',
