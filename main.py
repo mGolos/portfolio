@@ -39,10 +39,12 @@ def apropos(language="fr"):
     
     
 def parcours(language="fr"):
+    xrator = "[XRator](https://www.x-rator.com/)"
+    
     if language == "fr":
-        st.markdown("""
+        st.markdown(f"""
             # Expériences
-            * `[2022] (9 mois)` - **Scientifique de la donnée**, [XRator](https://www.x-rator.com/) *(France/Vietnam)*
+            * `[2022] (9 mois)` - **Scientifique de la donnée**, {xrator} *(France/Vietnam)*
             * `[2021] (8 mois)` - **Stage Ingénieur Machine Learning**, OpenClassrooms *(Lille)*
             * `[2019 - 2020] (7 mois)` - **Ingénieur DevOps**, Alpha Conseils *(St-Germain-en-Laye)*
             * `[2013 - 2017] (4 ans)` - **Doctorant en Neurosciences Computationnelles**, INS/INSERM 1106 *(Marseille)*
@@ -55,9 +57,9 @@ def parcours(language="fr"):
             * `[2008]` - **DUT Mesures Physiques - Génie des matériaux** *(Valenciennes)*
         """)
     elif language == "en":
-        st.markdown("""
+        st.markdown(f"""
             # Experiences
-            * `[2022] (9 mois)` - **Data Scientist**, [XRator](https://www.x-rator.com/) *(France/Vietnam)*
+            * `[2022] (9 mois)` - **Data Scientist**, {xrator} *(France/Vietnam)*
             * `[2021] (8 months)` - **Machine Learning Engineer (Internship)**, OpenClassrooms *(Lille)*
             * `[2019 - 2020] (7 months)` - **DevOps Engineer**, Alpha Conseils *(St-Germain-en-Laye)*
             * `[2013 - 2017] (4 years)` - **PhD Candidate in Computational Neurosciences**, INS/INSERM 1106 *(Marseille)*
@@ -72,14 +74,20 @@ def parcours(language="fr"):
         
     
 def projets(language="fr"):
+    streamlit = "[Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)"
+    link1 = "[Notebooks](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/question_tagging)"
+    link2 = f"[!{streamlit}](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=question-tagging)"
+    link3 = "[Notebooks](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/breed_classifier)"
+    link4 = f"[!{streamlit}](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=breed-classifier)"
+    
     if language == "fr":
-        st.markdown("""
+        st.markdown(f"""
             # Projets
-            * [Question Tagging](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/question_tagging) ([![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=question-tagging)) :  
+            * Question Tagging ({link1}, {link2}) :  
                 Production d'une application pour l'automatisation d'étiquetage multiple de questions en utilisant les algorithmes les plus récents/performants.  
                 `[ État de l'art / NLP / XMC / Deep Learning ]`
             ---
-            * [Breed Classifier](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/breed_classifier) ([![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=breed-classifier)) :  
+            * Breed Classifier ({link3}, {link4}) :  
                 Production d'une application de reconnaissance de race d'images de chiens.  
                 `[ Deep Learning / Transfert Learning ]`
             ---
@@ -94,13 +102,13 @@ def projets(language="fr"):
             (Nettoyage en cours)
             """)
     elif language == "en":
-        st.markdown("""
+        st.markdown(f"""
             # Projects
-            * [Question Tagging](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/question_tagging) ([![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=question-tagging)):  
+            * Question Tagging ({link1}, {link2}):  
                 Produce an application for automatic multi-tagging of questions using state of the art algorithms.  
                 `[ SOTA / NLP / XMC / Deep Learning ]`
             ---
-            * [Breed Classifier](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/breed_classifier) ([![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=breed-classifier)):               
+            * Breed Classifier ({link3}, {link4}):               
                 Produce an application for race recognition of dog images.  
                 `[ Deep Learning / Transfert Learning ]`
             ---
@@ -132,21 +140,21 @@ def publications(language="fr"):
     
     
 def cv(language="fr"):
+    url_fr = "https://1drv.ms/b/s!Ah3jei6FBtQIhOUpb7Wx-3nUGQrTWQ?e=5qYyve"
+    url_en = "https://1drv.ms/b/s!Ah3jei6FBtQIhOUsGOshMy3LKxTFVw?e=DeMrkI"
+    src_fr = "https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178505&authkey=ACciPtwGdV60lf4&em=2"
+    src_en = "https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178508&authkey=APB7Ex6E01QEURo&em=2"
+    
     if language == "fr":
-        st.markdown("[Télécharger la version française](https://1drv.ms/b/s!Ah3jei6FBtQIhOUpb7Wx-3nUGQrTWQ?e=5qYyve) | "
-                    "[Télécharger la version anglaise](https://1drv.ms/b/s!Ah3jei6FBtQIhOUsGOshMy3LKxTFVw?e=DeMrkI)")
-        components.iframe(
-            src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178505&authkey=ACciPtwGdV60lf4&em=2",
-            width=None, height=1020, scrolling=True)
+        st.markdown(f"[Télécharger la version française]({url_fr}) | [Télécharger la version anglaise]({url_en})")
+        components.iframe(src=src_fr, width=None, height=1020, scrolling=True)
     elif language == "en":
-        st.markdown("[Download the english version](https://1drv.ms/b/s!Ah3jei6FBtQIhOUsGOshMy3LKxTFVw?e=DeMrkI) | "
-                    "[Download the french version](https://1drv.ms/b/s!Ah3jei6FBtQIhOUpb7Wx-3nUGQrTWQ?e=5qYyve)")
-        components.iframe(
-            src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178508&authkey=APB7Ex6E01QEURo&em=2",
-            width=None, height=1020, scrolling=True)
+        st.markdown(f"[Download the english version]({url_en}) | [Download the french version]({url_fr})")
+        components.iframe(src=src_en, width=None, height=1020, scrolling=True)
     
 def recommandation(language="fr"):
     tab1, tab2 = st.tabs(["INS (En)", "XRator"])
+    
     with tab1:
         components.iframe(
             src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2149593&authkey=AGqw88JCpvqX2_Q&em=2",
@@ -182,28 +190,15 @@ def contact(language="fr"):
 
 def main():
     language = st.sidebar.radio('', ['English', 'Français'])
+    functions = apropos, parcours, projets, publications, cv, recommandation, contact
+    names_fr = "A propos", "Parcours", "Projets", "Publications", "Curriculum vitae", "Recommandations", "Contactez-moi"
+    names_en = "About", "Journey", "Projects", "Publications", "Curriculum vitae", "Recommendations", "Contact"
     
     if language == 'Français':
-        st_query_radio("Navigation", "p", {
-            "A propos": apropos,
-            "Parcours": parcours,
-            "Projets": projets,
-            "Publications": publications,
-            "Curriculum vitae": cv,
-            "Recommandations": recommandation,
-            "Contactez-moi": contact,
-        })(language="fr")
+        st_query_radio("Navigation", "p", {k:v for k,v in zip(names_fr, functions)})(language="fr")
         
     elif language == 'English':
-        st_query_radio("Navigation", "p", {
-            "About": apropos,
-            "Journey": parcours,
-            "Projects": projets,
-            "Publications": publications,
-            "Curriculum vitae": cv,
-            "Recommendations": recommandation,
-            "Contact": contact,
-        })(language="en")
+        st_query_radio("Navigation", "p", {k:v for k,v in zip(names_en, functions)})(language="en")
     
     
 if __name__ == "__main__":
