@@ -268,7 +268,7 @@ if __name__ == "__main__":
         page_icon=None,
         layout="centered"
     )
-    set_page_container_style(
+    set_page_container_style()
     add_logo()
 #     st.sidebar.image('hands.png')
 #     with open('.streamlit/style.css') as f:
