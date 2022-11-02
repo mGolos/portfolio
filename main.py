@@ -148,10 +148,10 @@ def cv(language="fr"):
     src_en = "https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178508&authkey=APB7Ex6E01QEURo&em=2"
     
     if language == "fr":
-        st.markdown(f"[Télécharger la version française]({url_fr}) | [Télécharger la version anglaise]({url_en})")
+        st.markdown(f"Télécharger la version [française]({url_fr}) | [anglaise]({url_en})")
         components.iframe(src=src_fr, width=None, height=1020, scrolling=True)
     elif language == "en":
-        st.markdown(f"[Download the english version]({url_en}) | [Download the french version]({url_fr})")
+        st.markdown(f"Download the [english version]({url_en}) | [french version]({url_fr})")
         components.iframe(src=src_en, width=None, height=1020, scrolling=True)
     
 def recommandation(language="fr"):
