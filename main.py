@@ -219,7 +219,48 @@ def main():
             "Contact": contact,
         })(language="en")
 
-
+        
+def add_logo():
+    st.markdown(
+        """
+        <style>
+            [data-testid="stSidebarNav"] {
+                background-image: url(https://github.com/mGolos/portfolio/blob/main/hands.png?raw=true);
+                background-repeat: no-repeat;
+                padding-top: 120px;
+                background-position: 20px 20px;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True)
+    
+    
+def set_page_container_style(
+        max_width: int=1100, max_width_100_percent: bool=False,
+        padding_top: int=1, padding_right: int=10, padding_left: int=1, padding_bottom: int=10
+    ):
+    if max_width_100_percent:
+        max_width_str = f'max-width: 100%;'
+    else:
+        max_width_str = f'max-width: {max_width}px;'
+    st.markdown(
+        f'''
+        <style>
+            .reportview-container .sidebar-content {{
+                padding-top: {padding_top}rem;
+            }}
+            .reportview-container .main .block-container {{
+                {max_width_str}
+                padding-top: {padding_top}rem;
+                padding-right: {padding_right}rem;
+                padding-left: {padding_left}rem;
+                padding-bottom: {padding_bottom}rem;
+            }}
+        </style>
+        ''',
+        unsafe_allow_html=True)
+        
+        
 if __name__ == "__main__":
     st.set_page_config(
         page_title='Golos Mathieu',
@@ -227,8 +268,10 @@ if __name__ == "__main__":
         page_icon=None,
         layout="centered"
     )
-    st.sidebar.image('hands.png')
-    with open('.streamlit/style.css') as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    set_page_container_style(
+    add_logo()
+#     st.sidebar.image('hands.png')
+#     with open('.streamlit/style.css') as f:
+#         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
         
     main()
