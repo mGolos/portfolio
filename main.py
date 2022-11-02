@@ -128,11 +128,11 @@ def publications(language="fr"):
         st.markdown("# Scientific Publications")
         
     st.markdown("""
-        * Golos M & al. (2015), *Multistability in large scale models of brain activity*, PLOS Computational Biology ([lien]
-            (https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004644))
+        * Golos M & al. (2015), *Multistability in large scale models of brain activity*, PLOS Computational Biology 
+            ([lien](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004644))
         * Wirsich J & al. (2016), *Whole-brain analytic measures of network communication reveal increased
-            structure-function correlation in right temporal lobe epilepsy*, Elsevier ([lien]
-            (https://www.sciencedirect.com/science/article/pii/S2213158216300869))
+            structure-function correlation in right temporal lobe epilepsy*, Elsevier 
+            ([lien](https://www.sciencedirect.com/science/article/pii/S2213158216300869))
         """)
     
     
