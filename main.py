@@ -236,9 +236,10 @@ def add_logo():
     
     
 def set_page_container_style(padding_top=0, padding_bottom=10, padding_left=1, padding_right=10):
-    st.markdown(
+    st.write(
         f'''
         <style>
+            div.block-container{padding-top:0rem;}
             .reportview-container .sidebar-content {{
                 padding-top: {padding_top}rem;
             }}
@@ -251,6 +252,7 @@ def set_page_container_style(padding_top=0, padding_bottom=10, padding_left=1, p
         </style>
         ''', unsafe_allow_html=True)
     
+set_page_container_style()    
         
 if __name__ == "__main__":
     st.set_page_config(
@@ -259,10 +261,9 @@ if __name__ == "__main__":
         page_icon=None,
         layout="centered"
     )
-#     set_page_container_style()
-    st.write('<style>div.block-container{padding-top:2rem;}</style>', unsafe_allow_html=True)
-    add_logo()
-#     st.sidebar.image('hands.png')
+#     st.write('<style>div.block-container{padding-top:0rem;}</style>', unsafe_allow_html=True)
+#     add_logo()
+    st.sidebar.image('hands.png')
 #     with open('.streamlit/style.css') as f:
 #         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
         
