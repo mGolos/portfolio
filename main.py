@@ -145,33 +145,20 @@ def cv(language="fr"):
                     "[Télécharger la version anglaise](https://1drv.ms/b/s!Ah3jei6FBtQIhOUsGOshMy3LKxTFVw?e=DeMrkI)")
         components.iframe(
             src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178505&authkey=ACciPtwGdV60lf4&em=2",
-            width=None, height=1060, scrolling=True)
-#         st.markdown(
-#             '''<iframe src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178505&authkey=ACciPtwGdV60lf4&em=2"*
-#             width="100%" height="142%" frameborder="0" scrolling="no"></iframe>''',
-#             unsafe_allow_html =True)
+            width=None, height=1000, scrolling=True)
     elif language == "en":
         st.markdown("[Download the english version](https://1drv.ms/b/s!Ah3jei6FBtQIhOUsGOshMy3LKxTFVw?e=DeMrkI) | "
                     "[Download the french version](https://1drv.ms/b/s!Ah3jei6FBtQIhOUpb7Wx-3nUGQrTWQ?e=5qYyve)")
         components.iframe(
             src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178508&authkey=APB7Ex6E01QEURo&em=2",
-            width=None, height=1060, scrolling=True)
-#         st.markdown(
-#             '''<iframe src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178508&authkey=APB7Ex6E01QEURo&em=2"*
-#             width="100%" height="100%" frameborder="0" transform=scale(1.5) scrolling="no"></iframe>''',
-#             unsafe_allow_html =True)
-    
+            width=None, height=1000, scrolling=True)
     
 def recommandation(language="fr"):
     tab1, tab2 = st.tabs(["INS (En)", "XRator"])
     with tab1:
         components.iframe(
             src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2149593&authkey=AGqw88JCpvqX2_Q&em=2",
-            width=None, height=1060, scrolling=True)
-#         st.markdown(
-#             '''<iframe src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2149593&authkey=AGqw88JCpvqX2_Q&em=2"*
-#             width="100%" height="1060" frameborder="0" scrolling="no"></iframe>''',
-#             unsafe_allow_html =True)
+            width=None, height=1000, scrolling=True)
     with tab2:
         st.markdown("Soon...")
     
@@ -238,7 +225,6 @@ if __name__ == "__main__":
     st.write('<style>div.block-container{padding-top:1rem;}</style>', unsafe_allow_html=True)
     st.sidebar.image('hands.png', width=170)
     with open('.streamlit/style.css') as f:
-        components.html(f'<style>{f.read()}</style>')
-#         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
         
     main()
