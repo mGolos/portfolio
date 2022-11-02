@@ -80,12 +80,11 @@ def projets(language="fr"):
     if language == "fr":
         st.markdown("""
             # Projets
-            * [Question Tagging](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/question_tagging) : [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=question-tagging)  
+            * [Question Tagging](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/question_tagging) ([![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=question-tagging)) :  
                 Production d'une application pour l'automatisation d'étiquetage multiple de questions en utilisant les algorithmes les plus récents/performants.  
                 `[ État de l'art / NLP / XMC / Deep Learning ]`
             ---
-            * [Breed Classifier](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/breed_classifier) :
-            [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=breed-classifier)  
+            * [Breed Classifier](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/breed_classifier) ([![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=breed-classifier)) :  
                 Production d'une application de reconnaissance de race d'images de chiens.  
                 `[ Deep Learning / Transfert Learning ]`
             ---
@@ -102,13 +101,11 @@ def projets(language="fr"):
     elif language == "en":
         st.markdown("""
             # Projects
-            * [Question Tagging](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/question_tagging) :
-            [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=question-tagging)  
+            * [Question Tagging](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/question_tagging) ([![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=question-tagging)):  
                 Produce an application for automatic multi-tagging of questions using state of the art algorithms.  
                 `[ SOTA / NLP / XMC / Deep Learning ]`
             ---
-            * [Breed Classifier](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/breed_classifier) :
-            [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=breed-classifier)  
+            * [Breed Classifier](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/breed_classifier) ([![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=breed-classifier)):               
                 Produce an application for race recognition of dog images.  
                 `[ Deep Learning / Transfert Learning ]`
             ---
