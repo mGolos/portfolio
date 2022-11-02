@@ -47,6 +47,7 @@ def parcours(language="fr"):
     if language == "fr":
         st.markdown("""
             # Expériences
+            * `[2022] (9 mois)` - **Scientifique de la donnée**, [XRator](https://www.x-rator.com/) *(France/Vietnam)*
             * `[2021] (8 mois)` - **Stage Ingénieur Machine Learning**, OpenClassrooms *(Lille)*
             * `[2019 - 2020] (7 mois)` - **Ingénieur DevOps**, Alpha Conseils *(St-Germain-en-Laye)*
             * `[2013 - 2017] (4 ans)` - **Doctorant en Neurosciences Computationnelles**, INS/INSERM 1106 *(Marseille)*
@@ -61,6 +62,7 @@ def parcours(language="fr"):
     elif language == "en":
         st.markdown("""
             # Experiences
+            * `[2022] (9 mois)` - **Data Scientist**, [XRator](https://www.x-rator.com/) *(France/Vietnam)*
             * `[2021] (8 months)` - **Machine Learning Engineer (Internship)**, OpenClassrooms *(Lille)*
             * `[2019 - 2020] (7 months)` - **DevOps Engineer**, Alpha Conseils *(St-Germain-en-Laye)*
             * `[2013 - 2017] (4 years)` - **PhD Candidate in Computational Neurosciences**, INS/INSERM 1106 *(Marseille)*
