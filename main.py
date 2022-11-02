@@ -16,7 +16,8 @@ def apropos(language="fr"):
             > J’ai toujours voué un vif intérêt aux disciplines scientifiques et satisfait celui-ci par des formations pluridisciplinaires qui m’ont amené vers un master spécialisé dans la Modélisation et les Calculs Scientifiques.
             > Formé sur les Calculs Intensifs, j'ai fait une thèse enrichissante en Neurosciences Computationnelles, en travaillant sur des Réseaux Neuronaux et l'Apprentissage Automatique.
             
-            > J'ai récemment fini un stage en tant qu'ingénieur en Apprentissage Automatique et je cherche actuellement à aller de l'avant dans plusieurs de ses domaines au cours de la prochaine décennie.
+            > Après un stage en tant qu'ingénieur en Apprentissage Automatique, j'ai travaillé en tant que Scientifique de la donnée chez XRator qui approche les cyber-risques de manière préventive.
+            > Je cherche actuellement à apprendre toujours plus dans certains domaines au cours de la prochaine décennie pour un projet sur le long terme.
         """)
     elif language == "en":
         st.markdown("""
@@ -29,7 +30,8 @@ def apropos(language="fr"):
             > I always had a keen interest in scientific disciplines and satisfied this with multidisciplinary training which led me to a master's degree specializing in Scientific Modeling and Computing.
             > Trained in Intensive Computing, I did an enriching thesis in Computational Neurosciences, working on Neural Networks and Machine Learning.  
             
-            > I recently completed an internship as a Machine Learning Engineer and am currently looking to move forward in several of its areas over the next decade.
+            > After an internship as a Machine Learning engineer, I worked as a Data Scientist at XRator who approaches cyber risks in a preventive way.
+            > I am currently looking to learn more in certain areas over the next decade for a long-term project.
         """)
     st.markdown("""
         ---
@@ -132,10 +134,10 @@ def publications(language="fr"):
         
     st.markdown("""
         * Golos M & al. (2015), *Multistability in large scale models of brain activity*, PLOS Computational Biology 
-            ([lien](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004644))
+            ([publication](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004644))
         * Wirsich J & al. (2016), *Whole-brain analytic measures of network communication reveal increased
             structure-function correlation in right temporal lobe epilepsy*, Elsevier 
-            ([lien](https://www.sciencedirect.com/science/article/pii/S2213158216300869))
+            ([publication](https://www.sciencedirect.com/science/article/pii/S2213158216300869))
         """)
     
     
