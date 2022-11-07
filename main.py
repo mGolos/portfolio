@@ -7,7 +7,7 @@ from utils import st_query_radio
 def apropos(language="fr"):
     if language == "fr":
         st.markdown("""
-            ## Bonjour et bienvenue sur mon portfolio !
+            ## Bonjour et bienvenue !
             ---
             # Mathieu Golos
             > Polyvalent avec un profil orienté vers les sciences et la programmation, je suis un travailleur altruiste et créatif.
@@ -21,7 +21,7 @@ def apropos(language="fr"):
         """)
     elif language == "en":
         st.markdown("""
-            ## Hello and welcome on my portfolio !
+            ## Hello and welcome!
             ---
             # Mathieu Golos
             > Versatile with a profile oriented towards science and programming, I am an altruistic and creative worker.
