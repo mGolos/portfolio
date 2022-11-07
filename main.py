@@ -155,14 +155,15 @@ def cv(language="fr"):
         components.iframe(src=src_en, width=None, height=1020, scrolling=True)
     
 def recommandation(language="fr"):
-    tab1, tab2 = st.tabs(["INS (En)", "XRator"])
+#     tab1, tab2 = st.tabs(["INS (En)", "XRator"])
+    tab1, tab2 = st.tabs(["INS (En)", "..."])
     
     with tab1:
         components.iframe(
             src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2149593&authkey=AGqw88JCpvqX2_Q&em=2",
             width=None, height=1020, scrolling=True)
-    with tab2:
-        st.markdown("Soon...")
+#     with tab2:
+#         st.markdown("Soon...")
     
     
 def contact(language="fr"):
