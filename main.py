@@ -200,7 +200,7 @@ def contact(language="fr"):
 
 
 def main():
-    language = st.sidebar.radio('', [':flag-en: English', ':flag-fr: Français'])
+    language = st.sidebar.radio('', ['English', 'Français'])
     functions = apropos, parcours, projets, publications, cv, recommandation, contact
     names_fr = "A propos", "Parcours", "Projets", "Publications", "Curriculum vitae", "Recommandations", "Contactez-moi"
     names_en = "About", "Journey", "Projects", "Publications", "Curriculum vitae", "Recommendations", "Contact"
