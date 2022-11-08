@@ -1,5 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
+import streamlit_analytics
 from pathlib import Path
 from utils import st_query_radio
 
@@ -219,9 +220,11 @@ if __name__ == "__main__":
         page_icon=None,
         layout="centered"
     )
+    hidden_password = "I'm not hidden"
     st.write('<style>div.block-container{padding-top:1rem;}</style>', unsafe_allow_html=True)
     st.sidebar.image('hands.png', width=200)
     with open('.streamlit/style.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
         
-    main()
+    with streamlit_analytics.track(unsafe_password=hidden_password):
+        main()
