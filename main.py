@@ -194,7 +194,7 @@ def contact(language="fr"):
         ---
         [![](https://img.icons8.com/officel/48/000000/email.png)mathieu.golos@gmail.com](mail:mathieu.golos@gmail.com)  
         [![](https://img.icons8.com/fluent/48/000000/phone.png):flag-fr: +336 11 47 89 01](tel:+33611478901)  
-        [![](https://img.icons8.com/fluent/48/000000/phone.png):flag-vi: +847 95 59 49 42](tel:+84795594942)  
+        [![](https://img.icons8.com/fluent/48/000000/phone.png):flag-vn: +847 95 59 49 42](tel:+84795594942)  
         [![](https://img.icons8.com/color/48/000000/linkedin.png)LinkedIn](https://www.linkedin.com/in/mathieu-golos-25055b77/)  
         [![](https://img.icons8.com/dusk/48/000000/worldwide-location.png)Lille (FRANCE)](https://goo.gl/maps/eXC8BJh9qGXWBgZDA)  
         ''')
