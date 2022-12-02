@@ -141,7 +141,7 @@ def publications(language="fr"):
         """)
 
 
-@st.cache
+@st.cache(suppress_st_warning=True)
 def iframe(src:str):
     return components.iframe(src=src, width=None, height=1020, scrolling=True)
     
