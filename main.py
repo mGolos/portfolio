@@ -142,6 +142,9 @@ def publications(language="fr"):
 
 
 @st.cache
+def iframe(src:str):
+    components.iframe(src=src_fr, width=None, height=1020, scrolling=True)
+    
 def cv(language="fr"):
     url_fr = "https://1drv.ms/b/s!Ah3jei6FBtQIhOUpb7Wx-3nUGQrTWQ?e=5qYyve"
     url_en = "https://1drv.ms/b/s!Ah3jei6FBtQIhOUsGOshMy3LKxTFVw?e=DeMrkI"
@@ -150,13 +153,15 @@ def cv(language="fr"):
     
     if language == "fr":
         st.markdown(f"Télécharger la version [française]({url_fr}) | [anglaise]({url_en})")
-        components.iframe(src=src_fr, width=None, height=1020, scrolling=True)
+        iframe(src_fr)
+#         components.iframe(src=src_fr, width=None, height=1020, scrolling=True)
     elif language == "en":
         st.markdown(f"Download the [english version]({url_en}) | [french version]({url_fr})")
-        components.iframe(src=src_en, width=None, height=1020, scrolling=True)
+        iframe(src_en)
+#         components.iframe(src=src_en, width=None, height=1020, scrolling=True)
 
         
-@st.cache
+# @st.cache
 def recommandation(language="fr"):
     if language == "fr":
 #         tab1, tab2 = st.tabs(["INS (En)", "XRator"])
