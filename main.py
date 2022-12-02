@@ -139,8 +139,9 @@ def publications(language="fr"):
             structure-function correlation in right temporal lobe epilepsy*, Elsevier 
             ([publication](https://www.sciencedirect.com/science/article/pii/S2213158216300869))
         """)
-    
-    
+
+
+@st.cache
 def cv(language="fr"):
     url_fr = "https://1drv.ms/b/s!Ah3jei6FBtQIhOUpb7Wx-3nUGQrTWQ?e=5qYyve"
     url_en = "https://1drv.ms/b/s!Ah3jei6FBtQIhOUsGOshMy3LKxTFVw?e=DeMrkI"
@@ -153,7 +154,9 @@ def cv(language="fr"):
     elif language == "en":
         st.markdown(f"Download the [english version]({url_en}) | [french version]({url_fr})")
         components.iframe(src=src_en, width=None, height=1020, scrolling=True)
-    
+
+        
+@st.cache
 def recommandation(language="fr"):
     if language == "fr":
 #         tab1, tab2 = st.tabs(["INS (En)", "XRator"])
