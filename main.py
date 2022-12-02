@@ -141,9 +141,9 @@ def publications(language="fr"):
         """)
 
 
-@st.cache(suppress_st_warning=True)
 def iframe(src:str):
-    components.iframe(src=src, width=None, height=1020, scrolling=True)
+    return components.iframe(src=src, width=None, height=1020, scrolling=True)
+    
     
 def cv(language="fr"):
     url_fr = "https://1drv.ms/b/s!Ah3jei6FBtQIhOUpb7Wx-3nUGQrTWQ?e=5qYyve"
@@ -154,30 +154,23 @@ def cv(language="fr"):
     if language == "fr":
         st.markdown(f"Télécharger la version [française]({url_fr}) | [anglaise]({url_en})")
         iframe(src_fr)
-#         components.iframe(src=src_fr, width=None, height=1020, scrolling=True)
     elif language == "en":
         st.markdown(f"Download the [english version]({url_en}) | [french version]({url_fr})")
         iframe(src_en)
-#         components.iframe(src=src_en, width=None, height=1020, scrolling=True)
 
         
-# @st.cache
 def recommandation(language="fr"):
     if language == "fr":
 #         tab1, tab2 = st.tabs(["INS (En)", "XRator"])
         tab1, tab2 = st.tabs(["Institut de Neurosciences des Systèmes (Traduit)", "..."])
         with tab1:
-            components.iframe(
-                src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178515&authkey=AD4gq0CU3sAJEnk&em=2",
-                width=None, height=1020, scrolling=True)
+            iframe("https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178515&authkey=AD4gq0CU3sAJEnk&em=2")
 #         with tab2:
 #             st.markdown("Soon...")
     elif language == "en":
         tab1, tab2 = st.tabs(["Institut de Neurosciences des Systèmes", "..."])
         with tab1:
-            components.iframe(
-                src="https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2149593&authkey=AGqw88JCpvqX2_Q&em=2",
-                width=None, height=1020, scrolling=True)
+            iframe("https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2149593&authkey=AGqw88JCpvqX2_Q&em=2")
 #         with tab2:
 #             st.markdown("Soon...")
     
