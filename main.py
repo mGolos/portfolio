@@ -143,7 +143,7 @@ def publications(language="fr"):
 
 @st.cache
 def iframe(src:str):
-    components.iframe(src=src_fr, width=None, height=1020, scrolling=True)
+    return components.iframe(src=src, width=None, height=1020, scrolling=True)
     
 def cv(language="fr"):
     url_fr = "https://1drv.ms/b/s!Ah3jei6FBtQIhOUpb7Wx-3nUGQrTWQ?e=5qYyve"
