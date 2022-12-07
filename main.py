@@ -16,7 +16,7 @@ def apropos(language="fr"):
             > J’ai toujours voué un vif intérêt aux disciplines scientifiques et satisfait celui-ci par des formations pluridisciplinaires qui m’ont amené vers un master spécialisé dans la Modélisation et les Calculs Scientifiques.
             > Formé sur les Calculs Intensifs, j'ai fait une thèse enrichissante en Neurosciences Computationnelles, en travaillant sur des Réseaux Neuronaux et l'Apprentissage Automatique.
             
-            > Après un stage en tant qu'ingénieur en Apprentissage Automatique, j'ai travaillé en tant que Scientifique de la donnée chez XRator qui approche les cyber-risques de manière préventive.
+            > Après un stage en tant qu'ingénieur en Apprentissage Automatique, j'ai travaillé en tant qu'Expert en Science des données chez XRator qui approche les cyber-risques de manière préventive.
             > Je cherche actuellement à apprendre toujours plus dans certains domaines au cours de la prochaine décennie pour un projet sur le long terme.
         """)
     elif language == "en":
