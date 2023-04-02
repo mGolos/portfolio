@@ -1,11 +1,9 @@
 import streamlit as st
 import streamlit.components.v1 as components
-from pathlib import Path
-from utils import st_query_radio
 
 
-def apropos(language="fr"):
-    if language == "fr":
+def apropos():
+    if LANGUAGE == "fr":
         st.markdown("""
             ## Bonjour et bienvenue !
             ---
@@ -19,7 +17,7 @@ def apropos(language="fr"):
             > Après un stage en tant qu'ingénieur en Apprentissage Automatique, j'ai travaillé en tant qu'Expert en Science des données chez XRator qui approche les cyber-risques de manière préventive.
             > Je cherche actuellement à apprendre toujours plus dans certains domaines au cours de la prochaine décennie pour un projet sur le long terme.
         """)
-    elif language == "en":
+    elif LANGUAGE == "en":
         st.markdown("""
             ## Hello and welcome!
             ---
@@ -40,11 +38,11 @@ def apropos(language="fr"):
         unsafe_allow_html =True)
     
     
-def parcours(language="fr"):
+def parcours():
     xrator = "[XRator](https://www.x-rator.com/)"
     lindera = "[Lindera](https://www.lindera.de/)"
     
-    if language == "fr":
+    if LANGUAGE == "fr":
         st.markdown(f"""
             # Expériences
             * `[2023] (2 mois)` - **Scientifique de la donnée Clinique**, {lindera} *(France/Vietnam/Allemagne)*
@@ -60,7 +58,7 @@ def parcours(language="fr"):
             * `[2010]` - **Licence Physique Fondamentale**, Lille1 *(Lille)*
             * `[2008]` - **DUT Mesures Physiques - Génie des matériaux** *(Valenciennes)*
         """)
-    elif language == "en":
+    elif LANGUAGE == "en":
         st.markdown(f"""
             # Experiences
             * `[2023] (2 months)` - **Data Scientist Clinical**, {lindera} *(France/Vietnam/Germany)*
@@ -78,14 +76,14 @@ def parcours(language="fr"):
         """)
         
     
-def projets(language="fr"):
+def projets():
     streamlit = "[Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)"
     link1 = "[Notebooks](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/question_tagging)"
     link2 = f"[!{streamlit}](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=question-tagging)"
     link3 = "[Notebooks](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/breed_classifier)"
     link4 = f"[!{streamlit}](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=breed-classifier)"
     
-    if language == "fr":
+    if LANGUAGE == "fr":
         st.markdown(f"""
             # Projets
             * Question Tagging ({link1}, {link2}) :  
@@ -106,7 +104,7 @@ def projets(language="fr"):
             ---
             (Nettoyage en cours)
             """)
-    elif language == "en":
+    elif LANGUAGE == "en":
         st.markdown(f"""
             # Projects
             * Question Tagging ({link1}, {link2}):  
@@ -129,10 +127,10 @@ def projets(language="fr"):
             """)
 
 
-def publications(language="fr"):
-    if language == "fr":
+def publications():
+    if LANGUAGE == "fr":
         st.markdown("# Publications Scientifiques")
-    elif language == "en":
+    elif LANGUAGE == "en":
         st.markdown("# Scientific Publications")
         
     st.markdown("""
@@ -148,28 +146,28 @@ def iframe(src:str):
     return components.iframe(src=src, width=None, height=1020, scrolling=True)
     
     
-def cv(language="fr"):
+def cv():
     url_fr = "https://1drv.ms/b/s!Ah3jei6FBtQIhOx0zmTSlEkxKYQh4Q?e=sXRqdm"
     url_en = "https://1drv.ms/b/s!Ah3jei6FBtQIhOx1BI-_YOe1orF8Qg?e=X00EOb"
     src_fr = "https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2179476&authkey=AJw1dkWCCYWhFE4&em=2"
     src_en = "https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2179477&authkey=AD16Jnht-e2tXmY&em=2"
-    if language == "fr":
+    if LANGUAGE == "fr":
         st.markdown(f"Télécharger la version [française]({url_fr}) | [anglaise]({url_en})")
         iframe(src_fr)
-    elif language == "en":
+    elif LANGUAGE == "en":
         st.markdown(f"Download the [english version]({url_en}) | [french version]({url_fr})")
         iframe(src_en)
 
         
-def recommandation(language="fr"):
-    if language == "fr":
+def recommandation():
+    if LANGUAGE == "fr":
 #         tab1, tab2 = st.tabs(["INS (En)", "XRator"])
         tab1, tab2 = st.tabs(["Institut de Neurosciences des Systèmes (Traduit)", "..."])
         with tab1:
             iframe("https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178515&authkey=AD4gq0CU3sAJEnk&em=2")
 #         with tab2:
 #             st.markdown("Soon...")
-    elif language == "en":
+    elif LANGUAGE == "en":
         tab1, tab2 = st.tabs(["Institut de Neurosciences des Systèmes", "..."])
         with tab1:
             iframe("https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2149593&authkey=AGqw88JCpvqX2_Q&em=2")
@@ -177,15 +175,15 @@ def recommandation(language="fr"):
 #             st.markdown("Soon...")
     
     
-def contact(language="fr"):
-    if language == "fr":
+def contact():
+    if LANGUAGE == "fr":
         st.markdown('''
             # Contactez-moi
             > La meilleur façon de me joindre est par email.  
             > Cependant, je liste ici les différents moyens de me joindre.
             > N'hésitez pas à me contacter sur l'un d'entre eux !
             ''')
-    elif language == "en":
+    elif LANGUAGE == "en":
         st.markdown('''
             # Contact
             > The best way to contact me is by email.  
@@ -204,16 +202,23 @@ def contact(language="fr"):
 
 
 def main():
+    global LANGUAGE
     language = st.sidebar.radio('', ['English', 'Français'])
     functions = apropos, parcours, projets, publications, cv, recommandation, contact
     names_fr = "A propos", "Parcours", "Projets", "Publications", "Curriculum vitae", "Recommandations", "Contactez-moi"
     names_en = "About", "Journey", "Projects", "Publications", "Curriculum vitae", "Recommendations", "Contact"
     
     if language == 'Français':
-        st_query_radio("Navigation", "p", {k:v for k,v in zip(names_fr, functions)})(language="fr")
+        LANGUAGE = "fr"
+        page_names_to_funcs = {name: func for name, func in zip(names_fr, functions)}
+        demo_name = st.sidebar.radio("Choisissez une page", page_names_to_funcs.keys())
         
     elif language == 'English':
-        st_query_radio("Navigation", "p", {k:v for k,v in zip(names_en, functions)})(language="en")
+        LANGUAGE = "en"
+        page_names_to_funcs = {name: func for name, func in zip(names_en, functions)}
+        demo_name = st.sidebar.radio("Choose a page", page_names_to_funcs.keys())
+
+    page_names_to_funcs[demo_name]()
     
     
 if __name__ == "__main__":
@@ -223,7 +228,6 @@ if __name__ == "__main__":
         page_icon=None,
         layout="centered"
     )
-    st.write('<style>div.block-container{padding-top:1rem;}</style>', unsafe_allow_html=True)
     st.sidebar.image('hands.png', width=200)
     with open('.streamlit/style.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
