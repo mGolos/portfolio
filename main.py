@@ -42,10 +42,12 @@ def apropos(language="fr"):
     
 def parcours(language="fr"):
     xrator = "[XRator](https://www.x-rator.com/)"
+    lindera = "[Lindera](https://www.lindera.de/)"
     
     if language == "fr":
         st.markdown(f"""
             # Expériences
+            * `[2023] (2 mois)` - **Scientifique de la donnée Clinique**, {lindera} *(France/Vietnam/Allemagne)*
             * `[2022] (9 mois)` - **Scientifique de la donnée**, {xrator} *(France/Vietnam)*
             * `[2021] (8 mois)` - **Stage Ingénieur Machine Learning**, OpenClassrooms *(Lille)*
             * `[2019 - 2020] (7 mois)` - **Ingénieur DevOps**, Alpha Conseils *(St-Germain-en-Laye)*
@@ -61,6 +63,7 @@ def parcours(language="fr"):
     elif language == "en":
         st.markdown(f"""
             # Experiences
+            * `[2023] (2 mois)` - **Data Scientist Clinical**, {lindera} *(France/Vietnam/Germany)*
             * `[2022] (9 months)` - **Data Scientist**, {xrator} *(France/Vietnam)*
             * `[2021] (8 months)` - **Machine Learning Engineer (Internship)**, OpenClassrooms *(Lille)*
             * `[2019 - 2020] (7 months)` - **DevOps Engineer**, Alpha Conseils *(St-Germain-en-Laye)*
@@ -146,11 +149,10 @@ def iframe(src:str):
     
     
 def cv(language="fr"):
-    url_fr = "https://1drv.ms/b/s!Ah3jei6FBtQIhOUpb7Wx-3nUGQrTWQ?e=5qYyve"
-    url_en = "https://1drv.ms/b/s!Ah3jei6FBtQIhOUsGOshMy3LKxTFVw?e=DeMrkI"
-    src_fr = "https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178505&authkey=ACciPtwGdV60lf4&em=2"
-    src_en = "https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178508&authkey=APB7Ex6E01QEURo&em=2"
-    
+    url_fr = "https://1drv.ms/b/s!Ah3jei6FBtQIhOx0zmTSlEkxKYQh4Q?e=sXRqdm"
+    url_en = "https://1drv.ms/b/s!Ah3jei6FBtQIhOx1BI-_YOe1orF8Qg?e=X00EOb"
+    src_fr = "https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2179476&authkey=AJw1dkWCCYWhFE4&em=2"
+    src_en = "https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2179477&authkey=AD16Jnht-e2tXmY&em=2"
     if language == "fr":
         st.markdown(f"Télécharger la version [française]({url_fr}) | [anglaise]({url_en})")
         iframe(src_fr)
