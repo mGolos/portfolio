@@ -63,7 +63,7 @@ def parcours(language="fr"):
     elif language == "en":
         st.markdown(f"""
             # Experiences
-            * `[2023] (2 mois)` - **Data Scientist Clinical**, {lindera} *(France/Vietnam/Germany)*
+            * `[2023] (2 months)` - **Data Scientist Clinical**, {lindera} *(France/Vietnam/Germany)*
             * `[2022] (9 months)` - **Data Scientist**, {xrator} *(France/Vietnam)*
             * `[2021] (8 months)` - **Machine Learning Engineer (Internship)**, OpenClassrooms *(Lille)*
             * `[2019 - 2020] (7 months)` - **DevOps Engineer**, Alpha Conseils *(St-Germain-en-Laye)*
