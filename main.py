@@ -160,20 +160,20 @@ def cv():
 
         
 def recommandation():
+    tab1, tab2 = st.tabs(["XRator", "INS"])
+
     if LANGUAGE == "fr":
-#         tab1, tab2 = st.tabs(["INS (En)", "XRator"])
-        tab1, tab2 = st.tabs(["Institut de Neurosciences des Systèmes (Traduit)", "..."])
         with tab1:
+            iframe("https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2179527&authkey=%21ADJYWIi%5FeQVejV4&em=2")
+        with tab2:
             iframe("https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178515&authkey=AD4gq0CU3sAJEnk&em=2")
-#         with tab2:
-#             st.markdown("Soon...")
+
     elif LANGUAGE == "en":
-        tab1, tab2 = st.tabs(["Institut de Neurosciences des Systèmes", "..."])
         with tab1:
+            iframe("https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2179528&authkey=%21AKf1P7B3SVNyOho&em=2")
+        with tab2:
             iframe("https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2149593&authkey=AGqw88JCpvqX2_Q&em=2")
-#         with tab2:
-#             st.markdown("Soon...")
-    
+
     
 def contact():
     if LANGUAGE == "fr":
