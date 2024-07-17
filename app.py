@@ -8,8 +8,7 @@ sss = st.session_state
 if __name__ == "__main__":
     utils.always()
     
-    pages = ['about', 'journey', 'projects', ]
-    # pages = ['about', 'journey', 'projects', 'timeline', 'publications', 'cv', 'recommendations']
+    pages = ['about', 'journey', 'projects', 'timeline', 'publications', 'cv', 'recommendations']
     for page in pages:
         submodule = importlib.import_module(f'pages.{page}')
         submodule.main()
