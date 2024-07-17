@@ -25,7 +25,7 @@ def main():
             #     `[ SVM / Forêt aléatoires / Boosting ]`
             # * Conception d'une application sur des données nutritionnelles.  
             # ---"""
-            """---
+            """
             (Nettoyage en cours)
         """)
 

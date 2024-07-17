@@ -29,7 +29,7 @@ def footer():
 
 
 def iframe(src:str):
-    return components.iframe(src=src, width=None, height=1020, scrolling=True)
+    return components.iframe(src=src, width=sss['a4_width'], height=sss['a4_height'], scrolling=True)
 
     
 def check_layout():
@@ -39,10 +39,20 @@ def check_layout():
     '''
     width = streamlit_js_eval(js_expressions='screen.width')
     height = streamlit_js_eval(js_expressions='screen.height')
+    inner_width = streamlit_js_eval(js_expressions="window.innerWidth")
     sleep(1)
         
     if width is not None and height is not None:
-        sss['layout'] = "wide" if width < height else "centered"
+        if width < height:
+            # portrait
+            sss['layout'] = "wide"
+            sss['a4_width'] = int(width * 0.92)
+            sss['a4_height'] = 700
+        else:
+            # landscape
+            sss['layout'] = "centered"
+            sss['a4_width'] = inner_width
+            sss['a4_height'] = 1020
 
 
 def once_set_layout():
@@ -60,26 +70,12 @@ def once_layout_toast():
         sss['layout_toasted'] = True
 
 
-# @st.experimental_fragment
-def sidebar():
-    if 'nrun' not in sss:
-        sss['nrun'] = 1
-    else:
-        sss['nrun'] += 1
-        
-    language()
-
+def sidebar():        
     add_logo_N_styles()
-    st.logo('images/empty.png', icon_image='images/logo.png')
-
-    for filename, (label, icon) in sss['pages'].items():
-        st.page_link(filename, label=label, icon=icon)
-        
-    # st.page_link("https://www.linkedin.com/in/mathieu-golos-25055b77", label="LinkedIn", icon='🌍')
-    # st.write('---')   
+    language()
+    pages()
+    st.write('---') 
     st.markdown(contact)
-    
-    print(sss['nrun'])
 
 
 def countries(s: str):
@@ -88,43 +84,51 @@ def countries(s: str):
         case 'en': return ':flag-gb: English'
     
 
-# @st.experimental_fragment
 def language():
+    if 'language' not in sss:
+        sss["language"] = 'fr'
+    
     languages = ['en', 'fr']
-    index = languages.index(sss['language']) if "language" in sss else 0
-    st.info(sss["language"]) if "language" in sss else st.info('no language')
-    
-    # st.sidebar.radio('Language', languages, horizontal=True, label_visibility='hidden', key='language', format_func=countries)
-    sss["language"] = st.radio('Language', languages, horizontal=True, label_visibility='hidden', index=index, format_func=countries)
-    st.info(sss["language"])
-    # st.rerun()
-    
+    index = languages.index(sss['language'])
+    language = st.radio('Language', languages, horizontal=True, label_visibility='hidden', index=index, format_func=countries)
+    if sss["language"] != language:
+        sss["language"] = language
+        st.rerun()
+
+
+def pages():
     if sss["language"] == 'fr':
-        sss["pages"] = {
-            "app.py": ("Tout", '🧻'),
-            "pages/about.py": ("A propos", '❔'),
-            "pages/journey.py": ("Parcours", '🏃'),
-            "pages/projects.py": ("Projets", '🔧'),
+        sss['pages'] = {
+            "app.py": ("Tout", '📜'),
+            "pages/about.py": ("A propos", '🧠'),
+            "pages/journey.py": ("Parcours", '🌌'),
+            "pages/projects.py": ("Projets", '🛠️'),
+            "pages/skills.py": ("Compétences", '💡'),
             "pages/timeline.py": ("Chronologie", '🎞️'),
-            "pages/publications.py": ("Publications", '📜'),
-            "pages/cv.py": ("Curriculum vitae", '📄'),
+            "pages/publications.py": ("Publications", '🗞️'),
             "pages/recommendations.py": ("Recommandations", '💌'),
+            "pages/cv.py": ("Curriculum vitae", '📑'),
         }
         
     elif sss["language"] == 'en':
-        sss["pages"] = {
-            "app.py": ("All", '🧻'),
-            "pages/about.py": ("About", '❔'),
-            "pages/journey.py": ("Journey", '🏃'),
-            "pages/projects.py": ("Projects", '🔧'),
+        sss['pages'] = {
+            "app.py": ("All", '📜'),
+            "pages/about.py": ("About", '🧠'),
+            "pages/journey.py": ("Journey", '🌌'),
+            "pages/projects.py": ("Projects", '🛠️'),
+            "pages/skills.py": ("Skills", '💡'),
             "pages/timeline.py": ("Timeline", '🎞️'),
-            "pages/publications.py": ("Publications", '📜'),
-            "pages/cv.py": ("Curriculum vitae", '📄'),
+            "pages/publications.py": ("Publications", '🗞️'),
             "pages/recommendations.py": ("Recommendations", '💌'),
+            "pages/cv.py": ("Curriculum vitae", '📑'),
         }
+
+    for filename, (label, icon) in sss['pages'].items():
+        st.page_link(filename, label=label, icon=icon)
 
 
 def add_logo_N_styles():
+    st.logo('images/empty.png', icon_image='images/logo.png')
     image_str = base64.b64encode(open('images/logo.png', "rb").read()).decode()
     st.markdown(
         f"""
