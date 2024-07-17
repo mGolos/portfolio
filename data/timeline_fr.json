@@ -1,0 +1,200 @@
+
+{
+  "title": {
+      "media": {
+        "url": "",
+        "caption": " <a target=\"_blank\" href=''>credits</a>",
+        "credit": ""
+      },
+      "text": {
+        "headline": "Welcome!",
+        "text": "<p>This is part of my experiences and education</p> <img src=https://onedrive.live.com/embed?resid=8D406852E7AE31D%2164453&authkey=%21AL7c2yoHM8TkaCk style=\"max-width:70%;\" alt=\"drawing\" />"
+      }
+  },
+  "events": [
+    {
+      "group": "Education",
+      "media": {
+        "url": "<iframe src=\"https://pod.uphf.fr/video/5206-les-atouts-du-but-mp-mesures-physiques/?is_iframe=true\" frameborder=\"0\"></iframe>",
+        "caption": "Streamlit Components (<a target=\"_blank\" href='https://streamlit.io/'>credits</a>)"
+      },
+      "start_date": {
+        "year": "2006",
+        "month":"9"
+      },
+      "end_date": {
+        "year": "2008",
+        "month":"7"
+      },
+      "text": {
+        "headline": "Technical Degree<br><i>Valenciennes (France)</i>",
+        "text": "<p><b>Physical Measurements & Material Engineering</b></p><p>Mathematics, Computer science, Signal Processing, Metrology, Instrumentation Electronics, Chemical Analysis Techniques, Thermal Transfer, Structure and Properties of Materials, Optics, Fluid Mechanics, Mechanics</p>"
+      }
+    },
+    {
+      "group": "Education",
+      "start_date": {
+        "year": "2008",
+        "month":"9"
+      },
+      "end_date": {
+        "year": "2010",
+        "month":"6"
+      },
+      "text": {
+        "headline": "Degree<br><i>Lille1 (France)</i>",
+        "text": "<p><b>Fundamental Physics</b></p><p>Quantum, Electromagnetism, Tools for Physics, Numerical simulation, Analytical mechanics, Thermodynamics, Optics, Waves and Vibration, Properties of matter, Statistical Physics, Astrophysics, Physics of the Earth and the Environment</p>"
+      }
+    },
+    {
+      "group": "Education",
+      "start_date": {
+        "year": "2010",
+        "month":"9"
+      },
+      "end_date": {
+        "year": "2012",
+        "month":"9"
+      },
+      "text": {
+        "headline": "Master Degree<br><i>Rennes1 (France)</i>",
+        "text": "<p><b>Modelling and Scientists Calculus</b></p><p>Numerical methods, Simulation, Modeling, Programming (C++, f90)</p>"
+      }
+    },
+    {
+      "group": "Experience",
+      "start_date": {
+        "year": "2013",
+        "month":"1"
+      },
+      "end_date": {
+        "year": "2013",
+        "month":"9"
+      },
+      "text": {
+        "headline": "Assistant Engineer<br><i>INS, INSERM (Marseille, France)</i>",
+        "text": "<p>Creation and study of a dynamic model for publication<br>Machine learning of activity configurations<br>Creation of learning algorithms</p>"
+      }
+    },
+    {
+      "group": "Experience",
+      "start_date": {
+        "year": "2013",
+        "month":"9"
+      },
+      "end_date": {
+        "year": "2017",
+        "month":"9"
+      },
+      "text": {
+        "headline": "PhD Candidate<br><i>INS, INSERM (Marseille, France)</i>",
+        "text": "<p>Multistability in large scale modeling of brain activity<br>Comparative analysis using functional connectivity dynamic between epileptic patients and controls<br>Developing my own simulator<br>Tools development for preprocessing / analysis<br>k-means, PCA, ICA, Signal processing, FCD, Neural networks, HPC, Medical imaging</p>"
+      }
+    },
+    {
+      "group": "Education",
+      "start_date": {
+        "year": "2017",
+        "month":"9"
+      },
+      "end_date": {
+        "year": "2018",
+        "month":"12"
+      },
+      "text": {
+        "headline": "Independent Research<br><i>(Lithuania)</i>",
+        "text": "<p>Personal project : scriptwriting and linguistics research</p>"
+      }
+    },
+    {
+      "group": "Education",
+      "start_date": {
+        "year": "2019",
+        "month":"6"
+      },
+      "end_date": {
+        "year": "2019",
+        "month":"9"
+      },
+      "text": {
+        "headline": "Training<br><i>EduGroupe (Paris, France)</i>",
+        "text": "<p>SecDevOps Development Consultant Course</p>"
+      }
+    },
+    {
+      "group": "Experience",
+      "start_date": {
+        "year": "2019",
+        "month":"9"
+      },
+      "end_date": {
+        "year": "2020",
+        "month":"03"
+      },
+      "text": {
+        "headline": "DevOps Engineer<br><i>Alpha Conseils (Paris, France)</i>",
+        "text": "<p>Automate the environment and develop a web interface for connecting accountants and professionals with the web library Django</p>"
+      }
+    },
+    {
+      "group": "Education",
+      "start_date": {
+        "year": "2021",
+        "month":"4"
+      },
+      "end_date": {
+        "year": "2021",
+        "month":"11"
+      },
+      "text": {
+        "headline": "Machine Learning Internship<br><i>OpenClassrooms (Lille, France)</i>",
+        "text": "<p>API, Image recognition, Customer segmentation, Regression, Prediction, Application conception, Cleaning<br>SOTA, NLP, XMC, Deep Learning, Transfert Learning, k-means, HCA, DBSCAN, SVM, Random Forest, Boosting</p>"
+      }
+    },
+    {
+      "group": "Experience",
+      "start_date": {
+        "year": "2022",
+        "month":"3"
+      },
+      "end_date": {
+        "year": "2022",
+        "month":"12"
+      },
+      "text": {
+        "headline": "Data Scientist<br><i>XRATOR (100% remote: France, Vietnam)</i>",
+        "text": "<p>Improve Cyber Risk Management and Reporting for IT or CISO: SOTA study<br>Study, Extract, Clean, Manage and Analyze data<br>Identify gaps and use data for risk quantification<br>Creation, Refactoring and Optimization of code<br>Tools development<br>NLP, NLTK, Spacy, Partitioning, Imputation, Regression, Transfer Learning, API, Django, Prefect, Webscraping<br>Docker, Kubernetes, OVH, Azure Storage, GitLab, Jira, Agility, R&D, independent</p>"
+      }
+    },
+    {
+      "group": "Experience",
+      "start_date": {
+        "year": "2023",
+        "month":"1"
+      },
+      "end_date": {
+        "year": "2023",
+        "month":"3"
+      },
+      "text": {
+        "headline": "Data Scientist Clinical<br><i>Lindera (100% remote: Italy, Germany)</i>",
+        "text": "<p>Intermediate between the Clinical and Data Science teams<br>Cleaning, checking and analysing the data; Code refactoring and optimization</p>"
+      }
+    },
+    {
+      "group": "Experience",
+      "start_date": {
+        "year": "2023",
+        "month":"3"
+      },
+      "end_date": {
+        "year": "2024",
+        "month":"3"
+      },
+      "text": {
+        "headline": "Data Scientist<br><i>Jagger & Lewis (Lille, France)</i>",
+        "text": "<p>Recognition of animal behaviour<br>Cleaning, checking and analysing the data<br>Development, maintenance and optimization of algorithms, pipelines and APIs<br>Regression, Time Series, API, Webscraping<br>Docker, Scaleway, Kubernetes, Notion, R&D, independent</p>"
+      }
+    }
+  ]
+}
