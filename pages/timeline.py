@@ -14,8 +14,8 @@ def load_json(lang: str):
 # @st.cache_resource
 def main(): 
     
-    st.markdown('<img src="file://images/photo2.jpg" />', unsafe_allow_html=True)
-    st.markdown('<img src="data:image/jpg;base64,/images/photo2.jpg" />', unsafe_allow_html=True)
+    # st.markdown('<img src="file://images/photo2.jpg" />', unsafe_allow_html=True)
+    # st.markdown('<img src="data:image/jpg;base64,/images/photo2.jpg" />', unsafe_allow_html=True)
 
     if sss["language"] == "fr":
         st.markdown("# Chronologie")
