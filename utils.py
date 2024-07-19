@@ -66,15 +66,18 @@ def once_set_layout():
 
 def once_layout_toast():
     if 'layout_toasted' not in sss:
-        st.toast(f"{'Narrow' if sss['layout'] == 'wide' else 'Wide'} layout detected.")
+        st.toast(
+            f"{'Narrow' if sss['layout'] == 'wide' else 'Wide'} layout detected. Refresh to reset.", 
+            icon = '🪟')
         sss['layout_toasted'] = True
 
 
 def sidebar():        
     add_logo_N_styles()
     language()
+    st.write('# Mathieu Golos')
     pages()
-    st.write('---') 
+    st.write('---')
     st.markdown(contact)
 
 
@@ -104,7 +107,6 @@ def pages():
             "pages/journey.py": ("Parcours", '🌌'),
             "pages/projects.py": ("Projets", '🛠️'),
             "pages/skills.py": ("Compétences", '💡'),
-            "pages/timeline.py": ("Chronologie", '🎞️'),
             "pages/publications.py": ("Publications", '🗞️'),
             "pages/recommendations.py": ("Recommandations", '💌'),
             "pages/cv.py": ("Curriculum vitae", '📑'),
@@ -117,7 +119,6 @@ def pages():
             "pages/journey.py": ("Journey", '🌌'),
             "pages/projects.py": ("Projects", '🛠️'),
             "pages/skills.py": ("Skills", '💡'),
-            "pages/timeline.py": ("Timeline", '🎞️'),
             "pages/publications.py": ("Publications", '🗞️'),
             "pages/recommendations.py": ("Recommendations", '💌'),
             "pages/cv.py": ("Curriculum vitae", '📑'),
