@@ -102,26 +102,26 @@ def language():
 def pages():
     if sss["language"] == 'fr':
         sss['pages'] = {
-            "app.py": ("Tout", '📜'),
-            "pages/about.py": ("A propos", '🧠'),
-            "pages/journey.py": ("Parcours", '🌌'),
-            "pages/projects.py": ("Projets", '🛠️'),
-            "pages/skills.py": ("Compétences", '💡'),
-            "pages/publications.py": ("Publications", '🗞️'),
-            "pages/recommendations.py": ("Recommandations", '💌'),
-            "pages/cv.py": ("Curriculum vitae", '📑'),
+            "app.py": ("Tout", ':material/scrollable_header:'),
+            "pages/about.py": ("A propos", ':material/person:'),
+            "pages/journey.py": ("Parcours", ':material/history:'),
+            "pages/projects.py": ("Projets", ':material/content_paste:'),
+            "pages/skills.py": ("Compétences", ':material/handyman:'),
+            "pages/publications.py": ("Publications", ':material/history_edu:'),
+            "pages/recommendations.py": ("Recommandations", ':material/mail:'),
+            "pages/cv.py": ("Curriculum vitae", ':material/contact_page:'),
         }
         
     elif sss["language"] == 'en':
         sss['pages'] = {
-            "app.py": ("All", '📜'),
-            "pages/about.py": ("About", '🧠'),
-            "pages/journey.py": ("Journey", '🌌'),
-            "pages/projects.py": ("Projects", '🛠️'),
-            "pages/skills.py": ("Skills", '💡'),
-            "pages/publications.py": ("Publications", '🗞️'),
-            "pages/recommendations.py": ("Recommendations", '💌'),
-            "pages/cv.py": ("Curriculum vitae", '📑'),
+            "app.py": ("All", ':material/scrollable_header:'),
+            "pages/about.py": ("About", ':material/person:'),
+            "pages/journey.py": ("Journey", ':material/history:'),
+            "pages/projects.py": ("Projects", ':material/content_paste:'),
+            "pages/skills.py": ("Skills", ':material/handyman:'),
+            "pages/publications.py": ("Publications", ':material/history_edu:'),
+            "pages/recommendations.py": ("Recommendations", ':material/mail:'),
+            "pages/cv.py": ("Curriculum vitae", ':material/contact_page:'),
         }
 
     for filename, (label, icon) in sss['pages'].items():
