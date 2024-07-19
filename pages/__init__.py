@@ -1,5 +1,6 @@
 from . import about
-from . import journey
+from . import experiences
+from . import education
 from . import projects
 from . import skills
 from . import publications

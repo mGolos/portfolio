@@ -104,7 +104,8 @@ def pages():
         sss['pages'] = {
             "app.py": ("Tout", ':material/scrollable_header:'),
             "pages/about.py": ("A propos", ':material/person:'),
-            "pages/journey.py": ("Parcours", ':material/history:'),
+            "pages/experiences.py": ("Expériences", ':material/history:'),
+            "pages/education.py": ("Éducation", ':material/import_contacts:'),
             "pages/projects.py": ("Projets", ':material/content_paste:'),
             "pages/skills.py": ("Compétences", ':material/handyman:'),
             "pages/publications.py": ("Publications", ':material/history_edu:'),
@@ -116,7 +117,8 @@ def pages():
         sss['pages'] = {
             "app.py": ("All", ':material/scrollable_header:'),
             "pages/about.py": ("About", ':material/person:'),
-            "pages/journey.py": ("Journey", ':material/history:'),
+            "pages/experiences.py": ("Experiences", ':material/history:'),
+            "pages/education.py": ("Education", ':material/import_contacts:'),
             "pages/projects.py": ("Projects", ':material/content_paste:'),
             "pages/skills.py": ("Skills", ':material/handyman:'),
             "pages/publications.py": ("Publications", ':material/history_edu:'),
