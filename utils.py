@@ -1,6 +1,7 @@
 import base64
 import streamlit as st
 import streamlit.components.v1 as components
+from PIL import Image
 from time import sleep
 from streamlit_js_eval import streamlit_js_eval
 sss = st.session_state
@@ -100,6 +101,7 @@ def language():
 
 
 def pages():
+    # https://fonts.google.com/icons?icon.set=Material+Symbols&icon.style=Outlined&icon.size=24&icon.color=%23e8eaed
     if sss["language"] == 'fr':
         sss['pages'] = {
             "app.py": ("Tout", ':material/scrollable_header:'),
@@ -165,6 +167,18 @@ def add_logo_N_styles():
     )
 
 
+def once_load_images():
+    if 'images' not in sss:
+        sss['images'] = {
+            'jl': Image.open("images/jl.jpeg"),
+            'xrator': Image.open("images/xrator.jpeg"),
+            'oc': Image.open("images/oc.jpeg"),
+            'lindera': Image.open("images/lindera.jpeg"),
+            'ins': Image.open("images/ins.jpeg"),
+            'alpha': Image.open("images/alpha.jpeg"),
+        }
+
+
 def always():
     once_set_layout()
     state = st.set_page_config(
@@ -174,6 +188,7 @@ def always():
         layout=sss['layout'],
     )
     once_layout_toast()
+    once_load_images()
     with st.sidebar:
         sidebar()
     
