@@ -170,12 +170,11 @@ def add_logo_N_styles():
 def once_load_images():
     if 'images' not in sss:
         sss['images'] = {
-            'jl': Image.open("images/jl.jpeg"),
-            'xrator': Image.open("images/xrator.jpeg"),
-            'oc': Image.open("images/oc.jpeg"),
-            'lindera': Image.open("images/lindera.jpeg"),
-            'ins': Image.open("images/ins.jpeg"),
-            'alpha': Image.open("images/alpha.jpeg"),
+            name: Image.open(f"images/{name}.jpeg")
+            for name in [
+                'jl', 'xrator', 'oc', 'lindera', 'ins', 'alpha',
+                'rennes', 'lille', 'iut', 'sup',
+            ]
         }
 
 
