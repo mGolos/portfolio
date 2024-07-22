@@ -19,6 +19,7 @@ def main():
         img.image(sss['images'][job.replace("2", "")])
         d_lines[job] = txt.empty(), txt.empty(), txt.empty()
     
+    
     if sss['language'] == "fr":
         header.write("# Expériences")
         
@@ -157,7 +158,8 @@ def main():
             
             Indépendant · R&D
         """)
-
+    
+    
     elif sss['language'] == "en":
         header.markdown("# Experiences")
         
