@@ -11,8 +11,8 @@ def main():
     link4 = f"[!{streamlit}](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=breed-classifier)"
 
     if sss['language'] == "fr":
-        st.markdown(f"""
-            # Projets"""
+        st.header("Projets", anchor='projects', divider="orange")
+        st.markdown(
             # f"""* Question Tagging ({link1}, {link2}) :  
             #     Production d'une application pour l'automatisation d'étiquetage multiple de questions en utilisant les algorithmes les plus récents/performants.  
             #     `[ État de l'art / NLP / XMC / Deep Learning ]`
@@ -30,8 +30,8 @@ def main():
         """)
 
     elif sss['language'] == "en":
-        st.markdown(f"""
-            # Projects"""
+        st.header("Projects", anchor='projects', divider="orange")
+        st.markdown(
             # f"""* Question Tagging ({link1}, {link2}):  
             #     Produce an application for automatic multi-tagging of questions using state of the art algorithms.  
             #     `[ SOTA / NLP / XMC / Deep Learning ]`

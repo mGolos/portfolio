@@ -35,7 +35,7 @@ def main():
     # visu_url += "&amp;wdPrint=1&amp;wdZoom=\"60%\""
     down_url = "https://onedrive.live.com/download?{id}&ithint=file%2cpdf"
     
-    st.markdown("# Curriculum vitae")
+    st.header("Curriculum vitae", anchor='cv', divider="orange")
     match lang:
         case "en":
             id_ = id_en

@@ -17,13 +17,13 @@ contact = """
 
 def footer():
     if sss["language"] == "fr":
+        st.header("Comment me contacter ?", anchor='contact', divider="orange")
         st.markdown("""
-            # Comment me contacter ?
             La meilleur façon de me joindre est par email.
         """)
     elif sss["language"] == "en":
+        st.header("How to reach me?", anchor='contact', divider="orange")
         st.markdown("""
-            # How to reach me?
             The best way to contact me is by email.
         """)
     st.write(contact)

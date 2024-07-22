@@ -5,14 +5,14 @@ sss = st.session_state
 
 def main():
     if sss['language'] == "fr":
+        st.header("Compétences", anchor='skills', divider="orange")
         st.markdown(f"""
-            # Compétences
             (En cours)
         """)
 
     elif sss['language'] == "en":
+        st.header("Hard Skills", anchor='skills', divider="orange")
         st.markdown(f"""
-            # Hard Skills
             (In progress)
         """)
             # - Programming  

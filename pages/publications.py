@@ -8,8 +8,8 @@ def main():
     link2 = "[publication](https://www.sciencedirect.com/science/article/pii/S2213158216300869)"
 
     if sss['language'] == "fr":
+        st.header("Publications Scientifiques", anchor='publications', divider="orange")
         st.markdown(f"""
-        # Publications Scientifiques
         * Golos M & al. (2015), *Multistabilité dans des modèles d'activité cérébrale à grande échelle*, PLOS Computational Biology 
             ({link1})
         * Wirsich J & al. (2016), *Les mesures analytiques du cerveau entier de la communication en réseau révèlent
@@ -18,8 +18,8 @@ def main():
         """)
 
     elif sss['language'] == "en":
+        st.header("Scientific Publications", anchor='publications', divider="orange")
         st.markdown(f"""
-        # Scientific Publications
         * Golos M & al. (2015), *Multistability in large scale models of brain activity*, PLOS Computational Biology 
             ({link1})
         * Wirsich J & al. (2016), *Whole-brain analytic measures of network communication reveal increased

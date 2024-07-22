@@ -20,7 +20,7 @@ def main():
     
 
     if sss['language'] == "fr":
-        header.write("# Éducation")
+        header.header("Éducation", anchor='education', divider="orange")
         
         d_lines['sup'][0].write(f"#### Master Ingénieur Machine Learning, {sup}")
         d_lines['sup'][1].markdown("""
@@ -57,7 +57,7 @@ def main():
     
 
     elif sss['language'] == "en":
-        header.write("# Education")
+        header.header("Education", anchor='education', divider="orange")
         
         d_lines['sup'][0].write(f"#### Master Ingénieur Machine Learning, {sup}")
         d_lines['sup'][1].markdown("""

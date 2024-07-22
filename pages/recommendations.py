@@ -5,7 +5,7 @@ sss = st.session_state
 
 def main():
     if sss['language'] == "fr":
-        st.markdown("# Recommandations")
+        st.header("Recommandations", anchor='recommendations', divider="orange")
         tab1, tab2 = st.tabs(["XRator", "INS"])
         
         with tab1:
@@ -14,7 +14,7 @@ def main():
             utils.iframe("https://onedrive.live.com/embed?cid=08D406852E7AE31D&resid=8D406852E7AE31D%2178515&authkey=AD4gq0CU3sAJEnk&em=2")
 
     elif sss['language'] == "en":
-        st.markdown("# Recommendations")
+        st.header("Recommendations", anchor='recommendations', divider="orange")
         tab1, tab2 = st.tabs(["XRator", "INS"])
         
         with tab1:

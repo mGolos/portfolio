@@ -5,9 +5,8 @@ sss = st.session_state
 
 def main():
     if sss['language'] == "fr":
+        st.header("A propos de moi", anchor='about', divider="orange")
         st.markdown("""
-            # A propos de moi
-            ---
             > Bonjour, je m'appelle Mathieu Golos.  
             
             > Polyvalent avec un profil orienté vers la **science** et la **programmation**, je suis un travailleur altruiste et créatif.
@@ -22,8 +21,8 @@ def main():
         st.warning("Recherche un poste en distanciel")
     
     elif sss['language'] == "en":
+        st.header("About me", anchor='about', divider="orange")
         st.markdown("""
-            # About me
             > Hello, my name is Mathieu Golos.  
             
             > Versatile with a profile oriented towards science and programming, I am an altruistic and creative worker.

@@ -21,7 +21,7 @@ def main():
     
     
     if sss['language'] == "fr":
-        header.write("# Expériences")
+        header.header("Expériences", anchor='experiences', divider="orange")
         
         d_lines['jl'][0].write(f"#### Scientifique de la donnée, {jl}")
         d_lines['jl'][1].markdown("""
@@ -161,7 +161,7 @@ def main():
     
     
     elif sss['language'] == "en":
-        header.markdown("# Experiences")
+        header.header("Experiences", anchor='experiences', divider="orange")
         
         d_lines['jl'][0].write(f"#### Data Scientist, {jl}")
         d_lines['jl'][1].markdown("""
