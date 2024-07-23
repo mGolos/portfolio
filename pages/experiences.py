@@ -13,11 +13,21 @@ def main():
 
     header = st.empty()
     d_lines = {}
-    for job in ['jl', 'lindera', 'xrator', 'oc', 'alpha', 'ins', 'ins2']:
-        img, txt = st.columns((1,5))
-        st.write('---')
-        img.image(sss['images'][job.replace("2", "")])
-        d_lines[job] = txt.empty(), txt.empty(), txt.empty()
+    job_tags = ['jl', 'lindera', 'xrator', 'oc', 'alpha', 'ins', 'ins2']
+    job_names = ['Jagger&Lewis', 'Lindera', 'XRator', 'OpenClassrooms', 'Alpha Conseil', 'INS', 'INS']
+    
+    
+    # Tabs or Containers
+    if sss['layout'] == "wide":
+        containers = st.tabs(job_names)
+    else:
+        containers = [st.container() for _ in job_names]
+    
+    for container, job_name in zip(containers, job_tags):
+        img, txt = container.columns((1,5))
+        container.write('---')
+        img.image(sss['images'][job_name.replace("2", "")])
+        d_lines[job_name] = txt.empty(), txt.empty(), txt.empty()
     
     
     if sss['language'] == "fr":
@@ -109,8 +119,8 @@ def main():
         d_lines['alpha'][0].write(f"#### Ingénieur DevOps, {alpha}")
         d_lines['alpha'][1].markdown("""
             **7 mois** / *2019* / **St-Germain-en-Laye**
-            * Implémentation et automatisation de l'environnement de travail pour un projet interne.
-            * Programmation d'une application web au sein d'une équipe travaillant sous méthode Agile.
+            * Implémentation et automatisation de l'environnement de travail pour un projet interne
+            * Programmation d'une application web au sein d'une équipe travaillant sous méthode Agile
         """)
         d_lines['alpha'][2].expander('`Python`, `Communication`, `État de l\'art`, ...').write("""
             Python · Git · Bash · Windows · Linux · Jupyter · Pandas · Django · Microsoft Azure · MySQL · 
@@ -143,7 +153,7 @@ def main():
         d_lines['ins2'][0].write(f"#### Assistant Ingénieur, {ins}")
         d_lines['ins2'][1].markdown("""
             **9 mois** / *2013* / **Marseille**
-            * Etude de modèles neuro-dynamiques pour la reconnaissance de configurations d'activité à l'état de repos (Resting-State Networks).
+            * Etude de modèles neuro-dynamiques pour la reconnaissance de configurations d'activité à l'état de repos (Resting-State Networks)
             * Création et étude d’un modèle dynamique pour publication
             * Apprentissage automatique de configurations d’activité
             * Création d'algorithmes d'apprentissage
@@ -249,8 +259,8 @@ def main():
         d_lines['alpha'][0].write(f"#### DevOps Engineer, {alpha}")
         d_lines['alpha'][1].markdown("""
             **7 months** / *2019* / **Paris, France**
-            * Implementing and automation of the coding environment for an internal project.
-            * Coding a web application within a team with Agile method.
+            * Implementing and automation of the coding environment for an internal project
+            * Coding a web application within a team with Agile method
         """)
         d_lines['alpha'][2].expander('`Python`, `Communication`, `État de l\'art`, ...').write("""
             Python · Git · Bash · Windows · Linux · Jupyter · Pandas · Django · Microsoft Azure · MySQL · 
@@ -264,9 +274,9 @@ def main():
         d_lines['ins'][0].write(f"#### PhD Candidate in Computational Neurosciences, {ins}")
         d_lines['ins'][1].markdown("""
             **4 years** / *2013* / **Marseille, France**
-            * Multistability in large scale of brain activity modeling.
-            * Comparative analyzes using functional connectivity dynamic between epileptic patients and controls.
-            * Developing my own simulator, preprocessing/analyzing tools in Python and its scientific libraries.
+            * Multistability in large scale of brain activity modeling
+            * Comparative analyzes using functional connectivity dynamic between epileptic patients and controls
+            * Developing my own simulator, preprocessing/analyzing tools in Python and its scientific libraries
         """)
         d_lines['ins'][2].expander('`Python`, `Research`, `État de l\'art`, ...').write("""
             Python · Git · Matplotlib · Bash · Windows · Jupyter · Pandas · k-means · PCA · ICA · 
@@ -283,7 +293,7 @@ def main():
         d_lines['ins2'][0].write(f"#### Assistant Engineer, {ins}")
         d_lines['ins2'][1].markdown("""
             **9 months** / *2013* / **Marseille, France**
-            * Study of multistability in large scale models of brain activity using my own model
+            * Study of neuro-dynamic models for the recognition of activity configurations in the resting state (Resting-State Networks)
             * Creation and study of a dynamic model for publication
             * Machine learning of activity configurations
             * Creation of learning algorithms

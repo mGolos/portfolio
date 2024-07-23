@@ -173,7 +173,7 @@ def once_load_images():
             name: Image.open(f"images/{name}.jpeg")
             for name in [
                 'jl', 'xrator', 'oc', 'lindera', 'ins', 'alpha',
-                'rennes', 'lille', 'iut', 'sup',
+                'rennes', 'amu', 'lille', 'iut', 'sup',
             ]
         }
 
