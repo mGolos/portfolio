@@ -179,6 +179,24 @@ def once_load_images():
         }
 
 
+def once_meta():
+    if 'meta' not in sss:
+        index = Path(st.__file__).parent / "static" / "index.html"
+        html = index.read_text()
+        
+        title = '<title>Mathieu Golos - portoflio</title>'
+        meta = (
+            '<meta name="title" content="Mathieu Golos - portoflio">'
+            '<meta name="description" content="Mathieu Golos is a Data Scientist with a scientic background in Computational Neurosciences and specialized in Time Series.">'
+        )
+        
+        balise = '<meta charset="UTF-8"/>'
+        html = re.sub(r'(?s)<title>.*?</title>', title, html)
+        html = html.replace(balise, balise+meta)
+        index.write_text(html)
+        sss['meta'] = True
+
+
 def get_base64_image(image_path):
     with open(image_path, 'rb') as img_file:
         img_bytes = img_file.read()
@@ -282,7 +300,8 @@ def background():
     st.markdown(style_code, unsafe_allow_html=True)
 
 
-def always():    
+def always():
+    once_meta()
     once_set_layout()
     state = st.set_page_config(
         page_title='Golos Mathieu',
