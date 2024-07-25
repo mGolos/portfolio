@@ -286,7 +286,7 @@ def always():
     once_set_layout()
     state = st.set_page_config(
         page_title='Golos Mathieu',
-        initial_sidebar_state="collapsed" if sss['layout'] == 'wide' else "expanded",
+        initial_sidebar_state="auto",
         page_icon=':scroll:',
         layout=sss['layout'],
     )
