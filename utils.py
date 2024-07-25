@@ -78,7 +78,7 @@ def sidebar():
     language()
     st.header("Mathieu Golos", divider="orange")
     pages()
-    st.write('---')
+    st.subheader("", divider="orange")
     st.markdown(contact)
 
 
