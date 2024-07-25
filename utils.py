@@ -221,7 +221,7 @@ def background():
             background-repeat: no-repeat;
             background-position: var(--parallax-bg-position, 0px 0px);
             background-size: var(--parallax-bg-width) var(--parallax-bg-height);
-            opacity: 0.1;
+            opacity: 0.13;
             z-index: -1;
             transition: background-position 1s ease-out;
             animation: breath 4s ease-in-out alternate infinite;
