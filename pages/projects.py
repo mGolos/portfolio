@@ -12,6 +12,7 @@ def main():
 
     if sss['language'] == "fr":
         st.header("Projets", anchor='projects', divider="orange")
+        st.info("En cours d'édition")
         st.markdown(
             # f"""* Question Tagging ({link1}, {link2}) :  
             #     Production d'une application pour l'automatisation d'étiquetage multiple de questions en utilisant les algorithmes les plus récents/performants.  
@@ -26,11 +27,11 @@ def main():
             # * Conception d'une application sur des données nutritionnelles.  
             # ---"""
             """
-            (Nettoyage en cours)
         """)
 
     elif sss['language'] == "en":
         st.header("Projects", anchor='projects', divider="orange")
+        st.info("Ongoing modifications")
         st.markdown(
             # f"""* Question Tagging ({link1}, {link2}):  
             #     Produce an application for automatic multi-tagging of questions using state of the art algorithms.  
@@ -45,10 +46,11 @@ def main():
             # * Design of an application on nutritional data for public health.  
             # ---"""
             """
-            (Cleaning in progress)
         """)
 
 
 if __name__ == "__main__":
     utils.always()
     main()
+    utils.footer()
+    utils.background()

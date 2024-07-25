@@ -69,14 +69,14 @@ def once_layout_toast():
     if 'layout_toasted' not in sss:
         st.toast(
             f"{'Narrow' if sss['layout'] == 'wide' else 'Wide'} layout detected. Refresh to reset.", 
-            icon = '🪟')
+            icon = '🛠️')
         sss['layout_toasted'] = True
 
 
 def sidebar():        
     add_logo_N_styles()
     language()
-    st.write('# Mathieu Golos')
+    st.header("Mathieu Golos", divider="orange")
     pages()
     st.write('---')
     st.markdown(contact)
@@ -133,16 +133,17 @@ def pages():
 
 
 def add_logo_N_styles():
-    st.logo('images/empty.png', icon_image='images/logo.png')
-    image_str = base64.b64encode(open('images/logo.png', "rb").read()).decode()
+    if 'profile_img' not in sss:
+        sss['profile_img'] = base64.b64encode(open('images/profile.png', "rb").read()).decode()
+    
     st.markdown(
         f"""
         <style>
             [data-testid="stSidebarUserContent"] {{
-                background-image: url(data:image/png;base64,{image_str});
+                background-image: url(data:image/png;base64,{sss['profile_img']});
                 background-repeat: no-repeat;
-                padding-top: 100px;
-                background-size: 240px;
+                padding-top: 80px;
+                background-size: 150px;
                 background-position: 20px 0px;
             }}
             [data-testid="stSidebarUserContent"]::before {{
@@ -178,7 +179,110 @@ def once_load_images():
         }
 
 
-def always():
+def get_base64_image(image_path):
+    with open(image_path, 'rb') as img_file:
+        img_bytes = img_file.read()
+    img_base64 = base64.b64encode(img_bytes).decode('utf-8')
+    return img_base64
+
+
+def background():
+    ''' Calling it at the end otherwise it creates a visual element that put everything down.
+    (scroll bar event missing)
+    '''
+    if 'bg_64' not in sss:
+        image_path = 'images/bg.jpeg'
+        sss['bg_x'], sss['bg_y'] = Image.open(image_path).size
+        sss['bg_64'] = get_base64_image(image_path)
+        sss['bg_ext'] = image_path.rsplit('.', 1)[1]
+    
+    style_code = (f"""
+        <style>
+        :root {{
+            --parallax-bg-position: center 0px;
+            --parallax-bg-height: {sss['bg_x']}px;
+            --parallax-bg-width: {sss['bg_y']}px;
+        }}
+        .stApp {{
+            background: transparent !important;
+        }}
+        .main {{
+            position: relative;
+            z-index: 1;
+        }}
+        .main::before {{
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(data:image/{sss['bg_ext']};base64,{sss['bg_64']});
+            background-repeat: no-repeat;
+            background-position: var(--parallax-bg-position, 0px 0px);
+            background-size: var(--parallax-bg-width) var(--parallax-bg-height);
+            opacity: 0.15;
+            z-index: -1;
+            transition: background-position 1s ease-out;
+            animation: breath 4s ease-in-out alternate infinite;
+        }}
+        @keyframes breath {{
+            from {{
+                transform: scale(1);
+            }}
+            to {{
+                transform: scale(1.1);
+            }}
+        }}
+        </style>
+    """)
+    js_code = f"""
+    <script>
+        const mainElement = parent.document.querySelector('.main');
+        const blockElement = parent.document.querySelector('.block-container');
+        const bgImageHeight = {sss['bg_x']};
+        const reduce = 4
+        
+        function updateScale() {{
+            mainElement.style.setProperty('--parallax-bg-position', `center 0px`);
+            var offsetHeight = mainElement.offsetHeight;
+            var blockHeight = blockElement.scrollHeight;
+            var screenHeight = screen.height;
+            var bgScale = bgImageHeight / screenHeight / reduce;
+            mainElement.style.setProperty('--parallax-bg-height', `${{{sss['bg_x']} * bgScale}}px`);
+            mainElement.style.setProperty('--parallax-bg-width', `${{{sss['bg_y']} * bgScale}}px`);
+            return bgScale
+        }};
+        const bgScale = updateScale();
+        
+        function updateParallax() {{
+            var scroll = mainElement.scrollTop;
+            var mainHeight = mainElement.offsetHeight;
+            var blockHeight = blockElement.scrollHeight;
+            
+            var scrollMax = blockHeight - mainHeight;
+            var positionMax = bgImageHeight * bgScale - mainHeight;
+            var ratio = positionMax / scrollMax;
+            
+            if (ratio < 0) {{
+                var position = scroll * ratio;
+            }}
+            if (ratio >= 0) {{
+                var position = - scroll * ratio;
+            }}
+            mainElement.style.setProperty('--parallax-bg-position', `center ${{position}}px`);
+        }};
+        
+        parent.window.addEventListener('wheel', updateParallax);
+        parent.window.addEventListener('scroll', updateParallax);
+        parent.window.addEventListener('touchmove', updateParallax);
+    </script>
+    """ 
+    st.components.v1.html(js_code, height=0)
+    st.markdown(style_code, unsafe_allow_html=True)
+
+
+def always():    
     once_set_layout()
     state = st.set_page_config(
         page_title='Golos Mathieu',

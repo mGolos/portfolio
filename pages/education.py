@@ -11,7 +11,7 @@ def main():
     iut = "[UPHF](https://www.uphf.fr/iut/presentation/departement-formations/mesures-physiques)"
     
     header = st.empty()
-    st.warning("En cours d'édition" if sss['language'] == "fr" else "Ongoing modifications")
+    st.info("En cours d'édition" if sss['language'] == "fr" else "Ongoing modifications")
     d_lines = {}
     edu_tags = ['amu', 'sup', 'rennes', 'lille', 'iut']
     edu_names = ['AMU', 'Supelec', 'Rennes1', 'Lille1', 'UPHF']
@@ -129,3 +129,5 @@ def main():
 if __name__ == "__main__":
     utils.always()
     main()
+    utils.footer()
+    utils.background()

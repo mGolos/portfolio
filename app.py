@@ -16,3 +16,4 @@ if __name__ == "__main__":
         submodule.main()
     
     utils.footer()
+    utils.background()
