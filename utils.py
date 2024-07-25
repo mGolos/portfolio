@@ -283,7 +283,6 @@ def background():
 
 
 def always():
-    once_meta()
     once_set_layout()
     state = st.set_page_config(
         page_title='Golos Mathieu',
