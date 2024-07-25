@@ -181,6 +181,8 @@ def once_load_images():
 
 def once_meta():
     if 'meta' not in sss:
+        from pathlib import Path
+        
         index = Path(st.__file__).parent / "static" / "index.html"
         html = index.read_text()
         
