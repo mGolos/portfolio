@@ -310,6 +310,12 @@ def always():
         initial_sidebar_state="auto",
         page_icon=':scroll:',
         layout=sss['layout'],
+        menu_items={
+            'About': """
+                ## Portfolio of Mathieu Golos
+                Mathieu Golos is a Data Scientist with a scientic background in Computational Neurosciences and specialized in Time Series.
+            """
+        },
     )
     once_layout_toast()
     once_load_images()
