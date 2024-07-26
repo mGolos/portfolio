@@ -1,12 +1,12 @@
 import pages
 import importlib
 import streamlit as st
-from tools.utils import always, footer, background
+from tools import utils
 sss = st.session_state
 
 
 if __name__ == "__main__":
-    always()
+    utils.always()
     
     pages = [
         'about', 'experiences', 'education', 'projects', 'skills', 
@@ -15,5 +15,5 @@ if __name__ == "__main__":
         submodule = importlib.import_module(f'pages.{page}')
         submodule.main()
     
-    footer()
-    background()
+    utils.footer()
+    utils.background()
