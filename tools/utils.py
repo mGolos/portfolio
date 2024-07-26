@@ -331,7 +331,7 @@ def background():
     st.markdown(style_code, unsafe_allow_html=True)
 
 
-def fix_layout_columns():
+def fix_layout():
     if sss['layout'] == 'wide':
         st.write('''
         <style>
@@ -342,6 +342,9 @@ def fix_layout_columns():
             }
             .st-emotion-cache-1tpzimh {
                 max-width: 20% !important;
+            }
+            .main{
+                position: absolute !important;
             }
         </style>
         ''', unsafe_allow_html=True)
@@ -380,7 +383,7 @@ def always():
     with st.sidebar:
         sidebar()
     
-    fix_layout_columns()
+    fix_layout()
     
     # with open('.streamlit/style.css') as f:
     #     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
