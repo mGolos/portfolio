@@ -1,4 +1,5 @@
 import streamlit as st
+from tools import utils
 sss = st.session_state
 
 
@@ -23,10 +24,16 @@ def main():
         containers = [st.container() for _ in job_names]
     
     for container, job_name in zip(containers, job_tags):
-        img, txt = container.columns((1,5))
-        container.write('---')
-        img.image(sss['images'][job_name.replace("2", "")])
-        d_lines[job_name] = txt.empty(), txt.empty(), txt.empty()
+        if sss['layout'] == 'wide':
+            img, title = container.columns((1,4), vertical_alignment='center')
+            img.image(sss['images'][job_name.replace("2", "")])
+            d_lines[job_name] = title, container.empty(), container.empty()
+        else:
+            img, txt = container.columns((1,5))
+            img.image(sss['images'][job_name.replace("2", "")])
+            d_lines[job_name] = txt.empty(), txt.empty(), txt.empty()
+            container.write('---')
+        
     
     
     if sss['language'] == "fr":

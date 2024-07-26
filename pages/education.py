@@ -24,12 +24,16 @@ def main():
         containers = [st.container() for _ in edu_names]
     
     for container, edu_name in zip(containers, edu_tags):
-        img, txt = container.columns((1,5))
-        container.write('---')
-        img.image(sss['images'][edu_name])
-        d_lines[edu_name] = txt.empty(), txt.empty(), txt.empty()
-    
-
+        if sss['layout'] == 'wide':
+            img, title = container.columns((1,4), vertical_alignment='center')
+            img.image(sss['images'][edu_name])
+            d_lines[edu_name] = title, container.empty(), container.empty()
+        else:
+            img, txt = container.columns((1,5))
+            img.image(sss['images'][edu_name])
+            d_lines[edu_name] = txt.empty(), txt.empty(), txt.empty()
+            container.write('---')
+            
     if sss['language'] == "fr":
         header.header("Éducation", anchor='education', divider="orange")
         

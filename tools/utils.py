@@ -302,7 +302,7 @@ def background():
     st.markdown(style_code, unsafe_allow_html=True)
 
 
-def fix_mobile_columns():
+def fix_layout_columns():
     if sss['layout'] == 'wide':
         st.write('''
         <style>
@@ -322,7 +322,11 @@ def fix_mobile_columns():
             [data-testid="column"] {
             }
             .st-emotion-cache-1tpzimh {
-                max-width: None;
+                max-width: inherit;
+            }
+            div.block-container {
+                padding-top: 1.5rem;
+                max-width: 55rem;
             }
         </style>
         ''', unsafe_allow_html=True)
@@ -347,7 +351,7 @@ def always():
     with st.sidebar:
         sidebar()
     
-    fix_mobile_columns()
+    fix_layout_columns()
     
-    with open('.streamlit/style.css') as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    # with open('.streamlit/style.css') as f:
+    #     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
