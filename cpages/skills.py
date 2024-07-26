@@ -18,6 +18,15 @@ def main():
             # - Programming  
             # - :books: Libraries:  
             # ---
+            
+            # * Technologies :
+            # Machine Learning, Deep learning, NLP,Backend Developer
+            # * Languages :
+            # Python, C, C++, Java, SQL, Bash Script
+            # * Frameworks :
+            # TensorFlow, Scikit, NLTK, SpaCy, Keras, Flask, Sreamlit, Java Swing, Springboot
+            # * Soft Skills :
+            # Leadership, Creativity, Writing, Public Speaking, Time Management, Problem Solving, Communications
 
 
 if __name__ == "__main__":

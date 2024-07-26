@@ -104,52 +104,81 @@ def language():
         st.rerun()
 
 
-def page2():
-    st.title("Second page")
+def redirect_button(url: str, icon: str=None, text: str= None, color="transparent"):
+    st.markdown(f'''
+    <link rel="stylesheet" style="text-decoration: none;" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <a href="{url}" target="_self" style="color: inherit; text-decoration: none;">
+        <div style="
+                display: flex;
+                flex-direction: row;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: start;
+                justify-content: flex-start;
+                gap: 0.5rem;
+                border-radius: 0.25rem;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                margin-top: 0.125rem;
+                margin-bottom: 0.125rem;
+                line-height: 2;
+                background-color: {color};
+            ">
+            <span class="material-symbols-outlined" style="
+                    fill: currentcolor;
+                    display: inline-flex;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    font-size: 1.25rem;
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    flex-shrink: 0;
+                ">
+                {icon}
+            </span>
+            <span style="
+                    fcolor: rgb(250, 250, 250);
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    display: table-cell;
+                ">
+                {text}
+            </span>
+        </div>
+    </a>
+    ''',
+    unsafe_allow_html=True)
+
+
 def pages():
     # https://fonts.google.com/icons?icon.set=Material+Symbols&icon.style=Outlined&icon.size=24&icon.color=%23e8eaed
     if sss["language"] == 'fr':
         sss['pages'] = {
-            "app.py": ("Tout", ':material/scrollable_header:'),
-            "pages/about.py": ("A propos", ':material/person:'),
-            "pages/experiences.py": ("Expériences", ':material/history:'),
-            "pages/education.py": ("Éducation", ':material/import_contacts:'),
-            "pages/projects.py": ("Projets", ':material/content_paste:'),
-            "pages/skills.py": ("Compétences", ':material/handyman:'),
-            "pages/publications.py": ("Publications", ':material/history_edu:'),
-            "pages/recommendations.py": ("Recommandations", ':material/mail:'),
-            "pages/cv.py": ("Curriculum vitae", ':material/contact_page:'),
+            "#about": ("A propos", 'person'),
+            "#experiences": ("Expériences", 'history'),
+            "#education": ("Éducation", 'import_contacts'),
+            "#projects": ("Projets", 'content_paste'),
+            "#skills": ("Compétences", 'handyman'),
+            "#publications": ("Publications", 'history_edu'),
+            "#cv": ("Curriculum vitae", 'contact_page'),
+            "#recommendations": ("Recommandations", 'mail'),
         }
         
     elif sss["language"] == 'en':
         sss['pages'] = {
-            "app.py": ("All", ':material/scrollable_header:'),
-            "pages/about.py": ("About", ':material/person:'),
-            "pages/experiences.py": ("Experiences", ':material/history:'),
-            "pages/education.py": ("Education", ':material/import_contacts:'),
-            "pages/projects.py": ("Projects", ':material/content_paste:'),
-            "pages/skills.py": ("Skills", ':material/handyman:'),
-            "pages/publications.py": ("Publications", ':material/history_edu:'),
-            "pages/recommendations.py": ("Recommendations", ':material/mail:'),
-            "pages/cv.py": ("Curriculum vitae", ':material/contact_page:'),
+            "#about": ("About propos", 'person'),
+            "#experiences": ("Experiences", 'history'),
+            "#education": ("Education", 'import_contacts'),
+            "#projects": ("Projects", 'content_paste'),
+            "#skills": ("Skills", 'handyman'),
+            "#publications": ("Publications", 'history_edu'),
+            "#cv": ("Curriculum vitae", 'contact_page'),
+            "#recommendations": ("Recommendations", 'mail'),
         }
 
-    for filename, (label, icon) in sss['pages'].items():
-        st.page_link(filename, label=label, icon=icon)
-    
-    # st.page_link("app.py", label="test", icon="💡")
-    # st.Page(lambda: st.markdown("[:material/person: About](#about)"), title="Second page", icon=":material/favorite:")
-    #? Opening a new tab istead of going directly to
-    # st.markdown("""
-    #     [:material/person: About](#about)
-    #     [:material/person: Publications](#publications)
-    #     <a href="/#about" target="_self">:material/person: About</a>
-    #     <a href="/#publications" target="_self">:material/person: Publications</a>
-    # """, unsafe_allow_html=True)
-    # if st.button(":material/person: Publications", use_container_width=True):
-    #     st.switch_page("pages/publications.py")
-    # st.link_button(":material/person: About", url="http://localhost:8501/#about", use_container_width=True)
-    # st.link_button(":material/history_edu: Publications", "/#publications")
+    for anchor, (label, icon) in sss['pages'].items():
+        redirect_button(anchor, icon=icon, text=label)
 
 
 def add_logo_N_styles():
