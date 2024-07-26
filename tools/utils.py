@@ -66,6 +66,10 @@ def once_set_layout():
 
 
 def once_layout_toast():
+    '''Once this function is run, it will detect the device's layout (wide or centered)
+    and set the 'layout' state accordingly. It also adjusts the width and height
+    of the A4 container based on the detected layout.
+    '''
     if 'layout_toasted' not in sss:
         st.toast(
             f"{'Narrow' if sss['layout'] == 'wide' else 'Wide'} layout detected. Refresh to reset.", 
@@ -73,7 +77,7 @@ def once_layout_toast():
         sss['layout_toasted'] = True
 
 
-def sidebar():        
+def sidebar():
     add_logo_N_styles()
     language()
     st.header("Mathieu Golos", divider="orange")
@@ -100,6 +104,8 @@ def language():
         st.rerun()
 
 
+def page2():
+    st.title("Second page")
 def pages():
     # https://fonts.google.com/icons?icon.set=Material+Symbols&icon.style=Outlined&icon.size=24&icon.color=%23e8eaed
     if sss["language"] == 'fr':
@@ -130,6 +136,20 @@ def pages():
 
     for filename, (label, icon) in sss['pages'].items():
         st.page_link(filename, label=label, icon=icon)
+    
+    # st.page_link("app.py", label="test", icon="💡")
+    # st.Page(lambda: st.markdown("[:material/person: About](#about)"), title="Second page", icon=":material/favorite:")
+    #? Opening a new tab istead of going directly to
+    # st.markdown("""
+    #     [:material/person: About](#about)
+    #     [:material/person: Publications](#publications)
+    #     <a href="/#about" target="_self">:material/person: About</a>
+    #     <a href="/#publications" target="_self">:material/person: Publications</a>
+    # """, unsafe_allow_html=True)
+    # if st.button(":material/person: Publications", use_container_width=True):
+    #     st.switch_page("pages/publications.py")
+    # st.link_button(":material/person: About", url="http://localhost:8501/#about", use_container_width=True)
+    # st.link_button(":material/history_edu: Publications", "/#publications")
 
 
 def add_logo_N_styles():
@@ -282,6 +302,32 @@ def background():
     st.markdown(style_code, unsafe_allow_html=True)
 
 
+def fix_mobile_columns():
+    if sss['layout'] == 'wide':
+        st.write('''
+        <style>
+            [data-testid="column"] {
+                width: calc(16.6666% - 1rem) !important;
+                flex: 1 1 calc(16.6666% - 1rem) !important;
+                min-width: calc(16.6666% - 1rem) !important;
+            }
+            .st-emotion-cache-1tpzimh {
+                max-width: 20% !important;
+            }
+        </style>
+        ''', unsafe_allow_html=True)
+    else:
+        st.write('''
+        <style>
+            [data-testid="column"] {
+            }
+            .st-emotion-cache-1tpzimh {
+                max-width: None;
+            }
+        </style>
+        ''', unsafe_allow_html=True)
+
+
 def always():
     once_set_layout()
     state = st.set_page_config(
@@ -301,5 +347,7 @@ def always():
     with st.sidebar:
         sidebar()
     
-    # with open('.streamlit/style.css') as f:
-    #     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    fix_mobile_columns()
+    
+    with open('.streamlit/style.css') as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
