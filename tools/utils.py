@@ -1,8 +1,13 @@
+import os
 import base64
+import requests
 import streamlit as st
+import pypdfium2 as pdfium
 import streamlit.components.v1 as components
 from PIL import Image
 from time import sleep
+from datetime import datetime
+from dateutil.parser import parse as parsedate
 from streamlit_js_eval import streamlit_js_eval
 sss = st.session_state
 
@@ -27,6 +32,29 @@ def footer():
             The best way to contact me is by email.
         """)
     st.write(contact)
+
+
+def download_pdf(url: str, filepath: str):
+    # Checking dates
+    if os.path.exists(filepath):
+        r = requests.head(url)
+        url_date = parsedate(r.headers['Date']).date()
+        file_date = datetime.fromtimestamp(os.path.getmtime(filepath)).date()
+
+        # Do not download
+        if url_date <= file_date:
+            return None
+    
+    # Downloading
+    response = requests.get(url)
+    with open(filepath, 'wb') as output:
+        output.write(response.content)
+    
+    # Convert to jpg
+    pdf = pdfium.PdfDocument(filepath)
+    page = pdf[0]
+    image = page.render(scale=4).to_pil()
+    image.save(filepath.replace('.pdf', '.jpg'))
 
 
 def iframe(src:str):
