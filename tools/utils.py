@@ -97,7 +97,7 @@ def language():
         sss["language"] = 'fr'
     
     languages = ['en', 'fr']
-    index = languages.index(sss['language'])
+    index = sss["lg_key"] = languages.index(sss['language'])
     language = st.radio('Language', languages, horizontal=True, label_visibility='hidden', index=index, format_func=countries)
     if sss["language"] != language:
         sss["language"] = language
