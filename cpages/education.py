@@ -44,9 +44,6 @@ def main():
             * Multistabilité dans la modélisation de l’activité cérébrale à large échelle
             * Etude de modèles neuro-dynamiques pour la reconnaissance de configurations d'activité à l'état de repos (Resting-State Networks)
         """)
-        d_lines['amu'][2].expander('Matières').write("""
-            En cours...
-        """)
         
         d_lines['sup'][0].write(f"#### Master Ingénieur Machine Learning, {sup}")
         d_lines['sup'][1].markdown("""
@@ -91,9 +88,6 @@ def main():
             In the doctoral school "Sciences du Mouvement Humain"
             * Multistability in large scale of brain activity modeling
             * Study of neuro-dynamic models for the recognition of activity configurations in the resting state (Resting-State Networks)
-        """)
-        d_lines['amu'][2].expander('Subjects').write("""
-            Ongoing...
         """)
         
         d_lines['sup'][0].write(f"#### Master Ingénieur Machine Learning, {sup}")

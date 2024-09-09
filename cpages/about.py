@@ -18,7 +18,6 @@ def main():
             > Après un stage en tant qu'ingénieur Machine Learning, j'ai travaillé comme Expert en Science des données chez XRator qui aborde les risques cyber de manière préventive, et chez Jagger&Lewis pour prédire les comportements de chiens à partir d'activités temporelles.
             > Je cherche actuellement à en apprendre davantage dans certains domaines au cours de la prochaine décennie pour un projet à long terme.
         """)
-        st.info("Recherche un poste en distanciel")
     
     elif sss['language'] == "en":
         st.header("About me", anchor='about', divider="orange")
@@ -34,7 +33,6 @@ def main():
             > After an internship as a Machine Learning engineer, I worked as a Data Scientist at XRator which approaches cyber risks in a preventive way, and Jagger&Lewis to predict dogs' behaviors from temporal activities.
             > I am currently looking to learn more in certain areas over the next decade for a long-term project.
         """)
-        st.info("Searching for a remote position")
     
     st.image('images/photo1.jpg')
 
