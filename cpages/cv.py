@@ -5,7 +5,7 @@ sss = st.session_state
 
 def main():
     lang = sss['language']
-    filepath = f"data/cv_{lang}.pdf"
+    filepath = f"cv_{lang}.pdf"
     id_en = "resid=8D406852E7AE31D%2186868&authkey=!AEfRPV4nuAuTXyc"
     id_fr = "resid=8D406852E7AE31D%2186859&authkey=!AFtjbavPucqp6mk"
     down_url = "https://onedrive.live.com/download?{id}&ithint=file%2cpdf"
@@ -27,8 +27,8 @@ def main():
                 f"[anglaise]({down_url.format(id=id_en)})"
             )
     
-    utils.download_pdf(down_url.format(id=id_), filepath)
-    st.image(filepath.replace('.pdf', '.jpg'))
+    image = utils.download_pdf(down_url.format(id=id_), filepath)
+    st.image(image)
 
 
 if __name__ == "__main__":

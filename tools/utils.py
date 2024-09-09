@@ -4,9 +4,9 @@ import requests
 import streamlit as st
 import pypdfium2 as pdfium
 import streamlit.components.v1 as components
+from io import BytesIO
 from PIL import Image
 from time import sleep
-from datetime import datetime
 from dateutil.parser import parse as parsedate
 from streamlit_js_eval import streamlit_js_eval
 sss = st.session_state
@@ -34,27 +34,27 @@ def footer():
     st.write(contact)
 
 
-def download_pdf(url: str, filepath: str):
+def download_pdf(url: str, name: str):
     # Checking dates
-    if os.path.exists(filepath):
-        r = requests.head(url)
-        url_date = parsedate(r.headers['Date']).date()
-        file_date = datetime.fromtimestamp(os.path.getmtime(filepath)).date()
+    if name in sss:
+        response = requests.head(url)
+        url_date = parsedate(response.headers['Date']).date()
+        mem_date = sss[name + '_date']
 
         # Do not download
-        if url_date <= file_date:
-            return None
+        if url_date <= mem_date:
+            return sss[name]
     
-    # Downloading
+    # Downloading in memory
     response = requests.get(url)
-    with open(filepath, 'wb') as output:
-        output.write(response.content)
+    pdf_io = BytesIO(response.content)
     
     # Convert to jpg
-    pdf = pdfium.PdfDocument(filepath)
+    pdf = pdfium.PdfDocument(pdf_io)
     page = pdf[0]
-    image = page.render(scale=4).to_pil()
-    image.save(filepath.replace('.pdf', '.jpg'))
+    sss[name + '_date'] = parsedate(response.headers['Date']).date()
+    sss[name] = image = page.render(scale=4).to_pil()
+    return image
 
 
 def iframe(src:str):
