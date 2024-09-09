@@ -70,7 +70,7 @@ def main():
                 "*2010* / **Lille**"),
             "description": (
                 "Quantum mechanics, Electromagnetism, Tools for physics, Numerical simulation, Analytical mechanics, Thermodynamics, Optics, Wave and vibration, Properties of matter, Physics and statistics, Astrophysics, Earth and environmental physics",
-                "Mécanique quantique, Electromagnétisme, Outils pour la physique, Simulation numérique, Mécanique analytique, Thermodynamique, Optique, Onde et vibration, Propriétés de la matière, Physique et statistiques, Astrophysique, Physique de la Terre et de l'environnement"),
+                "Mécanique quantique, Électromagnétisme, Outils pour la physique, Simulation numérique, Mécanique analytique, Thermodynamique, Optique, Onde et vibration, Propriétés de la matière, Physique et statistiques, Astrophysique, Physique de la Terre et de l'environnement"),
         },
         "iut": {
             "title": (
@@ -105,7 +105,7 @@ def main():
     
     # Content
     header.header(
-        "Education" if sss["lg_key"] else 'Éducation', 
+        "Éducation" if sss["lg_key"] else 'Education', 
         anchor='education', divider="orange")
     
     for edu_tag, edu_cont in d_lines.items():
