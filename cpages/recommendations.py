@@ -5,8 +5,8 @@ sss = st.session_state
 
 def main():
     lang = sss['language']
-    filepath1 = f"images/rl1_{lang}.pdf"
-    filepath2 = f"images/rl2_{lang}.pdf"
+    filepath1 = f"images/rl1_{lang}.jpg"
+    filepath2 = f"images/rl2_{lang}.jpg"
     
     st.header("Recommandations" if sss["lg_key"] else "Recommendations", anchor='recommendations', divider="orange")
     tab1, tab2 = st.tabs(["XRator", "INS"])
