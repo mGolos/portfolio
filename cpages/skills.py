@@ -15,7 +15,7 @@ def main():
             ("Testing Frameworks", "Frameworks de Test"): "`PyTest, Unittest`",
             ("Version Control", "Contrôle de Version"): "`Git, GitHub, GitLab, Bitbucket`",
             ("Collaboration Tools", "Outils de Collaboration"): "`Jira, Trello, Slack, MS Teams, Markdown, Confluence`",
-            ("Operating System", "Systèle d'exploitation"): "`Windows, Linux, MacOs`",
+            ("Operating System", "Système d'exploitation"): "`Windows, Linux, macOS`",
         },
         (
                 "🔍 **Analysis** 📊 **Data Visualization**",
