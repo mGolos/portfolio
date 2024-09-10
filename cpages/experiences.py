@@ -330,15 +330,15 @@ def main():
                 """),
             "skills": (
                 """
-                - Technologies: `Python, MATLAB, Git, Matplotlib, Bash, Windows, Jupyter, Pandas, k-means, PCA, ICA, LateX, 
-                Seaborn, Shell Scripting, Expressions régulières, Plotly, Scikit-Learn, FCD, HPC, Linux, Windows`
+                - Technologies: `Python, MATLAB, Git, Matplotlib, Bash, Jupyter, Pandas, k-means, PCA, ICA, LateX, 
+                Seaborn, Shell Scripting, Regular expression, Plotly, Scikit-Learn, FCD, HPC, Linux, Windows`
                 - Expertise: `Signal processing, Webscrapping, Data Analysis, Adaptation, Classification, Medical imaging, 
                 Algorithms, Neural networks, Machine Learning, Problem solving, Data visualization, 
                 Research, Data exploration, Data cleaning, Communication, Linear algebra, State of the art, 
                 Mathematical modelling, Finite element method, Time series`
                 - Context: `Independant, R&D`""", 
                 """
-                - Technologies : `Python, MATLAB, Git, Matplotlib, Bash, Windows, Jupyter, Pandas, k-means, PCA, ICA, LateX, 
+                - Technologies : `Python, MATLAB, Git, Matplotlib, Bash, Jupyter, Pandas, k-means, PCA, ICA, LateX, 
                 Seaborn, Shell Scripting, Expressions régulières, Plotly, Scikit-Learn, FCD, HPC, Linux, Windows`
                 - Savoir-faire : `Traitement du signal, Grattage de données, Analyse de données, Adaptation, Classification, Imagerie Médicale, 
                 Algorithmes, Réseaux neuronaux, Machine Learning, Résolution de problèmes, Visualisation de données, 
@@ -359,39 +359,47 @@ def main():
                 "Etude de modèles neuro-dynamiques pour la reconnaissance de configurations d'activité à l'état de repos (Resting-State Networks)"),
             "description": (
                 """
-                Ongoing...
-                * Creation and study of a dynamic model for publication
-                * Machine learning of activity configuration
-                * Creation of learning algorithms
+                GENERAL
+                * Bibliographic study of the state-of-the-art in the field
+                * Study and presentation to the group of external scientific publications not from the laboratory
+                * Creation of data treatment tools and visualizations
+                ---
+                NEURAL MODEL PROJECT
+                * Systematic creation and analysis of a new model of neuronal population, multi-stable at large scale
+                * Creation of a simulation software (optimized for intense calculations)
+                * Confrontation of the model's parameters with biological theories of brain functioning
+                ---
+                COMPETENCES
                 """, """
-                En cours...
-                * Création et étude d’un modèle dynamique pour publication
-                * Apprentissage automatique de configurations d’activité
-                * Création d'algorithmes d'apprentissage
+                GÉNÉRAL
+                * Étude bibliographique de l’état de l’art du domaine
+                * Étude de publications scientifiques externes au laboratoire et présentation au groupe
+                * Création d’outils de traitements de données et de visualisations
+                ---
+                PROJET MODÈLE NEURONAL
+                * Création et analyse systémique d’un nouveau modèle de population de neurones, multi-stable à large échelle
+                * Création d’un logiciel de simulation (optimisation pour des calculs intensifs)
+                * Confrontation des paramètres du modèle avec les théories biologiques du fonctionnement cérébral
+                ---
+                COMPÉTENCES
                 """),
-            "shortskills": (
-                "`Python`, `Research`, `State of the art`, ...",
-                "`Python`, `Recherche`, `État de l\'art`, ..."),
-            "skills": ("""
-                Python · Git · Matplotlib · Bash · Windows · Jupyter · PCA · ICA · 
-                Shell Scripting · Regular expressions · Scikit-Learn · HPC
-            
-                Signal processing · Data Analysis · Adaptation · Classification · Algorithmes · Neural networks · 
-                Problem solving · Data visualization · Research · Data exploration · Data cleaning · 
-                Communication · Linear algebra · State of the art · Mathematical modelling · Finite element method · 
-                Pattern Recognition · Time series
-                
-                Independant · R&D
-                """, """
-                Python · Git · Matplotlib · Bash · Windows · Jupyter · PCA · ICA · 
-                Shell Scripting · Expressions régulières · Scikit-Learn · HPC
-            
-                Traitement du signal · Analyse de données · Adaptation · Classification · Algorithmes · Réseaux neuronaux · 
-                Résolution de problèmes · Visualisation de données · Recherche · Exploration des données · Nettoyage de données · 
-                Communication · Algèbre linéaire · État de l'art · Modélisation mathématique · Méthode des éléments finis · Pattern Recognition
-                
-                Indépendant · R&D
-                """),
+            "skills": (
+                """
+                - Technologies: `Python, Git, Matplotlib, Bash, Jupyter, PCA, ICA, LateX, 
+                Shell Scripting, Regular expression, Scikit-Learn, HPC, Windows, Linux`
+                - Expertise: `Signal processing, Data Analysis, Adaptation, Classification, 
+                Algorithms, Neural networks, Problem solving, Data visualization, 
+                Research, Data exploration, Communication, Linear algebra, State of the art, 
+                Mathematical modelling, Finite element method, Pattern Recognition, Time series`
+                - Context: `Independant, R&D`""", 
+                """
+                - Technologies : `Python, Git, Matplotlib, Bash, Jupyter, PCA, ICA, LateX, 
+                Shell Scripting, Expressions régulières, Scikit-Learn, HPC, Windows, Linux`
+                - Savoir-faire : `Traitement du signal, Analyse de données, Adaptation, Classification, 
+                Algorithmes, Réseaux neuronaux, Résolution de problèmes, Visualisation de données, 
+                Recherche, Exploration des données, Communication, Algèbre linéaire, État de l'art, 
+                Modélisation mathématique, Pattern Recognition, Méthode des éléments finis`
+                - Contexte : `Indépendant, R&D`"""),
         },
     }
 
