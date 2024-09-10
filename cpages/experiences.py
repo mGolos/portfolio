@@ -221,7 +221,7 @@ def main():
                 "**7 months** / *2019* / **Paris, France**",
                 "**7 mois** / *2019* / **St-Germain-en-Laye**"),
             "short": (
-                "Implementing and automation of the coding environment for a web application",
+                "Implementing and automation of the code environment for a web application",
                 "Implémentation et automatisation de l'environnement de travail pour une application web"),
             "description": (
                 """
@@ -236,7 +236,7 @@ def main():
                 Python · Git · Bash · Windows · Linux · Jupyter · Pandas · Django · Microsoft Azure · MySQL · 
                 Docker · JIRA · Shell Scripting · Regular expressions · Web applications · API REST · MongoDB
                         
-                Front-end · Webscrapping · Algorithmes · Communication
+                Front-end development· Webscrapping · Algorithmes · Communication
                 
                 Agiles methods · DevOps
                 """, """
@@ -258,7 +258,7 @@ def main():
                 "**4 ans** / *2013* / **Marseille**"),
             "short": (
                 "Multistability in large scale of brain activity modeling and Funtional Connectivity Dynamics of epilepsy",
-                "Multistabilité dans la modélisation de l’activité cérébrale à large échelle et dynamique de la Connectivité Fonctionnelle de l'épilepsie"),
+                "Multistabilité dans la modélisation de l’activité cérébrale à large échelle et dynamique de la connectivité fonctionnelle de l'épilepsie"),
             "description": (
                 """
                 Ongoing...
@@ -309,7 +309,7 @@ def main():
                 """
                 Ongoing...
                 * Creation and study of a dynamic model for publication
-                * Machine learning of activity configurations
+                * Machine learning of activity configuration
                 * Creation of learning algorithms
                 """, """
                 En cours...

@@ -47,8 +47,8 @@ def main():
                 "*2013* / **Marseille (France)**",
                 "*2013* / **Marseille**"),
             "description": (
-                "Time multistability, Dynamical systems, Cellular automata, Mathematical modeling, Statistics, Machine learning, Classification, Neuro-dynamics, Pattern recognition, Resting-State networks, Medical imaging, State of the art, Multi-threading, Epilepsy", 
-                "Multistabilité temporelle, Systeèmes dynamiques, Automates cellulaires, Modélisation mathématique, Statistiques, Apprentissage automatique, Classification, Dynamique neuronale, Reconnaissance d'activité, Réseaux d'activité en état de repos, Imagerie médicale, État de l’art, Traitement en parallèle, Épilepsie"),
+                "Temporal multistability, Dynamical systems, Cellular automata, Mathematical modeling, Statistics, Machine learning, Classification, Neuro-dynamics, Pattern recognition, Resting-State networks, Medical imaging, State of the art, Multi-threading, Epilepsy", 
+                "Multistabilité temporelle, Systèmes dynamiques, Automates cellulaires, Modélisation mathématique, Statistiques, Apprentissage automatique, Classification, Dynamique neuronale, Reconnaissance d'activité, Réseaux d'activité en état de repos, Imagerie médicale, État de l’art, Traitement en parallèle, Épilepsie"),
         },
         "rennes": {
             "title": (
@@ -63,18 +63,18 @@ def main():
         },
         "lille": {
             "title": (
-                f"Degree in Fundamental Physics, {lille}",
+                f"Bachelor's degree in Fundamental Physics, {lille}",
                 f"Licence Physique Fondamentale, {lille}"),
             "dateplace": (
                 "*2010* / **Lille, France**",
                 "*2010* / **Lille**"),
             "description": (
-                "Quantum mechanics, Electromagnetism, Tools for physics, Numerical simulation, Analytical mechanics, Thermodynamics, Optics, Wave and vibration, Properties of matter, Physics and statistics, Astrophysics, Earth and environmental physics",
+                "Quantum mechanics, Electromagnetism, Tools for physics, Numerical simulation, Analytical mechanics, Thermodynamics, Optics, Wave and vibration, Properties of materials, Physics and statistics, Astrophysics, Earth and environmental physics",
                 "Mécanique quantique, Électromagnétisme, Outils pour la physique, Simulation numérique, Mécanique analytique, Thermodynamique, Optique, Onde et vibration, Propriétés de la matière, Physique et statistiques, Astrophysique, Physique de la Terre et de l'environnement"),
         },
         "iut": {
             "title": (
-                f"Technical degree in Physical Measurements - Material Engineering, {iut}",
+                f"Technical degree in Physical Measurements - Materials Engineering, {iut}",
                 f"DUT Mesures Physiques - Génie des matériaux, {iut}"),
             "dateplace": (
                 "*2008* / **Valenciennes, France**",
