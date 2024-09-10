@@ -257,42 +257,94 @@ def main():
                 "**4 years** / *2013* / **Marseille, France**",
                 "**4 ans** / *2013* / **Marseille**"),
             "short": (
-                "Multistability in large scale of brain activity modeling and Funtional Connectivity Dynamics of epilepsy",
-                "Multistabilité dans la modélisation de l’activité cérébrale à large échelle et dynamique de la connectivité fonctionnelle de l'épilepsie"),
+                """*Experience in computational biology for neuroscience, with deep learning projects, neural model creation and signal processing.
+                Involved in various literature reviews, data treatment tools creations and visualizations.*
+                """, 
+                """*Expérience dans le domaine de la biologie computationnelle en neurosciences, avec des projets d'apprentissage approfondi, création de modèles neuronaux et traitement du signal.
+                Impliqué dans diverses études bibliographiques, créations d'outils de traitements de données et visualisations.*"""),
             "description": (
                 """
-                Ongoing...
-                * Comparative analyzes using functional connectivity dynamic between epileptic patients and controls
-                * Developing my own simulator, preprocessing/analyzing tools in Python and its scientific libraries
+                GENERAL
+                * Bibliographic study of the state-of-the-art in the field
+                * Study and presentation to the group of external scientific publications not from the laboratory
+                * Creation of data treatment tools and visualizations
+                * Management of simulation data distributed over multiple parameters
+                * Automatic launch procedure for simulations and processing on a calculation cluster
+                * Administration of certain aspects of the calculation cluster
+                ---
+                DEEP LEARNING PROJECT
+                * Use of simple models (dynamics) to extract activity configurations (schemes) from anatomical structural connectivity (network)
+                * Confrontation of extracted configurations with observed configurations in healthy human subjects
+                * Automated learning of configurations
+                * Modification and optimization of learning algorithms
+                ---
+                NEURAL MODEL PROJECT
+                * Systematic creation and analysis of a new model of neuronal population, multi-stable at large scale
+                * Creation of a simulation software (optimized for intense calculations)
+                * Computationally intensive research to test the model on all its parameters
+                * Confrontation of the model's parameters with biological theories of brain functioning
+                ---
+                SIGNAL PROCESSING PROJECT
+                * Comparative analyses by dynamic functional connectivity between epileptic patients and controls
+                * Parallelization for intense calculations on multiple dimensions
+                * Post-processing of time series
+                * Analysis of dynamic networks
+                * Unsupervised automated learning
+                * Research on artifacts and statistical studies
+                * Study and critique of a new analytical tool
+                * Creation and study of another more advanced tool
+                ---
+                COMPETENCES
                 """, """
-                En cours...
-                * Analyses comparatives de séries temporelles entre patients épileptiques et contrôles
-                * Développement de mon simulateur et outils pour les pré-traitements et analyses
+                GÉNÉRAL
+                * Étude bibliographique de l’état de l’art du domaine
+                * Étude de publications scientifiques externes au laboratoire et présentation au groupe
+                * Création d’outils de traitements de données et de visualisations
+                * Gestion des données de simulations réparties sur de multiples paramètres
+                * Procédure de lancement automatique de simulation et de traitement sur cluster de calcul
+                * Administration de certains aspects du cluster de calculs
+                ---
+                PROJET D'APPRENTISSAGE APPROFONDI
+                * Utilisation de modèles simples (dynamique) pour extraire les configurations d’activité (schémas) à partir d’une connectivité structurelle anatomique (réseau)
+                * Confrontation des configurations extraites avec des configurations observées chez des sujets humains sains
+                * Apprentissage automatique de configurations
+                * Modification et optimisation d’algorithmes d’apprentissage
+                ---
+                PROJET MODÈLE NEURONAL
+                * Création et analyse systémique d’un nouveau modèle de population de neurones, multi-stable à large échelle
+                * Création d’un logiciel de simulation (optimisation pour des calculs intensifs)
+                * Recherche computationnelle intensive pour tester le modèle sur tous ses paramètres
+                * Confrontation des paramètres du modèle avec les théories biologiques du fonctionnement cérébral
+                ---
+                PROJET TRAITEMENT DU SIGNAL
+                * Analyses comparatives par connectivité fonctionnelle dynamique entre patients épileptiques et contrôles
+                * Parallélisation pour les calculs intensifs sur les multiples dimensions
+                * Post-traitement des séries temporelles
+                * Analyse des réseaux dynamiques
+                * Apprentissage automatique non supervisé
+                * Recherche d’artefacts et études statistiques
+                * Étude et critique d’un nouvel outil d’analyse
+                * Création et étude d’un autre outil plus poussé
+                ---
+                COMPÉTENCES
                 """),
-            "shortskills": (
-                "`Python`, `Research`, `State of the art`, ...",
-                "`Python`, `Recherche`, `État de l\'art`, ..."),
-            "skills": ("""
-                Python · Git · Matplotlib · Bash · Windows · Jupyter · Pandas · k-means · PCA · ICA · 
-                Seaborn · Shell Scripting · Regular expressions · Plotly · Scikit-Learn · FCD · HPC
-            
-                Signal processing · Webscrapping · Data Analysis · Adaptation · Classification · Medical imaging · 
-                Algorithmes · Neural networks · Machine Learning · Problem solving · Data visualization · 
-                Research · Data exploration · Data cleaning · Communication · Linear algebra · State of the art · 
-                Mathematical modelling · Finite element method · Time series
-                
-                Independant · R&D
-                """, """
-                Python · Git · Matplotlib · Bash · Windows · Jupyter · Pandas · k-means · PCA · ICA · 
-                Seaborn · Shell Scripting · Expressions régulières · Plotly · Scikit-Learn · FCD · HPC
-            
-                Traitement du signal · Grattage de données · Analyse de données · Adaptation · Classification · Imagerie Médicale · 
-                Algorithmes · Réseaux neuronaux · Machine Learning · Résolution de problèmes · Visualisation de données · 
-                Recherche · Exploration des données · Nettoyage de données · Communication · Algèbre linéaire · État de l'art · 
-                Modélisation mathématique · Méthode des éléments finis
-                
-                Indépendant · R&D
-                """),
+            "skills": (
+                """
+                - Technologies: `Python, MATLAB, Git, Matplotlib, Bash, Windows, Jupyter, Pandas, k-means, PCA, ICA, LateX, 
+                Seaborn, Shell Scripting, Expressions régulières, Plotly, Scikit-Learn, FCD, HPC, Linux, Windows`
+                - Expertise: `Signal processing, Webscrapping, Data Analysis, Adaptation, Classification, Medical imaging, 
+                Algorithms, Neural networks, Machine Learning, Problem solving, Data visualization, 
+                Research, Data exploration, Data cleaning, Communication, Linear algebra, State of the art, 
+                Mathematical modelling, Finite element method, Time series`
+                - Context: `Independant, R&D`""", 
+                """
+                - Technologies : `Python, MATLAB, Git, Matplotlib, Bash, Windows, Jupyter, Pandas, k-means, PCA, ICA, LateX, 
+                Seaborn, Shell Scripting, Expressions régulières, Plotly, Scikit-Learn, FCD, HPC, Linux, Windows`
+                - Savoir-faire : `Traitement du signal, Grattage de données, Analyse de données, Adaptation, Classification, Imagerie Médicale, 
+                Algorithmes, Réseaux neuronaux, Machine Learning, Résolution de problèmes, Visualisation de données, 
+                Recherche, Exploration des données, Nettoyage de données, Communication, Algèbre linéaire, État de l'art, 
+                Modélisation mathématique, Méthode des éléments finis`
+                - Contexte : `Indépendant, R&D`"""),
         },
         "ins2": {
             "name": "INS",
@@ -351,7 +403,8 @@ def main():
     
     # Tabs or Containers
     if sss['layout'] == "wide":
-        containers = st.tabs(job_names)
+        # containers = st.tabs(job_names)
+        containers = [st.container() for _ in job_names]
     else:
         containers = [st.container() for _ in job_names]
     
@@ -375,13 +428,16 @@ def main():
         c = d_lines[job_tag]
         c[0].write('#### ' + job['title'][sss["lg_key"]])
         c[1].markdown(job['dateplace'][sss["lg_key"]])
-        c[2].markdown(job['short'][sss["lg_key"]])
-        (
-            c[3]
-            .expander(job['shortskills'][sss["lg_key"]])
-            .write(job['skills'][sss["lg_key"]])
-        )
-        c[4].expander("Description").write(job['description'][sss["lg_key"]])
+        with c[2].expander(job['short'][sss["lg_key"]]):
+            st.write(job['description'][sss["lg_key"]])
+            st.markdown(job['skills'][sss["lg_key"]].replace(', \n', '` · `').replace(', ', '` · `'))
+        # c[2].markdown(job['short'][sss["lg_key"]])
+        # c[3].expander("Description").write(job['description'][sss["lg_key"]])
+        # (
+        #     c[4]
+        #     .expander('Outils Techniques' if sss["lg_key"] else 'Technical Tools')
+        #     .write(job['skills'][sss["lg_key"]])
+        # )
 
 
 if __name__ == "__main__":
