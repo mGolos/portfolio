@@ -37,27 +37,27 @@ def main():
                 "`Python`, `Time Series`, `Kubernetes`, ...",
                 "`Python`, `Séries temporelles`, `Kubernetes`, ..."),
             "skills": ("""
-                Python · Git · Plotly · Bash · Linux · Windows · Jupyter · Pandas · Scikit-Learn · 
-                Docker · Seaborn · Kubernetes · Notion · Shell Scripting · Regular expressions · Web applications · 
-                Scaleway · Matplotlib · API REST
+                Python, Git, Plotly, Bash, Linux, Windows, Jupyter, Pandas, Scikit-Learn, 
+                Docker, Seaborn, Kubernetes, Notion, Shell Scripting, Regular expressions, Web applications, 
+                Scaleway, Matplotlib, API REST
                 
-                Webscrapping · Data Analysis · Signal processing · Machine learning · 
-                Natural Language Processing · Numerical Simulation · Classification · 
-                Scientific analysis · Algorithmes · Regression modelling · Data cleaning · 
-                Time Series · Problem solving · Data Visualization · Data exploration
+                Webscrapping, Data Analysis, Signal processing, Machine learning, 
+                Natural Language Processing, Numerical Simulation, Classification, 
+                Scientific analysis, Algorithmes, Regression modelling, Data cleaning, 
+                Time Series, Problem solving, Data Visualization, Data exploration
                 
-                Agiles methods · R&D · DevOps · Independant
+                Agiles methods, R&D, DevOps, Independant
                 """, """
-                Python · Git · Plotly · Bash · Linux · Windows · Jupyter · Pandas · Scikit-Learn · 
-                Docker · Seaborn · Kubernetes · Notion · Shell Scripting · Expressions régulières · Applications web · 
-                Scaleway · Matplotlib · API REST
+                Python, Git, Plotly, Bash, Linux, Windows, Jupyter, Pandas, Scikit-Learn, 
+                Docker, Seaborn, Kubernetes, Notion, Shell Scripting, Expressions régulières, Applications web, 
+                Scaleway, Matplotlib, API REST
                 
-                Grattage de données · Analyse de données · Traitement du signal · Apprentissage automatique · 
-                Traitement automatique du langage naturel · Simulation Numérique · Classification · 
-                Analyses scientifiques · Algorithmes · Modèles de régression · Nettoyage de données · 
-                Séries temporelles · Résolution de problèmes · Visualisation de données · Exploration des données
+                Grattage de données, Analyse de données, Traitement du signal, Apprentissage automatique, 
+                Traitement automatique du langage naturel, Simulation Numérique, Classification, 
+                Analyses scientifiques, Algorithmes, Modèles de régression, Nettoyage de données, 
+                Séries temporelles, Résolution de problèmes, Visualisation de données, Exploration des données
                 
-                Méthodes agiles · R&D · DevOps · Indépendant
+                Méthodes agiles, R&D, DevOps, Indépendant
                 """),
         },
         "lindera": {
@@ -85,19 +85,19 @@ def main():
                 "`Python`, `Unstructured data`, `Liaison agent`, ...",
                 "`Python`, `Données non structurées`, `Agent de liaison`, ..."),
             "skills": ("""
-                Python · Git · Matplotlib · Bash · Linux · Windows · Jupyter · Pandas · Microsoft Excel
+                Python, Git, Matplotlib, Bash, Linux, Windows, Jupyter, Pandas, Microsoft Excel
             
-                Data Analysis · Adaptation · Unstructured data · Deep Learning · Problem solving · 
-                Data Visualization · Research · Data exploration · Data cleaning
+                Data Analysis, Adaptation, Unstructured data, Deep Learning, Problem solving, 
+                Data Visualization, Research, Data exploration, Data cleaning
                 
-                Agiles methods · Liaison agent
+                Agiles methods, Liaison agent
                 """, """
-                Python · Git · Matplotlib · Bash · Linux · Windows · Jupyter · Pandas · Microsoft Excel
+                Python, Git, Matplotlib, Bash, Linux, Windows, Jupyter, Pandas, Microsoft Excel
             
-                Analyse de données · Adaptation · Données non structurées · Deep Learning · Résolution de problèmes · 
-                Visualisation de données · Recherche · Exploration des données · Nettoyage de données
+                Analyse de données, Adaptation, Données non structurées, Deep Learning, Résolution de problèmes, 
+                Visualisation de données, Recherche, Exploration des données, Nettoyage de données
                 
-                Méthodes agiles · Agent de liaison
+                Méthodes agiles, Agent de liaison
                 """),
         },
         "xrator": {
@@ -131,29 +131,29 @@ def main():
                 "`Python`, `Unstructured data`, `NLP`, ...",
                 "`Python`, `Données non structurées`, `NLP`, ..."),
             "skills": ("""
-                Python · Git · GitLab · Matplotlib · Bash · Linux · Windows · Jupyter · Pandas · Django · 
-                Docker · Seaborn · Kubernetes · OVH · Shell Scripting · Regular expressions · Web applications · 
-                API REST · Prefect · NLTK · Spacy · JIRA · AWS · PyTorch · Plotly · Microsoft Azure · MySQL · 
-                Scikit-Learn · NoSQL
+                Python, Git, GitLab, Matplotlib, Bash, Linux, Windows, Jupyter, Pandas, Django, 
+                Docker, Seaborn, Kubernetes, OVH, Shell Scripting, Regular expressions, Web applications, 
+                API REST, Prefect, NLTK, Spacy, JIRA, AWS, PyTorch, Plotly, Microsoft Azure, MySQL, 
+                Scikit-Learn, NoSQL
             
-                Webscrapping · Natural Language Processing · Data Analysis · Adaptation · 
-                Unstructured data · Imputation · Regression modelling · Classification · Algorithmes · 
-                Machine Learning · Deep Learning · Transfert Learning · Problem solving · Partitioning · 
-                Data visualization · Research · Data exploration · Data cleaning
+                Webscrapping, Natural Language Processing, Data Analysis, Adaptation, 
+                Unstructured data, Imputation, Regression modelling, Classification, Algorithmes, 
+                Machine Learning, Deep Learning, Transfert Learning, Problem solving, Partitioning, 
+                Data visualization, Research, Data exploration, Data cleaning
                 
-                Agiles methods · R&D · DevOps · Independant
+                Agiles methods, R&D, DevOps, Independant
                 """, """
-                Python · Git · GitLab · Matplotlib · Bash · Linux · Windows · Jupyter · Pandas · Django · 
-                Docker · Seaborn · Kubernetes · OVH · Shell Scripting · Expressions régulières · Applications web · 
-                API REST · Prefect · NLTK · Spacy · JIRA · AWS · PyTorch · Plotly · Microsoft Azure · MySQL · 
-                Scikit-Learn · NoSQL
+                Python, Git, GitLab, Matplotlib, Bash, Linux, Windows, Jupyter, Pandas, Django, 
+                Docker, Seaborn, Kubernetes, OVH, Shell Scripting, Expressions régulières, Applications web, 
+                API REST, Prefect, NLTK, Spacy, JIRA, AWS, PyTorch, Plotly, Microsoft Azure, MySQL, 
+                Scikit-Learn, NoSQL
             
-                Grattage de données · Traitement automatique du langage naturel · Analyse de données · Adaptation · 
-                Données non structurées · Imputation · Modèles de régression · Classification · Algorithmes · 
-                Machine Learning · Deep Learning · Transfert Learning · Résolution de problèmes · Partitionnement · 
-                Visualisation de données · Recherche · Exploration des données · Nettoyage de données
+                Grattage de données, Traitement automatique du langage naturel, Analyse de données, Adaptation, 
+                Données non structurées, Imputation, Modèles de régression, Classification, Algorithmes, 
+                Machine Learning, Deep Learning, Transfert Learning, Résolution de problèmes, Partitionnement, 
+                Visualisation de données, Recherche, Exploration des données, Nettoyage de données
                 
-                Méthodes agiles · R&D · DevOps · Indépendant
+                Méthodes agiles, R&D, DevOps, Indépendant
                 """),
         },
         "oc": {
@@ -187,27 +187,27 @@ def main():
                 "`Python`, `Communication`, `State of the art`, ...",
                 "`Python`, `Communication`, `État de l\'art`, ..."),
             "skills": ("""
-                Python · Git · Matplotlib · Bash · Windows · Jupyter · Pandas · Django · Kaggle · k-means · Random forest · 
-                Boosting · Docker · Seaborn · Shell Scripting · Regular expressions · Web applications · HCA · SVM · 
-                API REST · NLTK · AWS · PyTorch · Plotly · MySQL · Scikit-Learn · TensorFlow · XMC · DBSCAN
+                Python, Git, Matplotlib, Bash, Windows, Jupyter, Pandas, Django, Kaggle, k-means, Random forest, 
+                Boosting, Docker, Seaborn, Shell Scripting, Regular expressions, Web applications, HCA, SVM, 
+                API REST, NLTK, AWS, PyTorch, Plotly, MySQL, Scikit-Learn, TensorFlow, XMC, DBSCAN
             
-                Webscrapping · Natural Language Processing · Data Analysis · Adaptation · 
-                Unstructured data · Imputation · Regression modelling · Classification · Algorithmes · 
-                Machine Learning · Deep Learning · Transfert Learning · Problem solving · Partitioning · 
-                Data visualization · Research · Data exploration · Data cleaning · Neural Networks · 
-                Inverse Problems · Image processing · Communication · Linear algebra · State of the art
+                Webscrapping, Natural Language Processing, Data Analysis, Adaptation, 
+                Unstructured data, Imputation, Regression modelling, Classification, Algorithmes, 
+                Machine Learning, Deep Learning, Transfert Learning, Problem solving, Partitioning, 
+                Data visualization, Research, Data exploration, Data cleaning, Neural Networks, 
+                Inverse Problems, Image processing, Communication, Linear algebra, State of the art
                 
                 Independant
                 """, """
-                Python · Git · Matplotlib · Bash · Windows · Jupyter · Pandas · Django · Kaggle · k-means · Forêt aléatoire · 
-                Boosting · Docker · Seaborn · Shell Scripting · Expressions régulières · Applications web · HCA · SVM · 
-                API REST · NLTK · AWS · PyTorch · Plotly · MySQL · Scikit-Learn · TensorFlow · XMC · DBSCAN
+                Python, Git, Matplotlib, Bash, Windows, Jupyter, Pandas, Django, Kaggle, k-means, Forêt aléatoire, 
+                Boosting, Docker, Seaborn, Shell Scripting, Expressions régulières, Applications web, HCA, SVM, 
+                API REST, NLTK, AWS, PyTorch, Plotly, MySQL, Scikit-Learn, TensorFlow, XMC, DBSCAN
             
-                Grattage de données · Traitement automatique du langage naturel · Analyse de données · Adaptation · 
-                Données non structurées · Imputation · Modèles de régression · Classification · Algorithmes · 
-                Machine Learning · Deep Learning · Transfert Learning · Résolution de problèmes · Partitionnement · 
-                Visualisation de données · Recherche · Exploration des données · Nettoyage de données · Neural Networks · 
-                Inverse Problems · Traitement de l'image · Communication · Algèbre linéaire · État de l'art
+                Grattage de données, Traitement automatique du langage naturel, Analyse de données, Adaptation, 
+                Données non structurées, Imputation, Modèles de régression, Classification, Algorithmes, 
+                Machine Learning, Deep Learning, Transfert Learning, Résolution de problèmes, Partitionnement, 
+                Visualisation de données, Recherche, Exploration des données, Nettoyage de données, Neural Networks, 
+                Inverse Problems, Traitement de l'image, Communication, Algèbre linéaire, État de l'art
                 
                 Indépendant
                 """),
@@ -221,32 +221,77 @@ def main():
                 "**7 months** / *2019* / **Paris, France**",
                 "**7 mois** / *2019* / **St-Germain-en-Laye**"),
             "short": (
-                "Implementing and automation of the code environment for a web application",
-                "Implémentation et automatisation de l'environnement de travail pour une application web"),
+                "Implementation and automation of an environment for a web-based platform to connect professionals with chartered accountants.",
+                "Implémentation et automatisation de l'environnement pour une interface web de mise en relation entre professionnels et experts comptables."),
             "description": (
                 """
-                Ongoing...
+                WORKING IN AGILE SCRUM METHODOLOGY
+                * Sprint Planning Organisation and ticket allocation from Backlog,
+                * Daily meeting for progress, blockers, updates, and Kanban tracking
+                * Grooming (Story Review) meeting to analyze tickets, prepare upcoming sprints
+                * Poker planning to estimate ticket values
+                * Sprint Review meeting to analyze completed sprint
+                * Demo and Retrospective
+                --- 
+                COLLABORATIVE TASKS WITH TEAMS
+                * Participation in technology choices, adoption of frameworks and tools
+                * Development of applications for evolution and correction
+                * Creation, modification of pages and forms based on User Stories (US)
+                * Integration of Bootstrap (responsive design), slides, and pop-ups in JavaScript
+                * Mastery of the MVC architecture (Models-View-Templates for Django)
+                * Migration of Pipelines to Controllers
+                * Control of versioning, deployment, and review of technical documentation and code
+                --- 
+                INDIVIDUAL PROJECTS AND TASKS
+                * Creation of a development environment adaptable to all system environments
+                * Creation, development of code under VS Code in Python / Django / HTML5 / CSS3
+                * Optimization of different parts and types of code
+                * Writing technical documentation for the code and development environment (Markdown) and automating documentation
+                * Training teams on various tools (Django/Jupyter)
+                * Conducting unit tests
+                --- 
+                COMPETENCES
                 """, """
-                En cours...
+                TRAVAIL EN MÉTHODE AGILE SCRUM
+                * Sprint Planning Organisation et répartition des tickets du Backlog,
+                * Daily meeting point d’avancement, point bloquant, màj et suivi du Kanban
+                * Grooming (Story Review) réunion d’analyse des tickets, Préparation des sprints à venir
+                * Poker planning chiffrage des tickets
+                * Sprint Review réunion d’analyse du Sprint écoulé
+                * Démo et Rétro
+                ---
+                TAVAUX EN COMMUN DES ÉQUIPES
+                * Participation au choix technologique, Appropriation des Framework et outils
+                * Développement d’application d’évolutions et de correctifs
+                * Création, Modification de pages et de formulaires en fonction des US
+                * Intégration de Bootstrap (responsive design), de slides et des Pop-ups en javascript
+                * Maitrise de l’architecture MVC (Modèles-Vue-Template pour Django)
+                * Migration de Pipelines en Contrôleurs
+                * Contrôle du versioning, du déploiement et revu de documentations techniques et de code
+                ---
+                PROJETS ET TRAVAUX INDIVIDUEL
+                * Création de l’environnement de développement adapté pour tout environnement système
+                * Création, développement du code sous VS Code en Python / Django / HTML5 / CSS3
+                * Optimisation des différentes parties et types de code
+                * Rédaction de documentations techniques du code et de l’environnement de développement (Markdown) et automatisation de la documentation
+                * Formation des équipes aux différents outils (Django/Jupyter)
+                * Réalisation de test unitaires
+                ---
+                COMPÉTENCES
                 """),
-            "shortskills": (
-                "`Python`, `Communication`, `State of the art`, ...",
-                "`Python`, `Communication`, `État de l\'art`, ..."),
-            "skills": ("""
-                Python · Git · Bash · Windows · Linux · Jupyter · Pandas · Django · Microsoft Azure · MySQL · 
-                Docker · JIRA · Shell Scripting · Regular expressions · Web applications · API REST · MongoDB
-                        
-                Front-end development· Webscrapping · Algorithmes · Communication
-                
-                Agiles methods · DevOps
-                """, """
-                Python · Git · Bash · Windows · Linux · Jupyter · Pandas · Django · Microsoft Azure · MySQL · 
-                Docker · JIRA · Shell Scripting · Expressions régulières · Applications web · API REST · MongoDB
-                        
-                Développement front-end · Grattage de données · Algorithmes · Communication
-                
-                Méthodes agiles · DevOps
-                """),
+            "skills": (
+                """
+                - Technologies: `Python, Git, Bash, Windows, Linux, Jupyter, Pandas, Django, Microsoft Azure, MySQL, 
+                Docker, JIRA, Shell Scripting, Regular expressions, Web applications, API REST, MongoDB, 
+                JavaScript, JQuery, Ajax, HTML5, CSS3, Bitbucket, Trello, Jira, Slack, VS Code`
+                - Expertise: `Front-end development, Webscrapping, Algorithmes, Communication`
+                - Context: `Agiles methods, DevOps`""", 
+                """
+                - Technologies : `Python, Git, Bash, Windows, Linux, Jupyter, Pandas, Django, Microsoft Azure, MySQL, 
+                Docker, JIRA, Shell Scripting, Expressions régulières, Applications web, API REST, MongoDB, 
+                JavaScript, JQuery, Ajax, HTML5, CSS3, Bitbucket, Trello, Jira, Slack, VS Code`
+                - Savoir-faire : `Développement front-end, Grattage de données, Algorithmes, Communication`
+                - Contexte : `Méthodes agiles, DevOps`"""),
         },
         "ins": {
             "name": "INS",
@@ -355,8 +400,8 @@ def main():
                 "**9 months** / *2013* / **Marseille, France**",
                 "**9 mois** / *2013* / **Marseille**"),
             "short": (
-                "Study of neuro-dynamic models for the recognition of activity configurations in the resting state (Resting-State Networks)",
-                "Etude de modèles neuro-dynamiques pour la reconnaissance de configurations d'activité à l'état de repos (Resting-State Networks)"),
+                "Study of neuro-dynamic models for the recognition of activity configurations in the resting state (Resting-State Networks).",
+                "Etude de modèles neuro-dynamiques pour la reconnaissance de configurations d'activité à l'état de repos (Resting-State Networks)."),
             "description": (
                 """
                 GENERAL
