@@ -165,52 +165,141 @@ def main():
                 "**8 month** / *2021* / **Lille, France**",
                 "**8 mois** / *2021* / **Lille**"),
             "short": (
-                "Mentored projects (weekly) including Data Cleaning and Data Analysis",
-                "Projets encadrés (hebdomadaire), incluant le nettoyage des données et l'analyse des données"),
+                "*A variety of concrete cases of companies managed independently with a weekly mentoring and systematically submitted reports, versioned code and presentations to a jury for validation.*",
+                "*Différents cas concrets d’entreprise gérés indépendamment avec un mentorat hebdomadaire et soumis systématiquement par des rapports, codes versionnés et présentations en face d’un jury pour validation.*"),
             "description": (
                 """
-                Ongoing...
-                * Produce an application for automatic multi-tagging of questions using state of the art algorithms (NLP, XMC, Deep Learning) 
-                * Produce an application for race recognition of dog images (Deep Learning, Transfer Learning)
-                * Segment customers of an e-commerce website (Unsupervised Learning, KMeans, HCA, DBSCAN)
-                * Anticipate a city's electricity consumption and CO² emissions (Supervised Learning, SVM, Random Forest, Boosting, ...)
-                * Design of an application on nutritional data for public health
+                DEVELOPING AN APPLICATION FOR PUBLIC HEALTH  
+                * Proposal for an application based on nutritional data
+                * Data management / Cleaning
+                * Exploring data
+                * Concept search
+                * Feature engineering (quantitative and qualitative)
+                * Imputation (KNN Imputer), Classification (SGD)
+                ---
+                ANTICIPATING ELECTRICITY CONSUMPTION NEEDS IN BUILDINGS  
+                *Predicting electricity consumption and carbon emissions for municipal buildings in Seattle*
+                * Merging / Cleaning databases
+                * Exploring data
+                * Feature engineering (quantitative and qualitative)
+                * Imputation and Regression (Linear, SVR, Random Forest, Gradient Boosting)
+                ---
+                SEGMENTING ONLINE SHOP CUSTOMERS  
+                *Providing marketing teams with a segmentable client segmentation to optimize communication campaigns*
+                * Merging / Cleaning multiple databases
+                * Exploring data
+                * Feature engineering (quantitative and qualitative)
+                * Unsupervised classification (k-Means, Hierarchical Agglomerative Clustering, DBSCAN)
+                * Hyperparameter optimization
+                ---
+                AUTOMATICALLY CATEGORIZING QUESTIONS  
+                *Developing a system to automatically tag user questions on Stack Overflow*
+                * Data cleaning (NLTK) and exploration
+                * Feature engineering (quantitative and qualitative)
+                * Multilabel extreme classification XMC (Gaussian Naive Bayes, Decision Tree Classifier, Linear Support Vector Classification, Multilabel k-Nearest Neighbours)
+                * Methods (Word Embedding, Binary Relevance, Label Powerset, Classifier Chain)
+                * Hyperparameter optimization
+                * Creating a personal model
+                * Bibliographic study of the state-of-the-art
+                * Implementing more recent models (XR-Linear, XR-Transformer)
+                * Creating an API in the form of an online application (Streamlit)
+                ---
+                CLASSIFYING IMAGES USING DEEP LEARNING ALGORITHMS  
+                *Using Deep Learning models for an animal association wanting to automate breed identification*
+                * Image processing
+                * Supervised classification with multiple classes
+                * Creating or implementing existing neural networks
+                * Transfer learning (MobileNetV2)
+                * Hyperparameter optimization
+                * Creating an API in the form of an online application (Streamlit)
+                ---
+                PARTICIPATING IN A KAGGLE COMPETITION  
+                *Predicting cryptocurrency markets based on data collected by G-Research*
+                * State-of-the-art study
+                * Signal processing
+                * Feature engineering (delays, aggregations)
+                * Regression (Linear, Light Gradient Boosting Machine, XGBoost)
+                * Hyperparameter optimization
+                * Using and contributing to other kernels
+                ---
+                COMPETENCIES
                 """, """
-                En cours...
-                * Produire une application pour l'étiquetage multiple automatique de questions en utilisant les algorithmes les plus récents et performants (SOTA, NLP, XMC, Deep Learning)
-                * Produire une application pour la reconnaissance de race d'images de chiens (Deep Learning, Transfer Learning)
-                * Segmenter les clients d'un site e-commerce (Apprentissage Non-Supervisé, k-means, HCA, DBSCAN)
-                * Anticiper la consommation électrique et les émissions de CO² d'une ville (Apprentissage Supervisé, SVM, Forêt aléatoires, Boosting, ...)
-                * Conception d'une application sur des données nutritionnelles au service de la santé publique
+                CONCEPTION D’UNE APPLICATION AU SERVICE DE LA SANTE PUBLIQUE  
+                *Proposition d’application basée sur des données nutritionnelles*
+                * Gestion / Nettoyage de la base de données
+                * Exploration de données
+                * Recherche de concepts
+                * Ingénierie des caractéristiques (quantitatives et qualitatives)
+                * Imputation (KNN Imputer), Classification (SGD)
+                ---
+                ANTICIPER LES BESOINS EN CONSOMMATION ÉLECTRIQUE DE BÂTIMENTS  
+                *Prédiction de consommation électrique et émissions de carbone pour des bâtiments municipaux de la ville de Seattle*
+                * Fusion / Nettoyage des bases de données
+                * Exploration de données
+                * Ingénierie des caractéristiques (quantitatives et qualitatives)
+                * Imputation et Régression (Linéaire, SVR, Random Forest, Gradient Boosting)
+                ---
+                SEGMENTER DES CLIENTS D'UN SITE E-COMMERCE  
+                *Fournir aux équipes marketing une segmentation activable de leurs clients pour optimiser les campagnes de communication*
+                * Fusion / Nettoyage de multiples bases de données
+                * Exploration de données
+                * Ingénierie des caractéristiques (quantitatives et qualitatives)
+                * Classification non supervisée (k-Means, Hiérarchique agglomératif, DBSCAN)
+                * Optimisation des hyperparamètres
+                ---
+                CATÉGORISER AUTOMATIQUEMENT DES QUESTIONS  
+                *Développer un système permettant de tagger automatiquement les questions des utilisateurs sur le site Stack Overflow*
+                * Nettoyage (NLTK) et exploration des données
+                * Ingénierie des caractéristiques (quantitatives et qualitatives) 
+                * Classification multi-étiquette extrême XMC (Gaussian Naive Bayes, Decision Tree Classifier, Linear Support Vector Classification, Multilabel k-Nearest Neighbours)
+                * Méthodes (Word Embedding, Binary Relevance, Label Powerset, Classifier Chain)
+                * Optimisation des hyperparamètres
+                * Création d’un modèle personnel
+                * Étude bibliographique de l’état de l’art
+                * Implémentation de modèles plus récents (XR-Linear, XR-Transformer)
+                * Création d’API sous forme d’une application en ligne (Streamlit)
+                ---
+                CLASSER DES IMAGES À L'AIDE D'ALGORITHMES DE DEEP LEARNING  
+                *Utilisation de modèles de Deep Learning pour une association animalière souhaitant automatiser l'identification de races*
+                * Traitement d’images
+                * Classification supervisée à classes multiples
+                * Création ou implémentation de Réseaux Neuronaux existants
+                * Apprentissage par transfert (MobileNetV2)
+                * Optimisation des hyperparamètres
+                * Création d’API sous forme d’une application en ligne (Streamlit)
+                ---
+                PARTICIPER À UNE COMPETITION KAGGLE  
+                *Prédiction du marché des crypto-monnaies à partir des données amassées par G-Research*
+                * État de l’art
+                * Traitement du signal
+                * Ingénierie des caractéristiques (latences, agrégations)
+                * Régression (Linéaire, Light Gradient Boosting Machine, XGBoost)
+                * Optimisation des hyperparamètres
+                * Utilisation et contribution aux autres kernels
+                ---
+                COMPÉTENCES
                 """),
-            "shortskills": (
-                "`Python`, `Communication`, `State of the art`, ...",
-                "`Python`, `Communication`, `État de l\'art`, ..."),
-            "skills": ("""
-                Python, Git, Matplotlib, Bash, Windows, Jupyter, Pandas, Django, Kaggle, k-means, Random forest, 
+            "skills": (
+                """
+                - Technologies: `Python, Git, Matplotlib, Bash, Windows, Jupyter, Pandas, Django, Kaggle, k-means, Random forest, 
                 Boosting, Docker, Seaborn, Shell Scripting, Regular expressions, Web applications, HCA, SVM, 
-                API REST, NLTK, AWS, PyTorch, Plotly, MySQL, Scikit-Learn, TensorFlow, XMC, DBSCAN
-            
-                Webscrapping, Natural Language Processing, Data Analysis, Adaptation, 
+                API REST, NLTK, AWS, PyTorch, Plotly, MySQL, Scikit-Learn, TensorFlow, XMC, DBSCAN`
+                - Expertise: `Webscrapping, Natural Language Processing, Data Analysis, Adaptation, 
                 Unstructured data, Imputation, Regression modelling, Classification, Algorithmes, 
                 Machine Learning, Deep Learning, Transfert Learning, Problem solving, Partitioning, 
                 Data visualization, Research, Data exploration, Data cleaning, Neural Networks, 
-                Inverse Problems, Image processing, Communication, Linear algebra, State of the art
-                
-                Independant
-                """, """
-                Python, Git, Matplotlib, Bash, Windows, Jupyter, Pandas, Django, Kaggle, k-means, Forêt aléatoire, 
+                Inverse Problems, Image processing, Communication, Linear algebra, State of the art`
+                - Context: `Independant`""", 
+                """
+                - Technologies : `Python, Git, Matplotlib, Bash, Windows, Jupyter, Pandas, Django, Kaggle, k-means, Forêt aléatoire, 
                 Boosting, Docker, Seaborn, Shell Scripting, Expressions régulières, Applications web, HCA, SVM, 
-                API REST, NLTK, AWS, PyTorch, Plotly, MySQL, Scikit-Learn, TensorFlow, XMC, DBSCAN
-            
-                Grattage de données, Traitement automatique du langage naturel, Analyse de données, Adaptation, 
+                API REST, NLTK, AWS, PyTorch, Plotly, MySQL, Scikit-Learn, TensorFlow, XMC, DBSCAN`
+                - Savoir-faire : `Grattage de données, Traitement automatique du langage naturel, Analyse de données, Adaptation, 
                 Données non structurées, Imputation, Modèles de régression, Classification, Algorithmes, 
                 Machine Learning, Deep Learning, Transfert Learning, Résolution de problèmes, Partitionnement, 
                 Visualisation de données, Recherche, Exploration des données, Nettoyage de données, Neural Networks, 
-                Inverse Problems, Traitement de l'image, Communication, Algèbre linéaire, État de l'art
-                
-                Indépendant
-                """),
+                Inverse Problems, Traitement de l'image, Communication, Algèbre linéaire, État de l'art`
+                - Contexte : `Indépendant`"""),
         },
         "alpha": {
             "name": "Alpha Conseil",
@@ -221,8 +310,8 @@ def main():
                 "**7 months** / *2019* / **Paris, France**",
                 "**7 mois** / *2019* / **St-Germain-en-Laye**"),
             "short": (
-                "Implementation and automation of an environment for a web-based platform to connect professionals with chartered accountants.",
-                "Implémentation et automatisation de l'environnement pour une interface web de mise en relation entre professionnels et experts comptables."),
+                "*Implementation and automation of an environment for a web-based platform to connect professionals with chartered accountants.*",
+                "*Implémentation et automatisation de l'environnement pour une interface web de mise en relation entre professionnels et experts comptables.*"),
             "description": (
                 """
                 WORKING IN AGILE SCRUM METHODOLOGY
@@ -250,7 +339,7 @@ def main():
                 * Training teams on various tools (Django/Jupyter)
                 * Conducting unit tests
                 --- 
-                COMPETENCES
+                COMPETENCIES
                 """, """
                 TRAVAIL EN MÉTHODE AGILE SCRUM
                 * Sprint Planning Organisation et répartition des tickets du Backlog,
@@ -339,7 +428,7 @@ def main():
                 * Study and critique of a new analytical tool
                 * Creation and study of another more advanced tool
                 ---
-                COMPETENCES
+                COMPETENCIES
                 """, """
                 GÉNÉRAL
                 * Étude bibliographique de l’état de l’art du domaine
@@ -400,8 +489,8 @@ def main():
                 "**9 months** / *2013* / **Marseille, France**",
                 "**9 mois** / *2013* / **Marseille**"),
             "short": (
-                "Study of neuro-dynamic models for the recognition of activity configurations in the resting state (Resting-State Networks).",
-                "Etude de modèles neuro-dynamiques pour la reconnaissance de configurations d'activité à l'état de repos (Resting-State Networks)."),
+                "*Study of neuro-dynamic models for the recognition of activity configurations in the resting state (Resting-State Networks).*",
+                "*Etude de modèles neuro-dynamiques pour la reconnaissance de configurations d'activité à l'état de repos (Resting-State Networks).*"),
             "description": (
                 """
                 GENERAL
@@ -414,7 +503,7 @@ def main():
                 * Creation of a simulation software (optimized for intense calculations)
                 * Confrontation of the model's parameters with biological theories of brain functioning
                 ---
-                COMPETENCES
+                COMPETENCIES
                 """, """
                 GÉNÉRAL
                 * Étude bibliographique de l’état de l’art du domaine
