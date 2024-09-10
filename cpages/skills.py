@@ -11,11 +11,11 @@ def main():
             ): {
             ("Languages", "Langages"): "`Python, SQL, Bash, Shell, MATLAB`",
             ("Environments", "Environnements"): "`VS Code, Jupyter Notebooks, Deepnote, Google Colab, Kaggle, Python Anywhere`",
-            ("Package Management", "Gestion des Packages"): "`Pip, Conda, Virtualenv`",
+            ("Package Management", "Gestion des Packages"): "`Pip, Anaconda, Virtualenv`",
             ("Testing Frameworks", "Frameworks de Test"): "`PyTest, Unittest`",
             ("Version Control", "Contrôle de Version"): "`Git, GitHub, GitLab, Bitbucket`",
-            ("Collaboration Tools", "Outils de Collaboration"): "`Jira, Trello, Slack, MS Teams, Markdown, Confluence`",
-            ("Operating System", "Système d'exploitation"): "`Windows, Linux, macOS`",
+            ("Collaboration Tools", "Outils de Collaboration"): "`Jira, Trello, Slack, Teams, Markdown, Confluence, Office, LaTeX`",
+            ("Operating System", "Système d'exploitation"): "`Windows, Linux (Debian, CentOs, Ubuntu), macOS`",
         },
         (
                 "🔍 **Analysis** 📊 **Data Visualization**",
@@ -23,7 +23,7 @@ def main():
             ): {
             ("Python", "Python"): "`Pandas, NumPy, Matplotlib, Seaborn, Plotly`",
             ("Excel", "Excel"): "`Advanced Functions, Pivot Tables, VBA`",
-            ("BI Tools", "Outils BI"): "`Tableau, Power BI, Dash, Streamlit`",
+            ("BI Tools", "Outils BI"): "`Tableau, Power BI, Dash, Streamlit, Xmind, Gephi`",
             ("Significance Testing", "Test de Signification"): "`dummy, baseline, a priori, p-values, Confidence Intervals`",
             ("Hypothesis Testing", "Test d'Hypothèse"): "`t-tests, ANOVA, Chi-Square Test`",
             ("Statistical Modeling", "Modélisation Statistique"): "`Time Series Analysis, Bayesian Inference, Regression, Probability Distributions`",
@@ -35,7 +35,7 @@ def main():
                 "🤖 **Machine Learning** 💬 **NLP**",
             ): {
             ("Frameworks", "Frameworks"): "`Scikit-learn, TensorFlow, Keras, PyTorch`",
-            ("Libraries", "Bibliothèques"): "`NLTK, SpaCy, Hugging Face Transformers, PIL, Scikit-image`",
+            ("Libraries", "Bibliothèques"): "`NLTK, SpaCy, Hugging Face Transformers, PIL, Scikit-image, BeautifulSoup`",
             ("Supervised Learning", "Apprentissage Supervisé"): "`Linear Regression, Logistic Regression, SVMs, Decision Trees, Random Forests, k-NN`",
             ("Unsupervised Learning", "Apprentissage Non Supervisé"): "`K-Means, PCA, DBSCAN`",
             ("Deep Learning", "Apprentissage Profond"): "`Neural Networks, CNNs, RNNs, Transfer Learning`",
