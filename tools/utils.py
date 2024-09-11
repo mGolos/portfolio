@@ -216,6 +216,9 @@ def add_logo_N_styles():
     st.markdown(
         f"""
         <style>
+            [data-testid="stSidebar"] {{
+                width: 260px;
+            }}
             [data-testid="stSidebarUserContent"] {{
                 background-image: url(data:image/png;base64,{sss['profile_img']});
                 background-repeat: no-repeat;
