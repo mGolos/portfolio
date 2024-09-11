@@ -25,40 +25,39 @@ def main():
                 "Reconnaissance du comportement canin à partir de capteurs intelligent de collier pour le bien-être de l'animal"),
             "description": (
                 """
-                Ongoing...
+                (Under modification)
+                GENERAL
                 * Cleaning, checking and analysing the data
                 * Development, maintenance and optimization of algorithms, pipelines and APIs
+                ---
+                COMPETENCIES
                 """, """
+                (En cours de modification)
                 En cours...
                 * Nettoyer, vérifier et analyser les données
                 * Développement, maintien et optimisation d'algorithmes, pipelines et APIs
+                ---
+                COMPÉTENCES
                 """),
-            "shortskills": (
-                "`Python`, `Time Series`, `Kubernetes`, ...",
-                "`Python`, `Séries temporelles`, `Kubernetes`, ..."),
-            "skills": ("""
-                Python, Git, Plotly, Bash, Linux, Windows, Jupyter, Pandas, Scikit-Learn, 
+            "skills": (
+                """
+                - Technologies: `Python, Git, Plotly, Bash, Linux, Windows, Jupyter, Pandas, Scikit-Learn, 
                 Docker, Seaborn, Kubernetes, Notion, Shell Scripting, Regular expressions, Web applications, 
-                Scaleway, Matplotlib, API REST
-                
-                Webscrapping, Data Analysis, Signal processing, Machine learning, 
+                Scaleway, Matplotlib, API RESTx`
+                - Expertise: `Webscrapping, Data Analysis, Signal processing, Machine learning, 
                 Natural Language Processing, Numerical Simulation, Classification, 
                 Scientific analysis, Algorithmes, Regression modelling, Data cleaning, 
-                Time Series, Problem solving, Data Visualization, Data exploration
-                
-                Agiles methods, R&D, DevOps, Independant
-                """, """
-                Python, Git, Plotly, Bash, Linux, Windows, Jupyter, Pandas, Scikit-Learn, 
+                Time Series, Problem solving, Data Visualization, Data exploration`
+                - Context: `Agiles methods, R&D, DevOps, Independant`""", 
+                """
+                - Technologies : `Python, Git, Plotly, Bash, Linux, Windows, Jupyter, Pandas, Scikit-Learn, 
                 Docker, Seaborn, Kubernetes, Notion, Shell Scripting, Expressions régulières, Applications web, 
-                Scaleway, Matplotlib, API REST
-                
-                Grattage de données, Analyse de données, Traitement du signal, Apprentissage automatique, 
+                Scaleway, Matplotlib, API REST`
+                - Savoir-faire : `Grattage de données, Analyse de données, Traitement du signal, Apprentissage automatique, 
                 Traitement automatique du langage naturel, Simulation Numérique, Classification, 
                 Analyses scientifiques, Algorithmes, Modèles de régression, Nettoyage de données, 
-                Séries temporelles, Résolution de problèmes, Visualisation de données, Exploration des données
-                
-                Méthodes agiles, R&D, DevOps, Indépendant
-                """),
+                Séries temporelles, Résolution de problèmes, Visualisation de données, Exploration des données`
+                - Contexte : `Méthodes agiles, R&D, DevOps, Indépendant`"""),
         },
         "lindera": {
             "name": "Lindera",
