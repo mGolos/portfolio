@@ -406,7 +406,7 @@ def always():
             """
         },
     )
-    once_layout_toast()
+    # once_layout_toast()
     once_load_images()
     with st.sidebar:
         sidebar()
