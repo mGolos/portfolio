@@ -106,14 +106,12 @@ def main():
                 "*Intermédiaire entre les équipes Clinique et Data Science pour le développement d'un dispositif médical de prédiction de chute des personnes agées.*"),
             "description": (
                 """
-                (Under modification)
                 GENERAL
                 * Cleaning / Checking / Analysing the data
                 * Code Refactoring / Optimization
                 ---
                 COMPETENCIES
                 """, """
-                (En cours de modification)
                 GÉNÉRAL
                 * Nettoyer, vérifier et analyser les données
                 * Refactorisation et optimisation de code
@@ -145,7 +143,6 @@ def main():
                 "*Amélioration de la gestion des risques Cyber par l'utilisation des données pour la quantification.*"),
             "description": (
                 """
-                (Under modification)
                 GENERAL
                 * Improve Cyber Risk Management and Reporting for IT or CISO
                 * Study, Extract, Clean, Manage and Analyze the data
@@ -155,7 +152,6 @@ def main():
                 ---
                 COMPETENCIES
                 """, """
-                (En cours de modification)
                 GÉNÉRAL
                 * Améliorer la Gestion et le rapport de risque Cyber pour les IT ou RSSI
                 * Étudier, Extraire, Nettoyer, Gérer et Analyser les données
