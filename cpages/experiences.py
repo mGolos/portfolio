@@ -21,8 +21,10 @@ def main():
                 "**1 year** / *2023* / **Lille, France**",
                 "**1 an** / *2023* / **Lille**"),
             "short": (
-                "*Verification, maintenance and development of pipelines and algorithms for canine behavior recognition from intelligent sensors for the well-being of the animal.*",
-                "*Vérification, maintien et développement des pipelines et algorithmes permettant la reconnaissance du comportement canin à partir de capteurs intelligents pour le bien-être de l'animal.*"),
+                """`R&D` · `Modeling` · `Analysis` · `BI` · `CI/CD` · `Software Development`  
+                *Verification, maintenance and development of pipelines and algorithms for canine behavior recognition from intelligent sensors for the well-being of the animal.*""",
+                """`R&D` · `Modélisation ` · `Analyse` · `BI` · `CI/CD` · `Développement Logiciel`  
+                *Vérification, maintien et développement des pipelines et algorithmes permettant la reconnaissance du comportement canin à partir de capteurs intelligents pour le bien-être de l'animal.*"""),
             "description": (
                 """
                 GENERAL
@@ -102,8 +104,10 @@ def main():
                 "**2 months** / *2023* / **Italy and Germany**",
                 "**2 mois** / *2023* / **Italie et Allemagne**"),
             "short": (
-                "*Intermediate between Clinical and Data Science teams for the development of a medical device to predict falls in elderly people.*",
-                "*Intermédiaire entre les équipes Clinique et Data Science pour le développement d'un dispositif médical de prédiction de chute des personnes agées.*"),
+                """`R&D` · `Healthcare` · `Analysis`  
+                *Intermediate between Clinical and Data Science teams for the development of a medical device to predict falls in elderly people.*""",
+                """`R&D` · `Médical` · `Analyse`  
+                *Intermédiaire entre les équipes Clinique et Data Science pour le développement d'un dispositif médical de prédiction de chute des personnes agées.*"""),
             "description": (
                 """
                 GENERAL
@@ -139,8 +143,10 @@ def main():
                 "**9 months** / *2022* / **France and Vietnam**",
                 "**9 mois** / *2022* / **France et Vietnam**"),
             "short": (
-                "*Improving the Cyber Risk Management using data for quantification.*",
-                "*Amélioration de la gestion des risques Cyber par l'utilisation des données pour la quantification.*"),
+                """`R&D` · `Cybersecurity` · `Analysis` · `Software Development`  
+                *Improve Cyber Risk Management for IT or RSSI by analyzing and managing data, developing information extraction tools.*""",
+                """`R&D` · `Cybersecurité` · `Analyse` · `Développement Logiciel`  
+                *Améliorer la gestion des risques cyber pour les IT ou RSSI en analysant et gérant les données, en développant des outils d'extraction de l'information.*"""),
             "description": (
                 """
                 GENERAL
@@ -192,8 +198,10 @@ def main():
                 "**8 month** / *2021* / **Lille, France**",
                 "**8 mois** / *2021* / **Lille**"),
             "short": (
-                "*A variety of concrete cases of companies managed independently with a weekly mentoring and systematically submitted reports, versioned code and presentations to a jury for validation.*",
-                "*Différents cas concrets d’entreprise gérés indépendamment avec un mentorat hebdomadaire et soumis systématiquement par des rapports, codes versionnés et présentations en face d’un jury pour validation.*"),
+                """`Modeling` · `Healthcare` · `Energy` · `E-commerce` · `Computer Vision` · `Finance` · `Software Development`  
+                *A variety of concrete cases of companies managed independently with a weekly mentoring and systematically submitted reports, versioned code and presentations to a jury for validation.*""",
+                """`Modélisation` · `Santé` · `Énergie` · `E-commerce` · `Analyse d'Image` · `Finances` · `Développement Logiciel`  
+                *Différents cas concrets d’entreprise gérés indépendamment avec un mentorat hebdomadaire et soumis systématiquement par des rapports, codes versionnés et présentations en face d’un jury pour validation.*"""),
             "description": (
                 """
                 DEVELOPING AN APPLICATION FOR PUBLIC HEALTH  
@@ -337,8 +345,10 @@ def main():
                 "**7 months** / *2019* / **Paris, France**",
                 "**7 mois** / *2019* / **St-Germain-en-Laye**"),
             "short": (
-                "*Implementation and automation of an environment for a web-based platform to connect professionals with chartered accountants.*",
-                "*Implémentation et automatisation de l'environnement pour une interface web de mise en relation entre professionnels et experts comptables.*"),
+                """`Accounting Expertise` · `CI/CD` · `Web Design` · `Software Development`  
+                *Implementation and automation of an environment for a web-based platform to connect professionals with chartered accountants.*""",
+                """`Expertise Comptable` · `CI/CD` · `Conception Web` · `Développement Logiciel`  
+                *Implémentation et automatisation de l'environnement pour une interface web de mise en relation entre professionnels et experts comptables.*"""),
             "description": (
                 """
                 WORKING IN AGILE SCRUM METHODOLOGY
@@ -418,10 +428,12 @@ def main():
                 "**4 years** / *2013* / **Marseille, France**",
                 "**4 ans** / *2013* / **Marseille**"),
             "short": (
-                """*Experience in computational biology for neuroscience, with deep learning projects, neural model creation and signal processing.
+                """`Research` · `Neurosciences` · `Modeling` · `Simulation` · `Epilepsy`  
+                *Experience in computational biology for neuroscience, with deep learning projects, neural model creation and signal processing.
                 Involved in various literature reviews, data treatment tools creations and visualizations.*
                 """, 
-                """*Expérience dans le domaine de la biologie computationnelle en neurosciences, avec des projets d'apprentissage approfondi, création de modèles neuronaux et traitement du signal.
+                """`Recherche` · `Neurosciences` · `Modélisation` · `Simulation` · `Epilepsie`  
+                *Expérience dans le domaine de la biologie computationnelle en neurosciences, avec des projets d'apprentissage approfondi, création de modèles neuronaux et traitement du signal.
                 Impliqué dans diverses études bibliographiques, créations d'outils de traitements de données et visualisations.*"""),
             "description": (
                 """
@@ -516,8 +528,10 @@ def main():
                 "**9 months** / *2013* / **Marseille, France**",
                 "**9 mois** / *2013* / **Marseille**"),
             "short": (
-                "*Study of neuro-dynamic models for the recognition of activity configurations in the resting state (Resting-State Networks).*",
-                "*Etude de modèles neuro-dynamiques pour la reconnaissance de configurations d'activité à l'état de repos (Resting-State Networks).*"),
+                """`Research` · `Neurosciences` · `Modeling` · `Simulation`  
+                *Study of neuro-dynamic models for the recognition of activity configurations in the resting state (Resting-State Networks).*""",
+                """`Recherche` · `Neurosciences` · `Modélisation` · `Simulation`  
+                *Etude de modèles neuro-dynamiques pour la reconnaissance de configurations d'activité à l'état de repos (Resting-State Networks).*"""),
             "description": (
                 """
                 GENERAL
