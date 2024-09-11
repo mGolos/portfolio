@@ -109,52 +109,51 @@ def main():
                 "**9 months** / *2022* / **France and Vietnam**",
                 "**9 mois** / *2022* / **France et Vietnam**"),
             "short": (
-                "Improving the Cyber Risk Management using data for quantification",
-                "Amélioration de la gestion des risques Cyber par l'utilisation des données pour la quantification"),
+                "*Improving the Cyber Risk Management using data for quantification.*",
+                "*Amélioration de la gestion des risques Cyber par l'utilisation des données pour la quantification.*"),
             "description": (
                 """
-                Ongoing...
+                (Under modification)
+                GENERAL
                 * Improve Cyber Risk Management and Reporting for IT or CISO
                 * Study, Extract, Clean, Manage and Analyze the data
                 * Identify gaps and use data for risk quantification
                 * Creation/Refactoring/Optimization of code to process the data
                 * Studying the state of the art for imputation and classification
+                ---
+                COMPETENCIES
                 """, """
-                En cours...
+                (En cours de modification)
+                GÉNÉRAL
                 * Améliorer la Gestion et le rapport de risque Cyber pour les IT ou RSSI
                 * Étudier, Extraire, Nettoyer, Gérer et Analyser les données
                 * Création, Refactorisation et Optimisation de code
                 * Développement d'outils
                 * État de l’art du domaine
+                ---
+                COMPÉTENCES
                 """),
-            "shortskills": (
-                "`Python`, `Unstructured data`, `NLP`, ...",
-                "`Python`, `Données non structurées`, `NLP`, ..."),
-            "skills": ("""
-                Python, Git, GitLab, Matplotlib, Bash, Linux, Windows, Jupyter, Pandas, Django, 
+            "skills": (
+                """
+                - Technologies: `Python, Git, GitLab, Matplotlib, Bash, Linux, Windows, Jupyter, Pandas, Django, 
                 Docker, Seaborn, Kubernetes, OVH, Shell Scripting, Regular expressions, Web applications, 
                 API REST, Prefect, NLTK, Spacy, JIRA, AWS, PyTorch, Plotly, Microsoft Azure, MySQL, 
-                Scikit-Learn, NoSQL
-            
-                Webscrapping, Natural Language Processing, Data Analysis, Adaptation, 
+                Scikit-Learn, NoSQL`
+                - Expertise: `Webscrapping, Natural Language Processing, Data Analysis, Adaptation, 
                 Unstructured data, Imputation, Regression modelling, Classification, Algorithmes, 
                 Machine Learning, Deep Learning, Transfert Learning, Problem solving, Partitioning, 
-                Data visualization, Research, Data exploration, Data cleaning
-                
-                Agiles methods, R&D, DevOps, Independant
-                """, """
-                Python, Git, GitLab, Matplotlib, Bash, Linux, Windows, Jupyter, Pandas, Django, 
+                Data visualization, Research, Data exploration, Data cleaning`
+                - Context: `Agiles methods, R&D, DevOps, Independant`""", 
+                """
+                - Technologies : `Python, Git, GitLab, Matplotlib, Bash, Linux, Windows, Jupyter, Pandas, Django, 
                 Docker, Seaborn, Kubernetes, OVH, Shell Scripting, Expressions régulières, Applications web, 
                 API REST, Prefect, NLTK, Spacy, JIRA, AWS, PyTorch, Plotly, Microsoft Azure, MySQL, 
-                Scikit-Learn, NoSQL
-            
-                Grattage de données, Traitement automatique du langage naturel, Analyse de données, Adaptation, 
+                Scikit-Learn, NoSQL`
+                - Savoir-faire : `Grattage de données, Traitement automatique du langage naturel, Analyse de données, Adaptation, 
                 Données non structurées, Imputation, Modèles de régression, Classification, Algorithmes, 
                 Machine Learning, Deep Learning, Transfert Learning, Résolution de problèmes, Partitionnement, 
-                Visualisation de données, Recherche, Exploration des données, Nettoyage de données
-                
-                Méthodes agiles, R&D, DevOps, Indépendant
-                """),
+                Visualisation de données, Recherche, Exploration des données, Nettoyage de données`
+                - Contexte : `Méthodes agiles, R&D, DevOps, Indépendant`"""),
         },
         "oc": {
             "name": "OpenClassrooms",
