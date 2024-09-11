@@ -21,21 +21,55 @@ def main():
                 "**1 year** / *2023* / **Lille, France**",
                 "**1 an** / *2023* / **Lille**"),
             "short": (
-                "Dog behaviour recognition from smart necklace sensors for the well-being of the animal",
-                "Reconnaissance du comportement canin à partir de capteurs intelligent de collier pour le bien-être de l'animal"),
+                "*Verification, maintenance and development of pipelines and algorithms for canine behavior recognition from intelligent sensors for the well-being of the animal.*",
+                "*Vérification, maintien et développement des pipelines et algorithmes permettant la reconnaissance du comportement canin à partir de capteurs intelligents pour le bien-être de l'animal.*"),
             "description": (
                 """
-                (Under modification)
                 GENERAL
-                * Cleaning, checking and analysing the data
-                * Development, maintenance and optimization of algorithms, pipelines and APIs
+                * Study of solutions for storing collected data and tools for analyzing this data
+                * Realization of studies illustrating the benefits of algorithms and specific problems associated with dog life
+                * Conducting tests on the relevance of solutions
+                * Maintaining documentation, tools, and actions
+                * Technological watch
+                ---
+                MODELING
+                * Definition and implementation of production environment to meet expectations and requirements in terms of availability, service quality, and security
+                * Development, maintenance, and optimization of algorithms, pipelines, and APIs
+                * Realization of studies illustrating the performance of prediction models
+                * Optimization and documentation for access to different pre-treatments and models
+                * Cleaning, checking, and analyzing data for validation
+                * Switching environment to Serverless and managing Scaleway
+                ---
+                ANALYSES & BI
+                * Recognition of unusual animal behaviors according to specific metrics or criteria
+                * Creation of an interactive web application for visualizing different types and sources of media and signals
+                * Creation of a dashboard from various analytics sources
+                * Implementation of the procedure for capturing new data
+                * Optimization of the data collection protocol
                 ---
                 COMPETENCIES
                 """, """
-                (En cours de modification)
-                En cours...
-                * Nettoyer, vérifier et analyser les données
+                GÉNÉRAL
+                * Étude de solutions permettant le stockage des données collectées et des outils permettant l'analyse de ces donées
+                * Réalisation d'études illustrant le bénéfice des algorithmes et des problématiques particulières associés à la vie du chien
+                * Conduite de tests sur la pertinence des solutions
+                * Maintien de la documentation, CIR (Crédit d'Impôt Recherche), des outils et actions
+                * Veille technologique
+                ---
+                MODÉLISATION
+                * Définition et mise en oeuvre de l'environnement technique de production pour répondre aux attentes et éxigences en terme de disponibilité, de qualité de services et de sécurité
                 * Développement, maintien et optimisation d'algorithmes, pipelines et APIs
+                * Réalisation d'études permettant d'illustrer la performance des modèles de prédiction
+                * Optimisation et documentation pour l'accès aux différents pré-traitements et modèles
+                * Nettoyage, vérification et analyses des données pour validation
+                * Bascule de l'environnement vers du Serverless et gestion de Scaleway
+                ---
+                ANALYSES & BI
+                * Reconnaissance de comportements inhabituels de l'animal selon des métriques ou critères particuliers
+                * Création d'une application web intéractive pour la visualisation des différentes types et sources de média et signaux
+                * Création d'un tableau de bord à partir de différentes sources d'analytics
+                * Mise en oeuvre de la procédure de capture de nouvelles données
+                * Optimisation du protocole de collecte des données
                 ---
                 COMPÉTENCES
                 """),
@@ -43,7 +77,7 @@ def main():
                 """
                 - Technologies: `Python, Git, Plotly, Bash, Linux, Windows, Jupyter, Pandas, Scikit-Learn, 
                 Docker, Seaborn, Kubernetes, Notion, Shell Scripting, Regular expressions, Web applications, 
-                Scaleway, Matplotlib, API RESTx`
+                Scaleway, Matplotlib, API REST`
                 - Expertise: `Webscrapping, Data Analysis, Signal processing, Machine learning, 
                 Natural Language Processing, Numerical Simulation, Classification, 
                 Scientific analysis, Algorithmes, Regression modelling, Data cleaning, 
@@ -68,8 +102,8 @@ def main():
                 "**2 months** / *2023* / **Italy and Germany**",
                 "**2 mois** / *2023* / **Italie et Allemagne**"),
             "short": (
-                "Intermediate between Clinical and Data Science",
-                "Intermédiaire entre les équipes Clinique et Data Science"),
+                "*Intermediate between Clinical and Data Science teams for the development of a medical device to predict falls in elderly people.*",
+                "*Intermédiaire entre les équipes Clinique et Data Science pour le développement d'un dispositif médical de prédiction de chute des personnes agées.*"),
             "description": (
                 """
                 (Under modification)
@@ -80,7 +114,7 @@ def main():
                 COMPETENCIES
                 """, """
                 (En cours de modification)
-                En cours...
+                GÉNÉRAL
                 * Nettoyer, vérifier et analyser les données
                 * Refactorisation et optimisation de code
                 ---
