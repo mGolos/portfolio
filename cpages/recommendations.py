@@ -4,14 +4,13 @@ sss = st.session_state
 
 
 def main():
-    lang = sss['language']
-    filepath1 = f"images/rl1_{lang}.jpg"
-    filepath2 = f"images/rl2_{lang}.jpg"
+    rls = ["XRator", "OC", "INS"]
+    filepaths = [f"images/rl{i}_{sss['language'] }.jpg" for i in range(len(rls))][::-1]
     
     st.header("Recommandations" if sss["lg_key"] else "Recommendations", anchor='recommendations', divider="orange")
-    tab1, tab2 = st.tabs(["XRator", "INS"])
-    tab1.image(filepath1)
-    tab2.image(filepath2)
+    tabs = st.tabs(rls)
+    for tab, filepath in zip(tabs, filepaths):
+        tab.image(filepath)
 
 
 if __name__ == "__main__":
