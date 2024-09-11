@@ -73,32 +73,31 @@ def main():
                 "Intermédiaire entre les équipes Clinique et Data Science"),
             "description": (
                 """
-                Ongoing...
+                (Under modification)
+                GENERAL
                 * Cleaning / Checking / Analysing the data
                 * Code Refactoring / Optimization
+                ---
+                COMPETENCIES
                 """, """
+                (En cours de modification)
                 En cours...
                 * Nettoyer, vérifier et analyser les données
                 * Refactorisation et optimisation de code
+                ---
+                COMPÉTENCES
                 """),
-            "shortskills": (
-                "`Python`, `Unstructured data`, `Liaison agent`, ...",
-                "`Python`, `Données non structurées`, `Agent de liaison`, ..."),
-            "skills": ("""
-                Python, Git, Matplotlib, Bash, Linux, Windows, Jupyter, Pandas, Microsoft Excel
-            
-                Data Analysis, Adaptation, Unstructured data, Deep Learning, Problem solving, 
-                Data Visualization, Research, Data exploration, Data cleaning
-                
-                Agiles methods, Liaison agent
-                """, """
-                Python, Git, Matplotlib, Bash, Linux, Windows, Jupyter, Pandas, Microsoft Excel
-            
-                Analyse de données, Adaptation, Données non structurées, Deep Learning, Résolution de problèmes, 
-                Visualisation de données, Recherche, Exploration des données, Nettoyage de données
-                
-                Méthodes agiles, Agent de liaison
-                """),
+            "skills": (
+                """
+                - Technologies: `Python, Git, Matplotlib, Bash, Linux, Windows, Jupyter, Pandas, Microsoft Excel`
+                - Expertise: `Data Analysis, Adaptation, Unstructured data, Deep Learning, Problem solving, 
+                Data Visualization, Research, Data exploration, Data cleaning`
+                - Context: `Agiles methods, Liaison agent`""", 
+                """
+                - Technologies : `Python, Git, Matplotlib, Bash, Linux, Windows, Jupyter, Pandas, Microsoft Excel`
+                - Savoir-faire : `Analyse de données, Adaptation, Données non structurées, Deep Learning, Résolution de problèmes, 
+                Visualisation de données, Recherche, Exploration des données, Nettoyage de données`
+                - Contexte : `Méthodes agiles, Agent de liaison`"""),
         },
         "xrator": {
             "name": "XRator",
