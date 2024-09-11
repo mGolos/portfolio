@@ -235,6 +235,9 @@ def add_logo_N_styles():
             [data-testid="stHeader"] {{
                 height: 0;
             }}
+            [data-testid="baseButton-headerNoPadding"] {{
+                color: #ed6f13;
+            }}
             [class=".stPageLink"]::before {{
                 margin-top: -0.5rem;
                 margin-bottom: -0.5rem;
@@ -406,6 +409,7 @@ def always():
             """
         },
     )
+    # st.logo(image='images/empty.png', icon_image='images/logoico.png')
     # once_layout_toast()
     once_load_images()
     with st.sidebar:
