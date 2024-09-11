@@ -87,7 +87,7 @@ def main():
 
     st.header(
         "Compétences" if sss["lg_key"] else 'Hard Skills', 
-        anchor='education', divider="orange")
+        anchor='skills', divider="orange")
         
     for exp, sub in dico.items():
         with st.expander(exp[sss["lg_key"]], expanded=True):
