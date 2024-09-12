@@ -595,11 +595,11 @@ def main():
         if sss['layout'] == 'wide':
             img, title = container.columns((1,4), vertical_alignment='center')
             img.image(sss['images'][job_tag.replace("2", "")])
-            d_lines[job_tag] = title, container.empty(), container.empty(), container.empty(), container.empty()
+            d_lines[job_tag] = title, container.empty(), container.empty()
         else:
-            img, txt = container.columns((1,5))
+            img, txt = container.columns((1,4.5))
             img.image(sss['images'][job_tag.replace("2", "")])
-            d_lines[job_tag] = txt.empty(), txt.empty(), txt.empty(), txt.empty(), txt.empty()
+            d_lines[job_tag] = txt.empty(), txt.empty(), txt.empty()
             container.write('---')
         
     # Content
@@ -611,16 +611,12 @@ def main():
         c = d_lines[job_tag]
         c[0].write('#### ' + job['title'][sss["lg_key"]])
         c[1].markdown(job['dateplace'][sss["lg_key"]])
-        with c[2].expander(job['short'][sss["lg_key"]]):
+        with c[2].expander(job['short'][sss["lg_key"]] + '\n\n...'):
             st.write(job['description'][sss["lg_key"]])
-            st.markdown(job['skills'][sss["lg_key"]].replace(', \n', '` · `').replace(', ', '` · `'))
-        # c[2].markdown(job['short'][sss["lg_key"]])
-        # c[3].expander("Description").write(job['description'][sss["lg_key"]])
-        # (
-        #     c[4]
-        #     .expander('Outils Techniques' if sss["lg_key"] else 'Technical Tools')
-        #     .write(job['skills'][sss["lg_key"]])
-        # )
+            st.write(job['skills'][sss["lg_key"]].replace(', \n', '` · `').replace(', ', '` · `'))
+        # with c[2].popover(job['short'][sss["lg_key"]] + '\n\n...', use_container_width=True):
+        #     st.write(job['description'][sss["lg_key"]])
+        #     st.write(job['skills'][sss["lg_key"]].replace(', \n', '` · `').replace(', ', '` · `'))
 
 
 if __name__ == "__main__":

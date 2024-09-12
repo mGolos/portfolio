@@ -98,7 +98,7 @@ def main():
             img.image(sss['images'][edu_tag])
             d_lines[edu_tag] = title, container.empty(), container.empty()
         else:
-            img, txt = container.columns((1,5))
+            img, txt = container.columns((1,4.5))
             img.image(sss['images'][edu_tag])
             d_lines[edu_tag] = txt.empty(), txt.empty(), txt.empty()
             container.write('---')
