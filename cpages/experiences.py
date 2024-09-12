@@ -27,14 +27,14 @@ def main():
                 *Vérification, maintien et développement des pipelines et algorithmes permettant la reconnaissance du comportement canin à partir de capteurs intelligents pour le bien-être de l'animal.*"""),
             "description": (
                 """
-                GENERAL
+                **GENERAL**
                 * Study of solutions for storing collected data and tools for analyzing this data
                 * Realization of studies illustrating the benefits of algorithms and specific problems associated with dog life
                 * Conducting tests on the relevance of solutions
                 * Maintaining documentation, tools, and actions
                 * Technological watch
                 ---
-                MODELING
+                **MODELING**
                 * Definition and implementation of production environment to meet expectations and requirements in terms of availability, service quality, and security
                 * Development, maintenance, and optimization of algorithms, pipelines, and APIs
                 * Realization of studies illustrating the performance of prediction models
@@ -42,23 +42,23 @@ def main():
                 * Cleaning, checking, and analyzing data for validation
                 * Switching environment to Serverless and managing Scaleway
                 ---
-                ANALYSES & BI
+                **ANALYSES & BI**
                 * Recognition of unusual animal behaviors according to specific metrics or criteria
                 * Creation of an interactive web application for visualizing different types and sources of media and signals
                 * Creation of a dashboard from various analytics sources
                 * Implementation of the procedure for capturing new data
                 * Optimization of the data collection protocol
                 ---
-                COMPETENCIES
+                **COMPETENCIES**
                 """, """
-                GÉNÉRAL
+                **GÉNÉRAL**
                 * Étude de solutions permettant le stockage des données collectées et des outils permettant l'analyse de ces donées
                 * Réalisation d'études illustrant le bénéfice des algorithmes et des problématiques particulières associés à la vie du chien
                 * Conduite de tests sur la pertinence des solutions
                 * Maintien de la documentation, CIR (Crédit d'Impôt Recherche), des outils et actions
                 * Veille technologique
                 ---
-                MODÉLISATION
+                **MODÉLISATION**
                 * Définition et mise en oeuvre de l'environnement technique de production pour répondre aux attentes et éxigences en terme de disponibilité, de qualité de services et de sécurité
                 * Développement, maintien et optimisation d'algorithmes, pipelines et APIs
                 * Réalisation d'études permettant d'illustrer la performance des modèles de prédiction
@@ -66,14 +66,14 @@ def main():
                 * Nettoyage, vérification et analyses des données pour validation
                 * Bascule de l'environnement vers du Serverless et gestion de Scaleway
                 ---
-                ANALYSES & BI
+                **ANALYSES & BI**
                 * Reconnaissance de comportements inhabituels de l'animal selon des métriques ou critères particuliers
                 * Création d'une application web intéractive pour la visualisation des différentes types et sources de média et signaux
                 * Création d'un tableau de bord à partir de différentes sources d'analytics
                 * Mise en oeuvre de la procédure de capture de nouvelles données
                 * Optimisation du protocole de collecte des données
                 ---
-                COMPÉTENCES
+                **COMPÉTENCES**
                 """),
             "skills": (
                 """
@@ -110,17 +110,17 @@ def main():
                 *Intermédiaire entre les équipes Clinique et Data Science pour le développement d'un dispositif médical de prédiction de chute des personnes agées.*"""),
             "description": (
                 """
-                GENERAL
+                **GENERAL**
                 * Cleaning / Checking / Analysing the data
                 * Code Refactoring / Optimization
                 ---
-                COMPETENCIES
+                **COMPETENCIES**
                 """, """
-                GÉNÉRAL
+                **GÉNÉRAL**
                 * Nettoyer, vérifier et analyser les données
                 * Refactorisation et optimisation de code
                 ---
-                COMPÉTENCES
+                **COMPÉTENCES**
                 """),
             "skills": (
                 """
@@ -149,23 +149,23 @@ def main():
                 *Améliorer la gestion des risques cyber pour les IT ou RSSI en analysant et gérant les données, en développant des outils d'extraction de l'information.*"""),
             "description": (
                 """
-                GENERAL
+                **GENERAL**
                 * Improve Cyber Risk Management and Reporting for IT or CISO
                 * Study, Extract, Clean, Manage and Analyze the data
                 * Identify gaps and use data for risk quantification
                 * Creation/Refactoring/Optimization of code to process the data
                 * Studying the state of the art for imputation and classification
                 ---
-                COMPETENCIES
+                **COMPETENCIES**
                 """, """
-                GÉNÉRAL
+                **GÉNÉRAL**
                 * Améliorer la Gestion et le rapport de risque Cyber pour les IT ou RSSI
                 * Étudier, Extraire, Nettoyer, Gérer et Analyser les données
                 * Création, Refactorisation et Optimisation de code
                 * Développement d'outils
                 * État de l’art du domaine
                 ---
-                COMPÉTENCES
+                **COMPÉTENCES**
                 """),
             "skills": (
                 """
@@ -204,7 +204,7 @@ def main():
                 *Différents cas concrets d’entreprise gérés indépendamment avec un mentorat hebdomadaire et soumis systématiquement par des rapports, codes versionnés et présentations en face d’un jury pour validation.*"""),
             "description": (
                 """
-                DEVELOPING AN APPLICATION FOR PUBLIC HEALTH  
+                **DEVELOPING AN APPLICATION FOR PUBLIC HEALTH**  
                 * Proposal for an application based on nutritional data
                 * Data management / Cleaning
                 * Exploring data
@@ -212,14 +212,14 @@ def main():
                 * Feature engineering (quantitative and qualitative)
                 * Imputation (KNN Imputer), Classification (SGD)
                 ---
-                ANTICIPATING ELECTRICITY CONSUMPTION NEEDS IN BUILDINGS  
+                **ANTICIPATING ELECTRICITY CONSUMPTION NEEDS IN BUILDINGS**  
                 *Predicting electricity consumption and carbon emissions for municipal buildings in Seattle*
                 * Merging / Cleaning databases
                 * Exploring data
                 * Feature engineering (quantitative and qualitative)
                 * Imputation and Regression (Linear, SVR, Random Forest, Gradient Boosting)
                 ---
-                SEGMENTING ONLINE SHOP CUSTOMERS  
+                **SEGMENTING ONLINE SHOP CUSTOMERS**  
                 *Providing marketing teams with a segmentable client segmentation to optimize communication campaigns*
                 * Merging / Cleaning multiple databases
                 * Exploring data
@@ -227,7 +227,7 @@ def main():
                 * Unsupervised classification (k-Means, Hierarchical Agglomerative Clustering, DBSCAN)
                 * Hyperparameter optimization
                 ---
-                AUTOMATICALLY CATEGORIZING QUESTIONS  
+                **AUTOMATICALLY CATEGORIZING QUESTIONS**  
                 *Developing a system to automatically tag user questions on Stack Overflow*
                 * Data cleaning (NLTK) and exploration
                 * Feature engineering (quantitative and qualitative)
@@ -239,7 +239,7 @@ def main():
                 * Implementing more recent models (XR-Linear, XR-Transformer)
                 * Creating an API in the form of an online application (Streamlit)
                 ---
-                CLASSIFYING IMAGES USING DEEP LEARNING ALGORITHMS  
+                **CLASSIFYING IMAGES USING DEEP LEARNING ALGORITHMS**  
                 *Using Deep Learning models for an animal association wanting to automate breed identification*
                 * Image processing
                 * Supervised classification with multiple classes
@@ -248,7 +248,7 @@ def main():
                 * Hyperparameter optimization
                 * Creating an API in the form of an online application (Streamlit)
                 ---
-                PARTICIPATING IN A KAGGLE COMPETITION  
+                **PARTICIPATING IN A KAGGLE COMPETITION**  
                 *Predicting cryptocurrency markets based on data collected by G-Research*
                 * State-of-the-art study
                 * Signal processing
@@ -257,9 +257,9 @@ def main():
                 * Hyperparameter optimization
                 * Using and contributing to other kernels
                 ---
-                COMPETENCIES
+                **COMPETENCIES**
                 """, """
-                CONCEPTION D’UNE APPLICATION AU SERVICE DE LA SANTE PUBLIQUE  
+                **CONCEPTION D’UNE APPLICATION AU SERVICE DE LA SANTE PUBLIQUE**  
                 *Proposition d’application basée sur des données nutritionnelles*
                 * Gestion / Nettoyage de la base de données
                 * Exploration de données
@@ -267,14 +267,14 @@ def main():
                 * Ingénierie des caractéristiques (quantitatives et qualitatives)
                 * Imputation (KNN Imputer), Classification (SGD)
                 ---
-                ANTICIPER LES BESOINS EN CONSOMMATION ÉLECTRIQUE DE BÂTIMENTS  
+                **ANTICIPER LES BESOINS EN CONSOMMATION ÉLECTRIQUE DE BÂTIMENTS**  
                 *Prédiction de consommation électrique et émissions de carbone pour des bâtiments municipaux de la ville de Seattle*
                 * Fusion / Nettoyage des bases de données
                 * Exploration de données
                 * Ingénierie des caractéristiques (quantitatives et qualitatives)
                 * Imputation et Régression (Linéaire, SVR, Random Forest, Gradient Boosting)
                 ---
-                SEGMENTER DES CLIENTS D'UN SITE E-COMMERCE  
+                **SEGMENTER DES CLIENTS D'UN SITE E-COMMERCE**  
                 *Fournir aux équipes marketing une segmentation activable de leurs clients pour optimiser les campagnes de communication*
                 * Fusion / Nettoyage de multiples bases de données
                 * Exploration de données
@@ -282,7 +282,7 @@ def main():
                 * Classification non supervisée (k-Means, Hiérarchique agglomératif, DBSCAN)
                 * Optimisation des hyperparamètres
                 ---
-                CATÉGORISER AUTOMATIQUEMENT DES QUESTIONS  
+                **CATÉGORISER AUTOMATIQUEMENT DES QUESTIONS**  
                 *Développer un système permettant de tagger automatiquement les questions des utilisateurs sur le site Stack Overflow*
                 * Nettoyage (NLTK) et exploration des données
                 * Ingénierie des caractéristiques (quantitatives et qualitatives) 
@@ -294,7 +294,7 @@ def main():
                 * Implémentation de modèles plus récents (XR-Linear, XR-Transformer)
                 * Création d’API sous forme d’une application en ligne (Streamlit)
                 ---
-                CLASSER DES IMAGES À L'AIDE D'ALGORITHMES DE DEEP LEARNING  
+                **CLASSER DES IMAGES À L'AIDE D'ALGORITHMES DE DEEP LEARNING**  
                 *Utilisation de modèles de Deep Learning pour une association animalière souhaitant automatiser l'identification de races*
                 * Traitement d’images
                 * Classification supervisée à classes multiples
@@ -303,7 +303,7 @@ def main():
                 * Optimisation des hyperparamètres
                 * Création d’API sous forme d’une application en ligne (Streamlit)
                 ---
-                PARTICIPER À UNE COMPETITION KAGGLE  
+                **PARTICIPER À UNE COMPETITION KAGGLE**  
                 *Prédiction du marché des crypto-monnaies à partir des données amassées par G-Research*
                 * État de l’art
                 * Traitement du signal
@@ -312,7 +312,7 @@ def main():
                 * Optimisation des hyperparamètres
                 * Utilisation et contribution aux autres kernels
                 ---
-                COMPÉTENCES
+                **COMPÉTENCES**
                 """),
             "skills": (
                 """
@@ -351,7 +351,7 @@ def main():
                 *Implémentation et automatisation de l'environnement pour une interface web de mise en relation entre professionnels et experts comptables.*"""),
             "description": (
                 """
-                WORKING IN AGILE SCRUM METHODOLOGY
+                **WORKING IN AGILE SCRUM METHODOLOGY**
                 * Sprint Planning Organisation and ticket allocation from Backlog,
                 * Daily meeting for progress, blockers, updates, and Kanban tracking
                 * Grooming (Story Review) meeting to analyze tickets, prepare upcoming sprints
@@ -359,7 +359,7 @@ def main():
                 * Sprint Review meeting to analyze completed sprint
                 * Demo and Retrospective
                 --- 
-                COLLABORATIVE TASKS WITH TEAMS
+                **COLLABORATIVE TASKS WITH TEAMS**
                 * Participation in technology choices, adoption of frameworks and tools
                 * Development of applications for evolution and correction
                 * Creation, modification of pages and forms based on User Stories (US)
@@ -368,7 +368,7 @@ def main():
                 * Migration of Pipelines to Controllers
                 * Control of versioning, deployment, and review of technical documentation and code
                 --- 
-                INDIVIDUAL PROJECTS AND TASKS
+                **INDIVIDUAL PROJECTS AND TASKS**
                 * Creation of a development environment adaptable to all system environments
                 * Creation, development of code under VS Code in Python / Django / HTML5 / CSS3
                 * Optimization of different parts and types of code
@@ -376,9 +376,9 @@ def main():
                 * Training teams on various tools (Django/Jupyter)
                 * Conducting unit tests
                 --- 
-                COMPETENCIES
+                **COMPETENCIES**
                 """, """
-                TRAVAIL EN MÉTHODE AGILE SCRUM
+                **TRAVAIL EN MÉTHODE AGILE SCRUM**
                 * Sprint Planning Organisation et répartition des tickets du Backlog,
                 * Daily meeting point d’avancement, point bloquant, màj et suivi du Kanban
                 * Grooming (Story Review) réunion d’analyse des tickets, Préparation des sprints à venir
@@ -386,7 +386,7 @@ def main():
                 * Sprint Review réunion d’analyse du Sprint écoulé
                 * Démo et Rétro
                 ---
-                TAVAUX EN COMMUN DES ÉQUIPES
+                **TAVAUX EN COMMUN DES ÉQUIPES**
                 * Participation au choix technologique, Appropriation des Framework et outils
                 * Développement d’application d’évolutions et de correctifs
                 * Création, Modification de pages et de formulaires en fonction des US
@@ -395,7 +395,7 @@ def main():
                 * Migration de Pipelines en Contrôleurs
                 * Contrôle du versioning, du déploiement et revu de documentations techniques et de code
                 ---
-                PROJETS ET TRAVAUX INDIVIDUEL
+                **PROJETS ET TRAVAUX INDIVIDUEL**
                 * Création de l’environnement de développement adapté pour tout environnement système
                 * Création, développement du code sous VS Code en Python / Django / HTML5 / CSS3
                 * Optimisation des différentes parties et types de code
@@ -403,7 +403,7 @@ def main():
                 * Formation des équipes aux différents outils (Django/Jupyter)
                 * Réalisation de test unitaires
                 ---
-                COMPÉTENCES
+                **COMPÉTENCES**
                 """),
             "skills": (
                 """
@@ -437,7 +437,7 @@ def main():
                 Impliqué dans diverses études bibliographiques, créations d'outils de traitements de données et visualisations.*"""),
             "description": (
                 """
-                GENERAL
+                **GENERAL**
                 * Bibliographic study of the state-of-the-art in the field
                 * Study and presentation to the group of external scientific publications not from the laboratory
                 * Creation of data treatment tools and visualizations
@@ -445,19 +445,19 @@ def main():
                 * Automatic launch procedure for simulations and processing on a calculation cluster
                 * Administration of certain aspects of the calculation cluster
                 ---
-                DEEP LEARNING PROJECT
+                **DEEP LEARNING PROJECT**
                 * Use of simple models (dynamics) to extract activity configurations (schemes) from anatomical structural connectivity (network)
                 * Confrontation of extracted configurations with observed configurations in healthy human subjects
                 * Automated learning of configurations
                 * Modification and optimization of learning algorithms
                 ---
-                NEURAL MODEL PROJECT
+                **NEURAL MODEL PROJECT**
                 * Systematic creation and analysis of a new model of neuronal population, multi-stable at large scale
                 * Creation of a simulation software (optimized for intense calculations)
                 * Computationally intensive research to test the model on all its parameters
                 * Confrontation of the model's parameters with biological theories of brain functioning
                 ---
-                SIGNAL PROCESSING PROJECT
+                **SIGNAL PROCESSING PROJECT**
                 * Comparative analyses by dynamic functional connectivity between epileptic patients and controls
                 * Parallelization for intense calculations on multiple dimensions
                 * Post-processing of time series
@@ -467,9 +467,9 @@ def main():
                 * Study and critique of a new analytical tool
                 * Creation and study of another more advanced tool
                 ---
-                COMPETENCIES
+                **COMPETENCIES**
                 """, """
-                GÉNÉRAL
+                **GÉNÉRAL**
                 * Étude bibliographique de l’état de l’art du domaine
                 * Étude de publications scientifiques externes au laboratoire et présentation au groupe
                 * Création d’outils de traitements de données et de visualisations
@@ -477,19 +477,19 @@ def main():
                 * Procédure de lancement automatique de simulation et de traitement sur cluster de calcul
                 * Administration de certains aspects du cluster de calculs
                 ---
-                PROJET D'APPRENTISSAGE APPROFONDI
+                **PROJET D'APPRENTISSAGE APPROFONDI**
                 * Utilisation de modèles simples (dynamique) pour extraire les configurations d’activité (schémas) à partir d’une connectivité structurelle anatomique (réseau)
                 * Confrontation des configurations extraites avec des configurations observées chez des sujets humains sains
                 * Apprentissage automatique de configurations
                 * Modification et optimisation d’algorithmes d’apprentissage
                 ---
-                PROJET MODÈLE NEURONAL
+                **PROJET MODÈLE NEURONAL**
                 * Création et analyse systémique d’un nouveau modèle de population de neurones, multi-stable à large échelle
                 * Création d’un logiciel de simulation (optimisation pour des calculs intensifs)
                 * Recherche computationnelle intensive pour tester le modèle sur tous ses paramètres
                 * Confrontation des paramètres du modèle avec les théories biologiques du fonctionnement cérébral
                 ---
-                PROJET TRAITEMENT DU SIGNAL
+                **PROJET TRAITEMENT DU SIGNAL**
                 * Analyses comparatives par connectivité fonctionnelle dynamique entre patients épileptiques et contrôles
                 * Parallélisation pour les calculs intensifs sur les multiples dimensions
                 * Post-traitement des séries temporelles
@@ -499,7 +499,7 @@ def main():
                 * Étude et critique d’un nouvel outil d’analyse
                 * Création et étude d’un autre outil plus poussé
                 ---
-                COMPÉTENCES
+                **COMPÉTENCES**
                 """),
             "skills": (
                 """
@@ -534,29 +534,29 @@ def main():
                 *Etude de modèles neuro-dynamiques pour la reconnaissance de configurations d'activité à l'état de repos (Resting-State Networks).*"""),
             "description": (
                 """
-                GENERAL
+                **GENERAL**
                 * Bibliographic study of the state-of-the-art in the field
                 * Study and presentation to the group of external scientific publications not from the laboratory
                 * Creation of data treatment tools and visualizations
                 ---
-                NEURAL MODEL PROJECT
+                **NEURAL MODEL PROJECT**
                 * Systematic creation and analysis of a new model of neuronal population, multi-stable at large scale
                 * Creation of a simulation software (optimized for intense calculations)
                 * Confrontation of the model's parameters with biological theories of brain functioning
                 ---
-                COMPETENCIES
+                **COMPETENCIES**
                 """, """
-                GÉNÉRAL
+                **GÉNÉRAL**
                 * Étude bibliographique de l’état de l’art du domaine
                 * Étude de publications scientifiques externes au laboratoire et présentation au groupe
                 * Création d’outils de traitements de données et de visualisations
                 ---
-                PROJET MODÈLE NEURONAL
+                **PROJET MODÈLE NEURONAL**
                 * Création et analyse systémique d’un nouveau modèle de population de neurones, multi-stable à large échelle
                 * Création d’un logiciel de simulation (optimisation pour des calculs intensifs)
                 * Confrontation des paramètres du modèle avec les théories biologiques du fonctionnement cérébral
                 ---
-                COMPÉTENCES
+                **COMPÉTENCES**
                 """),
             "skills": (
                 """

@@ -238,6 +238,12 @@ def add_logo_N_styles():
             [data-testid="baseButton-headerNoPadding"] {{
                 color: #ed6f13;
             }}
+            [data-testid="stExpanderToggleIcon"] {{
+                color: #ed6f13;
+            }}
+            [class="st-emotion-cache-1wsmgvh eqpbllx1"] {{
+                align-items: flex-end; 
+            }}
             [class=".stPageLink"]::before {{
                 margin-top: -0.5rem;
                 margin-bottom: -0.5rem;
