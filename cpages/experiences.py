@@ -343,7 +343,7 @@ def main():
                 f"Ingénieur DevOps, {alpha}"),
             "dateplace": (
                 "**7 months** / *2019* / **Paris, France**",
-                "**7 mois** / *2019* / **St-Germain-en-Laye**"),
+                "**7 mois** / *2019* / **Paris**"),
             "short": (
                 """`Accounting Expertise` · `CI/CD` · `Web Design` · `Software Development`  
                 *Implementation and automation of an environment for a web-based platform to connect professionals with chartered accountants.*""",
