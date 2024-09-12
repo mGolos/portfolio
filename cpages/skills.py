@@ -6,8 +6,8 @@ sss = st.session_state
 def main():
     dico = {
         (
-                "⌨️ **Programming** 📝 **Collaboration**",
-                "⌨️ **Programmation** 📝 **Collaboration**",
+                "📝 **Programming / Collaboration**",
+                "📝 **Programmation / Collaboration**",
             ): {
             ("Languages", "Langages"): "`Python, SQL, Bash, Shell, MATLAB`",
             ("Environments", "Environnements"): "`VS Code, Jupyter Notebooks, Deepnote, Google Colab, Kaggle, Python Anywhere`",
@@ -18,8 +18,8 @@ def main():
             ("Operating System", "Système d'exploitation"): "`Windows, Linux (Debian, CentOs, Ubuntu), macOS`",
         },
         (
-                "🔍 **Analysis** 📊 **Data Visualization**",
-                "🔍 **Analyse** 📊 **Visualisation de données**",
+                "📊 **Analysis / Data Visualization**",
+                "📊 **Analyse / Visualisation de données**",
             ): {
             ("Python", "Python"): "`Pandas, NumPy, Matplotlib, Seaborn, Plotly`",
             ("Excel", "Excel"): "`Advanced Functions, Pivot Tables, VBA`",
@@ -31,8 +31,8 @@ def main():
             ("Model Evaluation", "Évaluation de Modèle"): "`Cross-validation, Confusion Matrix, ROC-AUC, Precision-Recall, F1 Score`",
         },
         (
-                "🤖 **Machine Learning** 💬 **NLP**",
-                "🤖 **Machine Learning** 💬 **NLP**",
+                "🤖 **Machine Learning / NLP**",
+                "🤖 **Machine Learning / NLP**",
             ): {
             ("Frameworks", "Frameworks"): "`Scikit-learn, TensorFlow, Keras, PyTorch`",
             ("Libraries", "Bibliothèques"): "`NLTK, SpaCy, Hugging Face Transformers, PIL, Scikit-image, BeautifulSoup`",
@@ -44,8 +44,8 @@ def main():
             ("Optimization Methods", "Méthodes d'Optimisation"): "`Gradient Descent, Genetic Algorithms`",
         },
         (
-                "🛠️ **DevOps / Data Engineering** ☁️ **Deployment**",
-                "🛠️ **DevOps / Data Engineering** ☁️ **Déploiement**",
+                "🛠️ **DevOps / Data Engineering / Deployment**",
+                "🛠️ **DevOps / Data Engineering / Déploiement**",
             ): {
             ("APIs for Deployment", "APIs pour Déploiement"): "`Flask, FastAPI, Django REST Framework`",
             ("CI/CD", "CI/CD"): "`GitLab CI, GitHub Actions, Jenkins`",
