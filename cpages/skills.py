@@ -90,7 +90,7 @@ def main():
         anchor='skills', divider="orange")
         
     for exp, sub in dico.items():
-        with st.expander(exp[sss["lg_key"]], expanded=True):
+        with st.expander(exp[sss["lg_key"]], expanded=False):
             for k, v in sub.items():
                 if sss['layout'] == "wide":
                     st.write(" : ".join([k[sss["lg_key"]], v]))
