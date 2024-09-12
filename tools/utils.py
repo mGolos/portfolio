@@ -211,8 +211,7 @@ def pages():
 
 def add_logo_N_styles():
     if 'profile_img' not in sss:
-        # sss['profile_img'] = base64.b64encode(open('images/profile.png', "rb").read()).decode()
-        sss['profile_img'] = base64.b64encode(open('images/profilecut.png', "rb").read()).decode()
+        sss['profile_img'] = base64.b64encode(open('images/profile.png', "rb").read()).decode()
     
     st.markdown(
         f"""
