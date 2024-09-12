@@ -99,7 +99,7 @@ def main():
                     cs[0].write(k[sss["lg_key"]])
                     cs[1].write(v)
     
-    with st.expander(func_skills['name'][sss["lg_key"]], expanded=True):
+    with st.expander(func_skills['name'][sss["lg_key"]], expanded=False):
         st.write(func_skills['description'][sss["lg_key"]])
     
 
