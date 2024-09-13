@@ -241,6 +241,9 @@ def add_logo_N_styles():
             [data-testid="stToolbarActions"] {{
                 content-visibility: hidden; 
             }}
+            [class="viewerBadge_link__qRIco"] {{
+                visibility: hidden; 
+            }}
             [data-testid="baseButton-headerNoPadding"] {{
                 color: #ed6f13;
             }}
