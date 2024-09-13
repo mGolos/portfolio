@@ -241,7 +241,7 @@ def add_logo_N_styles():
             [data-testid="stToolbarActions"] {{
                 content-visibility: hidden; 
             }}
-            [class="viewerBadge_link__qRIco"] {{
+            [class="viewerBadge_container__r5tak styles_viewerBadge__CvC9N"] {{
                 visibility: hidden; 
             }}
             [data-testid="baseButton-headerNoPadding"] {{
