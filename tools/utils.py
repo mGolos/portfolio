@@ -254,6 +254,9 @@ def add_logo_N_styles():
                 margin-top: -0.5rem;
                 margin-bottom: -0.5rem;
             }}
+            [class="viewerBadge_container__r5tak"] {{
+                visibility: hidden; 
+            }}
             footer {{visibility: hidden;}}
         </style>
         """,
