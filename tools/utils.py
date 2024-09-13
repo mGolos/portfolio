@@ -235,7 +235,10 @@ def add_logo_N_styles():
             [data-testid="stHeader"] {{
                 height: 0;
             }}
-            [data-testid="stToolbar"] {{
+            [data-testid="stExpanderDetails"] {{
+                background: rgb(49 46 33 / 50%);
+            }}
+            [data-testid="stToolbarActions"] {{
                 content-visibility: hidden; 
             }}
             [data-testid="baseButton-headerNoPadding"] {{

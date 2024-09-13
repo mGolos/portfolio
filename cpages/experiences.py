@@ -611,8 +611,11 @@ def main():
         c = d_lines[job_tag]
         c[0].write('#### ' + job['title'][sss["lg_key"]])
         c[1].markdown(job['dateplace'][sss["lg_key"]])
-        with c[2].expander(job['short'][sss["lg_key"]] + '\n\n...'):
-            st.write(job['description'][sss["lg_key"]])
+        with c[2].expander(job['short'][sss["lg_key"]]):
+            before = '''
+                <hr style="margin-top:0;">  
+            '''
+            st.markdown(before + job['description'][sss["lg_key"]], unsafe_allow_html=True)
             st.write(job['skills'][sss["lg_key"]].replace(', \n', '` · `').replace(', ', '` · `'))
         # with c[2].popover(job['short'][sss["lg_key"]] + '\n\n...', use_container_width=True):
         #     st.write(job['description'][sss["lg_key"]])
