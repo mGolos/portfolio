@@ -254,16 +254,16 @@ def add_logo_N_styles():
                 margin-top: -0.5rem;
                 margin-bottom: -0.5rem;
             }}
-            [class="viewerBadge_container__r5tak"] {{
+            [class="viewerBadge_container__r5tak"]:after {{
                 visibility: hidden !important; 
             }}
-            [class="styles_viewerBadge__CvC9N"] {{
+            [class="styles_viewerBadge__CvC9N"]:after {{
                 visibility: hidden !important; 
             }}
-            [class="viewerBadge_link__qRIco"] {{
+            [class="viewerBadge_link__qRIco"]:after {{
                 visibility: hidden !important; 
             }}
-            footer {{visibility: hidden !important;}}
+            footer:after {{visibility: hidden !important;}}
         </style>
         """,
         unsafe_allow_html=True,
