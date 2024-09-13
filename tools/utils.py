@@ -241,9 +241,6 @@ def add_logo_N_styles():
             [data-testid="stToolbarActions"] {{
                 content-visibility: hidden; 
             }}
-            [class="viewerBadge_container__r5tak"] {{
-                visibility: hidden; 
-            }}
             [data-testid="baseButton-headerNoPadding"] {{
                 color: #ed6f13;
             }}
@@ -257,6 +254,7 @@ def add_logo_N_styles():
                 margin-top: -0.5rem;
                 margin-bottom: -0.5rem;
             }}
+            footer {{visibility: hidden;}}
         </style>
         """,
         unsafe_allow_html=True,
