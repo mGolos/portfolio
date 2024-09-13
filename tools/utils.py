@@ -257,7 +257,7 @@ def add_logo_N_styles():
             [class="viewerBadge_container__r5tak"] {{
                 visibility: hidden; 
             }}
-            footer {{visibility: hidden;}}
+            footer {{visibility: hidden !important;}}
         </style>
         """,
         unsafe_allow_html=True,
