@@ -255,7 +255,13 @@ def add_logo_N_styles():
                 margin-bottom: -0.5rem;
             }}
             [class="viewerBadge_container__r5tak"] {{
-                visibility: hidden; 
+                visibility: hidden !important; 
+            }}
+            [class="styles_viewerBadge__CvC9N"] {{
+                visibility: hidden !important; 
+            }}
+            [class="viewerBadge_link__qRIco"] {{
+                visibility: hidden !important; 
             }}
             footer {{visibility: hidden !important;}}
         </style>
