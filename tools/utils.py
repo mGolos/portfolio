@@ -241,6 +241,9 @@ def add_logo_N_styles():
             [data-testid="stToolbarActions"] {{
                 content-visibility: hidden; 
             }}
+            [data-testid="StyledFullScreenButton"] {{
+                display: none;
+            }}
             [data-testid="baseButton-headerNoPadding"] {{
                 color: #ed6f13;
             }}
@@ -267,6 +270,17 @@ def once_load_images():
             for name in [
                 'jl', 'xrator', 'oc', 'lindera', 'ins', 'alpha',
                 'rennes', 'amu', 'edu', 'lille', 'iut', 'sup',
+                'p_iut', 'p_iut_1',
+                'p_l3', 'p_l3_1',
+                'p_m1', 'p_m1_1', 'p_m1_2', 'p_m2', 'p_m2_1',
+                'p_m2b', 'p_m2b_1', 'p_m2b_2', 'p_m2b_3', 'p_m2b_4',
+                'p_ocr2', 'p_ocr2_1',
+                'p_ocr3', 'p_ocr3_1',
+                'p_ocr4', 'p_ocr4_1',
+                'p_ocr6', 'p_ocr6_1',
+                'p_ocr7', 'p_ocr7_1', 'p_ocr7_2',
+                'p_ocr8', 'p_ocr8_1',
+                'p_mem', 'p_motor', 'p_motor_1',
             ]
         }
 
