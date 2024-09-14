@@ -204,28 +204,14 @@ def main():
                 *Différents cas concrets d’entreprise gérés indépendamment avec un mentorat hebdomadaire et soumis systématiquement par des rapports, codes versionnés et présentations en face d’un jury pour validation.*"""),
             "description": (
                 """
-                **DEVELOPING AN APPLICATION FOR PUBLIC HEALTH**  
-                * Proposal for an application based on nutritional data
-                * Data management / Cleaning
-                * Exploring data
-                * Concept search
-                * Feature engineering (quantitative and qualitative)
-                * Imputation (KNN Imputer), Classification (SGD)
-                ---
-                **ANTICIPATING ELECTRICITY CONSUMPTION NEEDS IN BUILDINGS**  
-                *Predicting electricity consumption and carbon emissions for municipal buildings in Seattle*
-                * Merging / Cleaning databases
-                * Exploring data
-                * Feature engineering (quantitative and qualitative)
-                * Imputation and Regression (Linear, SVR, Random Forest, Gradient Boosting)
-                ---
-                **SEGMENTING ONLINE SHOP CUSTOMERS**  
-                *Providing marketing teams with a segmentable client segmentation to optimize communication campaigns*
-                * Merging / Cleaning multiple databases
-                * Exploring data
-                * Feature engineering (quantitative and qualitative)
-                * Unsupervised classification (k-Means, Hierarchical Agglomerative Clustering, DBSCAN)
+                **PARTICIPATING IN A KAGGLE COMPETITION**  
+                *Predicting cryptocurrency markets based on data collected by G-Research*
+                * State-of-the-art study
+                * Signal processing
+                * Feature engineering (delays, aggregations)
+                * Regression (Linear, Light Gradient Boosting Machine, XGBoost)
                 * Hyperparameter optimization
+                * Using and contributing to other kernels
                 ---
                 **AUTOMATICALLY CATEGORIZING QUESTIONS**  
                 *Developing a system to automatically tag user questions on Stack Overflow*
@@ -248,39 +234,39 @@ def main():
                 * Hyperparameter optimization
                 * Creating an API in the form of an online application (Streamlit)
                 ---
-                **PARTICIPATING IN A KAGGLE COMPETITION**  
-                *Predicting cryptocurrency markets based on data collected by G-Research*
-                * State-of-the-art study
-                * Signal processing
-                * Feature engineering (delays, aggregations)
-                * Regression (Linear, Light Gradient Boosting Machine, XGBoost)
+                **SEGMENTING ONLINE SHOP CUSTOMERS**  
+                *Providing marketing teams with a segmentable client segmentation to optimize communication campaigns*
+                * Merging / Cleaning multiple databases
+                * Exploring data
+                * Feature engineering (quantitative and qualitative)
+                * Unsupervised classification (k-Means, Hierarchical Agglomerative Clustering, DBSCAN)
                 * Hyperparameter optimization
-                * Using and contributing to other kernels
+                ---
+                **ANTICIPATING ELECTRICITY CONSUMPTION NEEDS IN BUILDINGS**  
+                *Predicting electricity consumption and carbon emissions for municipal buildings in Seattle*
+                * Merging / Cleaning databases
+                * Exploring data
+                * Feature engineering (quantitative and qualitative)
+                * Imputation and Regression (Linear, SVR, Random Forest, Gradient Boosting)
+                ---
+                **DEVELOPING AN APPLICATION FOR PUBLIC HEALTH**  
+                *Proposal for an application based on nutritional data*
+                * Data management / Cleaning
+                * Exploring data
+                * Concept search
+                * Feature engineering (quantitative and qualitative)
+                * Imputation (KNN Imputer), Classification (SGD)
                 ---
                 **COMPETENCIES**
                 """, """
-                **CONCEPTION D’UNE APPLICATION AU SERVICE DE LA SANTE PUBLIQUE**  
-                *Proposition d’application basée sur des données nutritionnelles*
-                * Gestion / Nettoyage de la base de données
-                * Exploration de données
-                * Recherche de concepts
-                * Ingénierie des caractéristiques (quantitatives et qualitatives)
-                * Imputation (KNN Imputer), Classification (SGD)
-                ---
-                **ANTICIPER LES BESOINS EN CONSOMMATION ÉLECTRIQUE DE BÂTIMENTS**  
-                *Prédiction de consommation électrique et émissions de carbone pour des bâtiments municipaux de la ville de Seattle*
-                * Fusion / Nettoyage des bases de données
-                * Exploration de données
-                * Ingénierie des caractéristiques (quantitatives et qualitatives)
-                * Imputation et Régression (Linéaire, SVR, Random Forest, Gradient Boosting)
-                ---
-                **SEGMENTER DES CLIENTS D'UN SITE E-COMMERCE**  
-                *Fournir aux équipes marketing une segmentation activable de leurs clients pour optimiser les campagnes de communication*
-                * Fusion / Nettoyage de multiples bases de données
-                * Exploration de données
-                * Ingénierie des caractéristiques (quantitatives et qualitatives)
-                * Classification non supervisée (k-Means, Hiérarchique agglomératif, DBSCAN)
+                **PARTICIPER À UNE COMPETITION KAGGLE**  
+                *Prédiction du marché des crypto-monnaies à partir des données amassées par G-Research*
+                * État de l’art
+                * Traitement du signal
+                * Ingénierie des caractéristiques (latences, agrégations)
+                * Régression (Linéaire, Light Gradient Boosting Machine, XGBoost)
                 * Optimisation des hyperparamètres
+                * Utilisation et contribution aux autres kernels
                 ---
                 **CATÉGORISER AUTOMATIQUEMENT DES QUESTIONS**  
                 *Développer un système permettant de tagger automatiquement les questions des utilisateurs sur le site Stack Overflow*
@@ -303,14 +289,28 @@ def main():
                 * Optimisation des hyperparamètres
                 * Création d’API sous forme d’une application en ligne (Streamlit)
                 ---
-                **PARTICIPER À UNE COMPETITION KAGGLE**  
-                *Prédiction du marché des crypto-monnaies à partir des données amassées par G-Research*
-                * État de l’art
-                * Traitement du signal
-                * Ingénierie des caractéristiques (latences, agrégations)
-                * Régression (Linéaire, Light Gradient Boosting Machine, XGBoost)
+                **SEGMENTER DES CLIENTS D'UN SITE E-COMMERCE**  
+                *Fournir aux équipes marketing une segmentation activable de leurs clients pour optimiser les campagnes de communication*
+                * Fusion / Nettoyage de multiples bases de données
+                * Exploration de données
+                * Ingénierie des caractéristiques (quantitatives et qualitatives)
+                * Classification non supervisée (k-Means, Hiérarchique agglomératif, DBSCAN)
                 * Optimisation des hyperparamètres
-                * Utilisation et contribution aux autres kernels
+                ---
+                **ANTICIPER LES BESOINS EN CONSOMMATION ÉLECTRIQUE DE BÂTIMENTS**  
+                *Prédiction de consommation électrique et émissions de carbone pour des bâtiments municipaux de la ville de Seattle*
+                * Fusion / Nettoyage des bases de données
+                * Exploration de données
+                * Ingénierie des caractéristiques (quantitatives et qualitatives)
+                * Imputation et Régression (Linéaire, SVR, Random Forest, Gradient Boosting)
+                ---
+                **CONCEPTION D’UNE APPLICATION AU SERVICE DE LA SANTE PUBLIQUE**  
+                *Proposition d’application basée sur des données nutritionnelles*
+                * Gestion / Nettoyage de la base de données
+                * Exploration de données
+                * Recherche de concepts
+                * Ingénierie des caractéristiques (quantitatives et qualitatives)
+                * Imputation (KNN Imputer), Classification (SGD)
                 ---
                 **COMPÉTENCES**
                 """),
