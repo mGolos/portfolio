@@ -428,11 +428,11 @@ def main():
                 "**4 years** / *2013* / **Marseille, France**",
                 "**4 ans** / *2013* / **Marseille**"),
             "short": (
-                """`Research` · `Neurosciences` · `Modeling` · `Simulation` · `Epilepsy`  
+                """`Research` · `Neurosciences` · `Modeling` · `Simulation` · `Epilepsy` · `Time Series`  
                 *Experience in computational biology for neuroscience, with deep learning projects, neural model creation and signal processing.
                 Involved in various literature reviews, data treatment tools creations and visualizations.*
                 """, 
-                """`Recherche` · `Neurosciences` · `Modélisation` · `Simulation` · `Epilepsie`  
+                """`Recherche` · `Neurosciences` · `Modélisation` · `Simulation` · `Epilepsie` · `Séries Temporelles`  
                 *Expérience dans le domaine de la biologie computationnelle en neurosciences, avec des projets d'apprentissage approfondi, création de modèles neuronaux et traitement du signal.
                 Impliqué dans diverses études bibliographiques, créations d'outils de traitements de données et visualisations.*"""),
             "description": (
