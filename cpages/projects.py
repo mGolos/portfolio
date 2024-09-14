@@ -37,7 +37,7 @@ def main():
                 *Prédiction du marché des crypto-monnaies.*"""),
             "description": (
                 """
-                Ongoing...
+                Ongoing...  
                 *Predicting cryptocurrency markets based on data collected from different sources*
                 * State-of-the-art study
                 * Signal processing
@@ -46,7 +46,7 @@ def main():
                 * Hyperparameter optimization
                 * Using and contributing to other kernels
                 """, """
-                En cours...
+                En cours...  
                 *Prédiction du marché des crypto-monnaies à partir des données amassées par différentes sources*
                 * État de l’art
                 * Traitement du signal
@@ -70,7 +70,7 @@ def main():
             #TODO: ajouter le visuel de la webapp
             "description": (
                 """
-                Ongoing...
+                Ongoing...  
                 *Developing a system to automatically tag user questions on Stack Overflow*
                 * Data cleaning (NLTK) and exploration
                 * Feature engineering (quantitative and qualitative)
@@ -82,7 +82,7 @@ def main():
                 * Implementing more recent models (XR-Linear, XR-Transformer)
                 * Creating an API in the form of an online application (Streamlit)
                 """, """
-                En cours...
+                En cours...  
                 *Développer un système permettant de tagger automatiquement les questions des utilisateurs sur le site Stack Overflow*
                 * Nettoyage (NLTK) et exploration des données
                 * Ingénierie des caractéristiques (quantitatives et qualitatives) 
@@ -109,7 +109,7 @@ def main():
             #TODO: ajouter le visuel de la webapp
             "description": (
                 """
-                Ongoing...
+                Ongoing...  
                 *Using Deep Learning models for an animal association wanting to automate breed identification*
                 * Image processing
                 * Supervised classification with multiple classes
@@ -118,7 +118,7 @@ def main():
                 * Hyperparameter optimization
                 * Creating an API in the form of an online application (Streamlit)
                 """, """
-                En cours...
+                En cours...  
                 *Utilisation de modèles de Deep Learning pour une association animalière souhaitant automatiser l'identification de races*
                 * Traitement d’images
                 * Classification supervisée à classes multiples
@@ -141,7 +141,7 @@ def main():
                 *Segmentation de clients d'un site e-commerce.*"""),
             "description": (
                 """
-                Ongoing...
+                Ongoing...  
                 *Providing marketing teams with a segmentable client segmentation to optimize communication campaigns*
                 * Merging / Cleaning multiple databases
                 * Exploring data
@@ -149,7 +149,7 @@ def main():
                 * Unsupervised classification (k-Means, Hierarchical Agglomerative Clustering, DBSCAN)
                 * Hyperparameter optimization
                 """, """
-                En cours...
+                En cours...  
                 *Fournir aux équipes marketing une segmentation activable de leurs clients pour optimiser les campagnes de communication*
                 * Fusion / Nettoyage de multiples bases de données
                 * Exploration de données
@@ -171,14 +171,14 @@ def main():
                 *Anticipation de la consommation électrique et émissions CO² d'une ville.*"""),
             "description": (
                 """
-                Ongoing...
+                Ongoing...  
                 *Predicting electricity consumption and carbon emissions for municipal buildings in Seattle*
                 * Merging / Cleaning databases
                 * Exploring data
                 * Feature engineering (quantitative and qualitative)
                 * Imputation and Regression (Linear, SVR, Random Forest, Gradient Boosting)
                 """, """
-                En cours...
+                En cours...  
                 *Prédiction de consommation électrique et émissions de carbone pour des bâtiments municipaux de la ville de Seattle*
                 * Fusion / Nettoyage des bases de données
                 * Exploration de données
@@ -199,7 +199,7 @@ def main():
                 *Conception d'une application sur des données nutritionnelles au service de la sante publique.*"""),
             "description": (
                 """
-                Ongoing...
+                Ongoing...  
                 *Proposal for an application based on nutritional data*
                 * Data management / Cleaning
                 * Exploring data
@@ -207,7 +207,7 @@ def main():
                 * Feature engineering (quantitative and qualitative)
                 * Imputation (KNN Imputer), Classification (SGD)
                 """, """
-                En cours...
+                En cours...  
                 *Proposition d’application basée sur des données nutritionnelles*
                 * Gestion / Nettoyage de la base de données
                 * Exploration de données
@@ -337,11 +337,11 @@ def main():
                 *Rédaction d'un livre sur l'auto-portrait d'un méta-mème.*"""),
             "description": (
                 """
-                Ongoing...
+                Ongoing...  
                 Tell the journey of a meme in the city of the mind.
                 Complete analogy of a meme-based social system to explain consciousness emergence.
                 """, """
-                En cours...
+                En cours...  
                 Relate les périples d'un mème dans la cité de l'esprit.
                 Analogie complète d'un système social de mèmes pour expliquer l'émergence de la conscience.
                 """),
