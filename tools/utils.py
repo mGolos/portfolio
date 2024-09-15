@@ -277,10 +277,10 @@ def once_load_images():
                 'p_ocr2', 'p_ocr2_1',
                 'p_ocr3', 'p_ocr3_1',
                 'p_ocr4', 'p_ocr4_1',
-                'p_ocr6', 'p_ocr6_1',
-                'p_ocr7', 'p_ocr7_1', 'p_ocr7_2',
+                'p_ocr6', 'p_ocr6_1', 'p_ocr6_2',
+                'p_ocr7', 'p_ocr7_1', 'p_ocr7_2', 'p_ocr7_3', 'p_ocr7_4',
                 'p_ocr8', 'p_ocr8_1',
-                'p_mem', 'p_motor', 'p_motor_1',
+                'p_mem', 'p_motor', 'p_motor_1', 'p_pal',
             ]
         }
 

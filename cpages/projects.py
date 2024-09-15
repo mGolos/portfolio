@@ -4,32 +4,12 @@ sss = st.session_state
 
 
 def main():
-    streamlit = "[Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)"
-    ocr_p7_1 = "[Notebooks](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/question_tagging)"
-    ocr_p7_2 = f"[!{streamlit}](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=question-tagging)"
-    ocr_p6_1 = "[Notebooks](https://github.com/mGolos/Machine-Learning-Examples/tree/master/examples/breed_classifier)"
-    ocr_p6_2 = f"[!{streamlit}](https://share.streamlit.io/mgolos/machine-learning-examples/main.py?p=breed-classifier)"
-
-        
-#             	CONTEXTE 
-# Recherche sur la programmation neurolinguistique
-
-# 	ETUDES DES LANGUES ET RÉSEAUX
-# o	Etudes sur la Linguistique fondamentale et la programmation neurolinguistique
-# o	Etudes sur la phonologie des langues, plus particulièrement l’Esperanto
-# o	Etude bibliographique, création et soumission d’un projet : « Tentative d'approche multiple (théorie/modèle/pratique) d'une langue parfaitement régulière sur les troubles de l'apprentissage (dyslexie/dysphasie) »
-# o	Conceptualisation de génération automatisé de scénarisation/code
-# o	Recherche computationnelle sur la dynamique des comportements humains
-# o	Recherche computationnelle sur les comportements moteurs
-
-# 	OUTILS TECHNIQUES
-# Ubuntu, Windows, MyBinder, Jupyter, Pyton, Git, Trello
     projects = {
         "p_ocr8": {
             "name": "Consommation",
             "title": (
                 f"Predicting cryptocurrency markets (`Ongoing`)",
-                f"Prédiction du marché des crypto-monnaies (`En-cours`)"),
+                f"Prédiction du marché des crypto-monnaies (`En cours`)"),
             "short": (
                 """`Regression` · `Signal processing` · `SOTA` · `Kaggle`  
                 *Predicting cryptocurrency markets.*""",
@@ -67,7 +47,6 @@ def main():
                 *Produce an application to automatically multi-tag questions using state of the art algorithms.*""",
                 """`État de l'art` · `NLP` · `XMC` · `Deep Learning` · `Streamlit`  
                 *Production d'une application pour l'automatisation d'étiquetage multiple de questions en utilisant l'état de l'art des algorithmes.*"""),
-            #TODO: ajouter le visuel de la webapp
             "description": (
                 """
                 Ongoing...  
@@ -94,7 +73,7 @@ def main():
                 * Implémentation de modèles plus récents (XR-Linear, XR-Transformer)
                 * Création d’API sous forme d’une application en ligne (Streamlit)
                 """),
-            "images": ['p_ocr7_1', 'p_ocr7_2'],
+            "images": ['p_ocr7_2', 'p_ocr7_3'],
         },
         "p_ocr6": {
             "name": "Breed Classifier",
@@ -106,7 +85,6 @@ def main():
                 *Produce an application for race recognition of dog images using deep learning algorithms.*""",
                 """`Deep Learning` · `Transfert Learning` · `Streamlit`  
                 *Production d'une application de reconnaissance de race d'images de chiens à l'aide d'algorithmes de deep learning.*"""),
-            #TODO: ajouter le visuel de la webapp
             "description": (
                 """
                 Ongoing...  
@@ -127,7 +105,7 @@ def main():
                 * Optimisation des hyperparamètres
                 * Création d’API sous forme d’une application en ligne (Streamlit)
                 """),
-            "images": ['p_ocr6_1',],
+            "images": ['p_ocr6_1', 'p_ocr6_2'],
         },
         "p_ocr4": {
             "name": "Market Segment Analysis",
@@ -311,7 +289,7 @@ def main():
             "name": "Motor",
             "title": (
                 f"Motor Behaviors Generation (`Ongoing`)",
-                f"Génération de comportement moteurs (`En-cours`)"),
+                f"Génération de comportement moteurs (`En cours`)"),
             "short": (
                 """`Multi-stability` · `Simulation` · `Time Series`  
                 *Generation of motor behavior from neuronal models.*""",
@@ -329,7 +307,7 @@ def main():
             "name": "Meme",
             "title": (
                 f"Writing a book (`Ongoing`)",
-                f"Écriture d'un livre (`En-cours`)"),
+                f"Écriture d'un livre (`En cours`)"),
             "short": (
                 """`Mèmétique` · `Writing`  
                 *Writing a book on the self-portrait of an meta-meme.*""",
@@ -344,6 +322,34 @@ def main():
                 En cours...  
                 Relate les périples d'un mème dans la cité de l'esprit.
                 Analogie complète d'un système social de mèmes pour expliquer l'émergence de la conscience.
+                """),
+            "images": [],
+        },
+        "p_pal": {
+            "name": "Palingen",
+            "title": (
+                f"Development of a video game experience (`Ongoing`)",
+                f"Développement d'une expérience videoludique (`En cours`)"),
+            "short": (
+                """`Linguistics` · `Neural Networks` · `Python` · `Esperanto`  
+                *Development of a video game experience.*""",
+                """`Linguistique` · `Réseaux Neuronaux` · `Python` · `Esperanto`  
+                *Développement d'une expérience videoludique.*"""),
+            "description": (
+                """
+                Ongoing...  
+                - Studies on fundamental linguistics and linguistic programming
+                - Studies on phonology of languages, particularly Esperanto
+                - Bibliographic study, creation and submission of a project: *"Attempt at a multiple approach (theory/model/practice) to a perfectly regular language on learning disorders (dyslexia/dysphasia)"*
+                - Conceptualization of automated generation of scenario/code
+                - Research on human behavior dynamics and motorics
+                """, """
+                En cours...  
+                - Etudes sur la linguistique fondamentale et la programmation linguistique
+                - Etudes sur la phonologie des langues, plus particulièrement l’Esperanto
+                - Etude bibliographique, création et soumission d’un projet : *"Tentative d'approche multiple (théorie/modèle/pratique) d'une langue parfaitement régulière sur les troubles de l'apprentissage (dyslexie/dysphasie)"*
+                - Conceptualisation de génération automatisé de scénarisation/code
+                - Recherche sur la dynamique des comportements humains et moteurs
                 """),
             "images": [],
         },
