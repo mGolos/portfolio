@@ -62,26 +62,26 @@ def main():
             "🧩 **Compétences Fonctionnelles**"),
         "description": (
             """
-            * Functional analysis of clients needs
-            * Data transformation into usable form
+            * Problem identification & Functional needs analysis
+            * Solution planning
+            * Exploratory analysis & Conceptual and analytical vision
+            * Data modeling and transformation for exploitation
+            * Creation of tools for data processing and visualizations
             * Resolution of complex business problems
-            * Analytical and conceptual vision
-            * Responsible for one or more functional processes
-            * Application of state-of-the-art knowledge in the field
-            * Creation of data processing tools and visualizations
-            * Signal processing
-            * Critical reasoning and scientific methodology
+            * Application of state-of-the-art in the field
+            * Critical thinking and scientific rigor
+            * Ensuring responsibility for one or more functional processes
             """,
             """
-            * Analyse fonctionnelle des besoins clients
-            * Transformation des données en exploitable
-            * Résolution des problématiques métiers complexe
-            * Vision analytique et conceptuelle
-            * Assurer la responsabilité d'un ou plusieurs processus fonctionnels
-            * Application de l’état de l’art du domaine
+            * Identification des problèmes & Analyse fonctionnelle des besoins
+            * Planification des solutions
+            * Analyse exploratoire & Vision analytique et conceptuelle
+            * Modélisation et transformation des données pour exploitation
             * Création d’outils de traitements de données et de visualisations
-            * Traitement du signal
-            * Raisonnement critique et méthodologie scientifique
+            * Résolution de problématiques métiers complexes
+            * Application de l’état de l’art du domaine
+            * Raisonnement critique et rigueur scientifique
+            * Assurer la responsabilité d'un ou plusieurs processus fonctionnels
             """),
     }
 
