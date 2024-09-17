@@ -373,15 +373,16 @@ def main():
             img, title = container.columns((1,4), vertical_alignment='center')
             d_lines[tag] = img, title, container
         else:
-            img, txt = container.columns((1,4.5))
+            img, txt = container.columns((1,7))
             d_lines[tag] = img, txt.empty(), txt
-            container.write('---')
+            # container.write('---')
         
     # Content
     header.header(
         "Projets" if sss["lg_key"] else 'Projects', 
         anchor='projects', divider="orange")
-            
+    
+    # if sss['layout'] == "wide":
     for tag, project in projects.items():
         c = d_lines[tag]
         c[0].image(sss['images'][tag])
@@ -397,6 +398,17 @@ def main():
         #     st.write(project['description'][sss["lg_key"]])
         #     st.write(project['skills'][sss["lg_key"]].replace(', \n', '` · `').replace(', ', '` · `'))
 
+    # else:
+    #     ncols = 5
+    #     nrows = len(projects) // ncols + (len(projects) % ncols != 0)
+    #     cols = [c for _ in range(nrows) for c in st.columns(ncols, vertical_alignment='top')]
+    #     # cols = [c for _ in range(int(ceil(len(projects)/ncols))) for c in st.columns(ncols, vertical_alignment='top')]
+    #     for col, (tag, project) in zip(cols, projects.items()):
+    #         col.image(sss['images'][tag])
+    #         with col.popover(project['title'][sss["lg_key"]].split('(')[0], use_container_width=True):
+    #             st.markdown(project['description'][sss["lg_key"]], unsafe_allow_html=True)
+    #             for img in project['images']:
+    #                 st.image(sss['images'][img])
 
 if __name__ == "__main__":
     utils.always()

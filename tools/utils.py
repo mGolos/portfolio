@@ -110,7 +110,7 @@ def sidebar():
     language()
     st.header("Mathieu Golos", divider="orange")
     pages()
-    st.subheader("", divider="orange")
+    st.write('<hr style="margin-top:0;">', unsafe_allow_html=True)
     st.markdown(contact)
 
 
@@ -237,6 +237,13 @@ def add_logo_N_styles():
             }}
             [data-testid="stExpanderDetails"] {{
                 background: rgb(49 46 33 / 50%);
+            }}
+            [data-testid="stHeading"] {{
+                background: linear-gradient(5deg, rgb(237 111 19 / 70%), transparent, transparent)
+            }}
+            [data-testid="stPopover"] {{
+                display: flex;
+                justify-content: flex-end;
             }}
             [data-testid="stToolbarActions"] {{
                 content-visibility: hidden; 

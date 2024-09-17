@@ -597,10 +597,9 @@ def main():
             img.image(sss['images'][job_tag.replace("2", "")])
             d_lines[job_tag] = title, container.empty(), container.empty()
         else:
-            img, txt = container.columns((1,4.5))
+            img, txt = container.columns((1,7))
             img.image(sss['images'][job_tag.replace("2", "")])
             d_lines[job_tag] = txt.empty(), txt.empty(), txt.empty()
-            container.write('---')
         
     # Content
     header.header(
