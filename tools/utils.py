@@ -241,6 +241,9 @@ def add_logo_N_styles():
             [data-testid="stHeading"] {{
                 background: linear-gradient(5deg, rgb(237 111 19 / 70%), transparent, transparent)
             }}
+            [class="subheader"] {{
+                background: linear-gradient(185deg, rgb(237 111 19 / 70%), transparent, transparent)
+            }}
             [data-testid="stPopover"] {{
                 display: flex;
                 justify-content: flex-end;

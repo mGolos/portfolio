@@ -4,12 +4,12 @@ sss = st.session_state
 
 
 def main():
-    projects = {
+    present_projects = {
         "p_ocr8": {
             "name": "Consommation",
             "title": (
-                f"Predicting cryptocurrency markets (`Ongoing`)",
-                f"Prédiction du marché des crypto-monnaies (`En cours`)"),
+                f"Predicting cryptocurrency markets",
+                f"Prédiction du marché des crypto-monnaies"),
             "short": (
                 """`Regression` · `Signal processing` · `SOTA` · `Kaggle`  
                 *Predicting cryptocurrency markets.*""",
@@ -37,6 +37,76 @@ def main():
                 """),
             "images": ['p_ocr8_1'],
         },
+        "p_motor": {
+            "name": "Motor",
+            "title": (
+                f"Motor Behaviors Generation",
+                f"Génération de comportement moteurs"),
+            "short": (
+                """`Multi-stability` · `Simulation` · `Time Series`  
+                *Generation of motor behavior from neuronal models.*""",
+                """`Multi-stabilité` · `Simulation` · `Séries Temporelles`  
+                *Génération de comportement moteurs à partir de modèles neuronaux.*"""),
+            "description": (
+                """
+                Ongoing...
+                """, """
+                En cours...
+                """),
+            "images": ['p_motor_1'],
+        },
+        "p_mem": {
+            "name": "Meme",
+            "title": (
+                f"Writing a book",
+                f"Écriture d'un livre"),
+            "short": (
+                """`Mèmétique` · `Writing`  
+                *Writing a book on the self-portrait of an meta-meme.*""",
+                """`Mèmétique` · `Écriture`  
+                *Rédaction d'un livre sur l'auto-portrait d'un méta-mème.*"""),
+            "description": (
+                """
+                Ongoing...  
+                Tell the journey of a meme in the city of the mind.
+                Complete analogy of a meme-based social system to explain consciousness emergence.
+                """, """
+                En cours...  
+                Relate les périples d'un mème dans la cité de l'esprit.
+                Analogie complète d'un système social de mèmes pour expliquer l'émergence de la conscience.
+                """),
+            "images": [],
+        },
+        "p_pal": {
+            "name": "Palingen",
+            "title": (
+                f"Development of a video game experience",
+                f"Développement d'une expérience videoludique"),
+            "short": (
+                """`Linguistics` · `Neural Networks` · `Python` · `Esperanto`  
+                *Development of a video game experience.*""",
+                """`Linguistique` · `Réseaux Neuronaux` · `Python` · `Esperanto`  
+                *Développement d'une expérience videoludique.*"""),
+            "description": (
+                """
+                Ongoing...  
+                - Studies on fundamental linguistics and linguistic programming
+                - Studies on phonology of languages, particularly Esperanto
+                - Bibliographic study, creation and submission of a project: *"Attempt at a multiple approach (theory/model/practice) to a perfectly regular language on learning disorders (dyslexia/dysphasia)"*
+                - Conceptualization of automated generation of scenario/code
+                - Research on human behavior dynamics and motorics
+                """, """
+                En cours...  
+                - Etudes sur la linguistique fondamentale et la programmation linguistique
+                - Etudes sur la phonologie des langues, plus particulièrement l’Esperanto
+                - Etude bibliographique, création et soumission d’un projet : *"Tentative d'approche multiple (théorie/modèle/pratique) d'une langue parfaitement régulière sur les troubles de l'apprentissage (dyslexie/dysphasie)"*
+                - Conceptualisation de génération automatisé de scénarisation/code
+                - Recherche sur la dynamique des comportements humains et moteurs
+                """),
+            "images": [],
+        },
+    }
+    past_projects = {
         "p_ocr7": {
             "name": "XMC",
             "title": (
@@ -285,130 +355,64 @@ def main():
                 """),
             "images": ['p_iut_1', ],
         },
-        "p_motor": {
-            "name": "Motor",
-            "title": (
-                f"Motor Behaviors Generation (`Ongoing`)",
-                f"Génération de comportement moteurs (`En cours`)"),
-            "short": (
-                """`Multi-stability` · `Simulation` · `Time Series`  
-                *Generation of motor behavior from neuronal models.*""",
-                """`Multi-stabilité` · `Simulation` · `Séries Temporelles`  
-                *Génération de comportement moteurs à partir de modèles neuronaux.*"""),
-            "description": (
-                """
-                Ongoing...
-                """, """
-                En cours...
-                """),
-            "images": ['p_motor_1'],
-        },
-        "p_mem": {
-            "name": "Meme",
-            "title": (
-                f"Writing a book (`Ongoing`)",
-                f"Écriture d'un livre (`En cours`)"),
-            "short": (
-                """`Mèmétique` · `Writing`  
-                *Writing a book on the self-portrait of an meta-meme.*""",
-                """`Mèmétique` · `Écriture`  
-                *Rédaction d'un livre sur l'auto-portrait d'un méta-mème.*"""),
-            "description": (
-                """
-                Ongoing...  
-                Tell the journey of a meme in the city of the mind.
-                Complete analogy of a meme-based social system to explain consciousness emergence.
-                """, """
-                En cours...  
-                Relate les périples d'un mème dans la cité de l'esprit.
-                Analogie complète d'un système social de mèmes pour expliquer l'émergence de la conscience.
-                """),
-            "images": [],
-        },
-        "p_pal": {
-            "name": "Palingen",
-            "title": (
-                f"Development of a video game experience (`Ongoing`)",
-                f"Développement d'une expérience videoludique (`En cours`)"),
-            "short": (
-                """`Linguistics` · `Neural Networks` · `Python` · `Esperanto`  
-                *Development of a video game experience.*""",
-                """`Linguistique` · `Réseaux Neuronaux` · `Python` · `Esperanto`  
-                *Développement d'une expérience videoludique.*"""),
-            "description": (
-                """
-                Ongoing...  
-                - Studies on fundamental linguistics and linguistic programming
-                - Studies on phonology of languages, particularly Esperanto
-                - Bibliographic study, creation and submission of a project: *"Attempt at a multiple approach (theory/model/practice) to a perfectly regular language on learning disorders (dyslexia/dysphasia)"*
-                - Conceptualization of automated generation of scenario/code
-                - Research on human behavior dynamics and motorics
-                """, """
-                En cours...  
-                - Etudes sur la linguistique fondamentale et la programmation linguistique
-                - Etudes sur la phonologie des langues, plus particulièrement l’Esperanto
-                - Etude bibliographique, création et soumission d’un projet : *"Tentative d'approche multiple (théorie/modèle/pratique) d'une langue parfaitement régulière sur les troubles de l'apprentissage (dyslexie/dysphasie)"*
-                - Conceptualisation de génération automatisé de scénarisation/code
-                - Recherche sur la dynamique des comportements humains et moteurs
-                """),
-            "images": [],
-        },
     }
     
     header = st.empty()
     d_lines = {}
-    tags = list(projects)
-    names = [p['name'] for _,p in projects.items()]
-    
+    tags = [
+        list(past_projects),
+        list(present_projects),
+    ]
+    names = [
+        [p['name'] for _,p in past_projects.items()],
+        [p['name'] for _,p in present_projects.items()],
+    ]
     
     # Tabs or Containers
-    if sss['layout'] == "wide":
-        # containers = st.tabs(names)
-        containers = [st.container() for _ in names]
-    else:
-        containers = [st.container() for _ in names]
-    
-    for container, tag in zip(containers, tags):
-        if sss['layout'] == 'wide':
-            img, title = container.columns((1,4), vertical_alignment='center')
-            d_lines[tag] = img, title, container
-        else:
-            img, txt = container.columns((1,7))
-            d_lines[tag] = img, txt.empty(), txt
-            # container.write('---')
+    parts = [
+        st.container(),
+        st.container(),
+    ]
+    part_names = [
+        'Passés' if sss["lg_key"] else 'Past',
+        'Présents' if sss["lg_key"] else 'Present',
+    ]
+    projects = [
+        past_projects, 
+        present_projects,
+    ]
+        
+    for ipart, part in enumerate(parts):
+        d_lines[ipart] = {}
+        part.write(f"<h3 class=\"subheader\">{part_names[ipart]}</h3>", unsafe_allow_html=True)
+        containers = [part.container() for _ in names[ipart]]
+        
+        for container, tag in zip(containers, tags[ipart]):
+            if sss['layout'] == 'wide':
+                img, title = container.columns((1,4), vertical_alignment='center')
+                d_lines[ipart][tag] = img, title, container
+            else:
+                img, txt = container.columns((1,7))
+                d_lines[ipart][tag] = img, txt.empty(), txt
         
     # Content
     header.header(
         "Projets" if sss["lg_key"] else 'Projects', 
         anchor='projects', divider="orange")
     
-    # if sss['layout'] == "wide":
-    for tag, project in projects.items():
-        c = d_lines[tag]
-        c[0].image(sss['images'][tag])
-        c[1].write('#### ' + project['title'][sss["lg_key"]])
-        with c[2].expander(project['short'][sss["lg_key"]]):
-            before = '''
-                <hr style="margin-top:0;">  
-            '''
-            st.markdown(before + project['description'][sss["lg_key"]], unsafe_allow_html=True)
-            for img in project['images']:
-                st.image(sss['images'][img])
-        # with c[2].popover(project['short'][sss["lg_key"]] + '\n\n...', use_container_width=True):
-        #     st.write(project['description'][sss["lg_key"]])
-        #     st.write(project['skills'][sss["lg_key"]].replace(', \n', '` · `').replace(', ', '` · `'))
+    for ipart, part in enumerate(parts):
+        for tag, c in d_lines[ipart].items():
+            project = projects[ipart][tag]
+            c[0].image(sss['images'][tag])
+            c[1].write('#### ' + project['title'][sss["lg_key"]])
+            with c[2].expander(project['short'][sss["lg_key"]]):
+                before = '''
+                    <hr style="margin-top:0;">  
+                '''
+                st.markdown(before + project['description'][sss["lg_key"]], unsafe_allow_html=True)
+                for img in project['images']:
+                    st.image(sss['images'][img])
 
-    # else:
-    #     ncols = 5
-    #     nrows = len(projects) // ncols + (len(projects) % ncols != 0)
-    #     cols = [c for _ in range(nrows) for c in st.columns(ncols, vertical_alignment='top')]
-    #     # cols = [c for _ in range(int(ceil(len(projects)/ncols))) for c in st.columns(ncols, vertical_alignment='top')]
-    #     for col, (tag, project) in zip(cols, projects.items()):
-    #         col.image(sss['images'][tag])
-    #         with col.popover(project['title'][sss["lg_key"]].split('(')[0], use_container_width=True):
-    #             st.markdown(project['description'][sss["lg_key"]], unsafe_allow_html=True)
-    #             for img in project['images']:
-    #                 st.image(sss['images'][img])
 
 if __name__ == "__main__":
     utils.always()
