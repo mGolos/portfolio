@@ -13,8 +13,8 @@ def main():
     
     header = st.empty()
     d_lines = {}
-    edu_tags = ['sup', 'edu', 'amu', 'rennes', 'lille', 'iut']
-    edu_names = ['Supelec', 'EduGroupe', 'AMU', 'Rennes1', 'Lille1', 'UPHF']
+    tags = ['sup', 'edu', 'amu', 'rennes', 'lille', 'iut']
+    names = ['Supelec', 'EduGroupe', 'AMU', 'Rennes1', 'Lille1', 'UPHF']
     
     dico = {
         "sup": {
@@ -88,25 +88,25 @@ def main():
     
     # Tabs or Containers
     if sss['layout'] == "wide":
-        containers = st.tabs(edu_names)
+        containers = st.tabs(names)
         
-        for container, edu_tag in zip(containers, edu_tags):
+        for container, tag in zip(containers, tags):
             img, title = container.columns((1,4), vertical_alignment='center')
-            img.image(sss['images'][edu_tag])
-            d_lines[edu_tag] = title, container.empty(), container.empty()
+            img.image(sss['images'][tag])
+            d_lines[tag] = title, container.empty(), container.empty()
     else:
         tabs = st.tabs([
             'Date / Lieu' if sss["lg_key"] else 'Date / Place',
             'Matières' if sss["lg_key"] else 'Subjects'
         ])
-        containers = [[tab.container() for _ in edu_names] for tab in tabs]
+        containers = [[tab.container() for _ in names] for tab in tabs]
         
         for itab, tab in enumerate(tabs):
             d_lines[itab] = {}
-            for container, edu_tag in zip(containers[itab], edu_tags):
+            for container, tag in zip(containers[itab], tags):
                 img, txt = container.columns((1,7))
-                img.image(sss['images'][edu_tag])
-                d_lines[itab][edu_tag] = txt.empty(), txt.empty()
+                img.image(sss['images'][tag])
+                d_lines[itab][tag] = txt.empty(), txt.empty()
     
     # Content
     header.header(
@@ -114,22 +114,22 @@ def main():
         anchor='education', divider="orange")
     
     if sss['layout'] == 'wide':
-        for edu_tag, edu_cont in d_lines.items():
-            e = dico[edu_tag]
-            edu_cont[0].write('#### ' + e['title'][sss["lg_key"]])
+        for tag, cont in d_lines.items():
+            e = dico[tag]
+            cont[0].write('#### ' + e['title'][sss["lg_key"]])
         
-            edu_cont[1].markdown(e['dateplace'][sss["lg_key"]])
-            with edu_cont[2].expander('Matières' if sss["lg_key"] else 'Subjects', expanded=True):
+            cont[1].markdown(e['dateplace'][sss["lg_key"]])
+            with cont[2].expander('Matières' if sss["lg_key"] else 'Subjects', expanded=True):
                 st.markdown('`'+ e['description'][sss["lg_key"]].replace(', ', '` · `') + '`')
     else:
         for itab, tab in enumerate(tabs):
-            for edu_tag, edu_cont in d_lines[itab].items():
-                e = dico[edu_tag]
-                edu_cont[0].write('#### ' + e['title'][sss["lg_key"]])
+            for tag, cont in d_lines[itab].items():
+                e = dico[tag]
+                cont[0].write('#### ' + e['title'][sss["lg_key"]])
                 if itab == 0:
-                    edu_cont[1].markdown(e['dateplace'][sss["lg_key"]])
+                    cont[1].markdown(e['dateplace'][sss["lg_key"]])
                 elif itab == 1:
-                    edu_cont[1].markdown('`'+ e['description'][sss["lg_key"]].replace(', ', '` · `') + '`')
+                    cont[1].markdown('`'+ e['description'][sss["lg_key"]].replace(', ', '` · `') + '`')
 
 
 if __name__ == "__main__":
