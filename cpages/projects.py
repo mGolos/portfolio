@@ -61,8 +61,8 @@ def main():
                 f"Writing a book",
                 f"Écriture d'un livre"),
             "short": (
-                """`Mèmétique` · `Writing`  
-                *Writing a book on the self-portrait of an meta-meme.*""",
+                """`Memetique` · `Writing`  
+                *Writing a book on the self-portrait of a meta-meme.*""",
                 """`Mèmétique` · `Écriture`  
                 *Rédaction d'un livre sur l'auto-portrait d'un méta-mème.*"""),
             "description": (
