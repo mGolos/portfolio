@@ -10,6 +10,7 @@ from time import sleep
 from dateutil.parser import parse as parsedate
 from streamlit_js_eval import streamlit_js_eval
 sss = st.session_state
+sqp = st.query_params
 
 
 contact = """
@@ -107,7 +108,7 @@ def once_layout_toast():
 
 def sidebar():
     add_logo_N_styles()
-    language()
+    language('2')
     st.header("Mathieu Golos", divider="orange")
     pages()
     st.write('<hr style="margin-top:0;">', unsafe_allow_html=True)
@@ -120,14 +121,30 @@ def countries(s: str):
         case 'en': return ':flag-gb: English'
     
 
-def language():
-    if 'language' not in sss:
-        sss["language"] = 'fr'
-    
+def language(keyp: str=''):
     languages = ['en', 'fr']
+    sqp_lang = sqp.get('language', '')
+    sss_lang = sss.get('language', '')
+    
+    match (sqp_lang in languages, sss_lang in languages):
+        case (False, False):
+            sqp["language"] = sss["language"] = 'fr'
+        case (False, True):
+            sqp["language"] = sss["language"]
+        case _:
+            sss["language"] = sqp["language"]
+    
     index = sss["lg_key"] = languages.index(sss['language'])
-    language = st.radio('Language', languages, horizontal=True, label_visibility='hidden', index=index, format_func=countries)
-    if sss["language"] != language:
+    sqp["language"] = language = st.radio(
+        'Language',
+        languages, 
+        key="radio_lang"+keyp, 
+        horizontal=True, 
+        label_visibility='hidden', 
+        index=index, 
+        format_func=countries,
+    )
+    if sqp["language"] != sss["language"]:
         sss["language"] = language
         st.rerun()
 
@@ -211,7 +228,7 @@ def pages():
 
 def add_logo_N_styles():
     if 'profile_img' not in sss:
-        sss['profile_img'] = base64.b64encode(open('images/profile.png', "rb").read()).decode()
+        sss['profile_img'] = get_base64_image('images/profile.png')
     
     st.markdown(
         f"""
@@ -448,6 +465,8 @@ def always():
     # st.logo(image='images/empty.png', icon_image='images/logoico.png')
     # once_layout_toast()
     once_load_images()
+    language()
+    
     with st.sidebar:
         sidebar()
     
