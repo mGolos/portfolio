@@ -2,3 +2,4 @@ streamlit==1.36.0
 streamlit-timeline==0.0.2
 streamlit_js_eval==0.1.7
 pypdfium2==4.30.0
+streamlit-image-comparison==0.0.4

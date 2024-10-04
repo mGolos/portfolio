@@ -284,6 +284,10 @@ def add_logo_N_styles():
                 margin-top: -0.5rem;
                 margin-bottom: -0.5rem;
             }}
+            [data-testid="stIFrame"] {{
+                width: 100%;
+                height: calc(min(475px, 48vw));
+            }}
         </style>
         """,
         unsafe_allow_html=True,

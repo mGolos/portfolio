@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_image_comparison import image_comparison
 from tools import utils
 sss = st.session_state
 
@@ -34,7 +35,19 @@ def main():
             > Open to all proposals and any type of contract.
         """)
     
-    st.image('images/photo1.jpg')
+    # st.audio(f"audio/presentation_{sss['language']}.mp3")
+    # st.image('images/photo1.jpg')
+    image_comparison(
+        img1="images/photo1b.jpg",
+        img2="images/photo1.jpg",
+        label1="Style Transfer",
+        label2="Original",
+        # width=1920,
+        starting_position=70,
+        show_labels=True,
+        make_responsive=True,
+        in_memory=True,
+    )
 
 
 if __name__ == "__main__":
