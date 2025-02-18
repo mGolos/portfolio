@@ -6,8 +6,8 @@ sss = st.session_state
 def main():
     lang = sss['language']
     filepath = f"cv_{lang}.pdf"
-    id_en = "resid=8D406852E7AE31D%2189261&authkey=%21ABPYkyvXBSsQgMU"
-    id_fr = "resid=8D406852E7AE31D%2189262&authkey=%21APmcgKdobBGWPy0"
+    id_en = "resid=08D406852E7AE31D%2193134&authkey=%21AHfSXTlbyrnWlFs"
+    id_fr = "resid=08D406852E7AE31D%2193135&authkey=%21AFC4Y6OmO7-GL1g"
     down_url = "https://onedrive.live.com/download?{id}&ithint=file%2cpdf"
     
     st.header("Curriculum vitae", anchor='cv', divider="orange")
