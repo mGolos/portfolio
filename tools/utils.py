@@ -35,6 +35,7 @@ def footer():
     st.write(contact)
 
 
+st.cache_resource
 def download_pdf(url: str, name: str):
     # Checking dates
     if name in sss:
@@ -294,10 +295,15 @@ def add_logo_N_styles():
     )
 
 
+@st.cache_resource
+def load_image(image_path):
+    return Image.open(image_path)
+
+
 def once_load_images():
     if 'images' not in sss:
         sss['images'] = {
-            name: Image.open(f"images/{name}.jpeg")
+            name: load_image(f"images/{name}.jpeg")
             for name in [
                 'jl', 'xrator', 'oc', 'lindera', 'ins', 'alpha',
                 'rennes', 'amu', 'edu', 'lille', 'iut', 'sup',
@@ -314,8 +320,15 @@ def once_load_images():
                 'p_mem', 'p_motor', 'p_motor_1', 'p_pal',
             ]
         }
+        for name in [
+                'rl0_en', 'rl0_fr',
+                'rl1_en', 'rl1_fr',
+                'rl2_en', 'rl2_fr',
+            ]:
+            sss['images'][name] = load_image(f"images/{name}.jpg")
 
 
+@st.cache_resource
 def get_base64_image(image_path):
     with open(image_path, 'rb') as img_file:
         img_bytes = img_file.read()
@@ -329,7 +342,7 @@ def background():
     '''
     if 'bg_64' not in sss:
         image_path = 'images/bg.jpeg'
-        sss['bg_x'], sss['bg_y'] = Image.open(image_path).size
+        sss['bg_x'], sss['bg_y'] = load_image(image_path).size
         sss['bg_64'] = get_base64_image(image_path)
         sss['bg_ext'] = image_path.rsplit('.', 1)[1]
     
