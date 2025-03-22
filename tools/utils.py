@@ -35,26 +35,29 @@ def footer():
     st.write(contact)
 
 
-st.cache_resource
-def download_pdf(url: str, name: str):
-    # Checking dates
-    if name in sss:
-        response = requests.head(url)
-        url_date = parsedate(response.headers['Date']).date()
-        mem_date = sss[name + '_date']
+@st.cache_resource
+# def download_pdf(url: str, name: str):
+def download_pdf(lang: str, name: str):
+    #TODO Fix the issue created by OneDrive url modification
+    # # Checking dates
+    # if name in sss:
+    #     response = requests.head(url)
+    #     url_date = parsedate(response.headers['Date']).date()
+    #     mem_date = sss[name + '_date']
 
-        # Do not download
-        if url_date <= mem_date:
-            return sss[name]
+    #     # Do not download
+    #     if url_date <= mem_date:
+    #         return sss[name]
     
-    # Downloading in memory
-    response = requests.get(url)
-    pdf_io = BytesIO(response.content)
+    # # Downloading in memory
+    # response = requests.get(url)
+    # pdf_io = BytesIO(response.content)
     
     # Convert to jpg
-    pdf = pdfium.PdfDocument(pdf_io)
+    # pdf = pdfium.PdfDocument(pdf_io)
+    pdf = pdfium.PdfDocument(f"tools/CV GOLOS {lang}.pdf")
     page = pdf[0]
-    sss[name + '_date'] = parsedate(response.headers['Date']).date()
+    # sss[name + '_date'] = parsedate(response.headers['Date']).date()
     sss[name] = image = page.render(scale=4).to_pil()
     return image
 
