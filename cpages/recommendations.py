@@ -4,8 +4,8 @@ sss = st.session_state
 
 
 def main():
-    rls = ["XRator", "OC", "INS"]
-    images_names = [f"rl{i}_{sss['language']}" for i in range(len(rls))][::-1]
+    rls = ["LinkedIn", "XRator", "INS"]
+    images_names = [f"rl_{rl}_{sss['language']}" for rl in rls]
     
     st.header("Recommandations" if sss["lg_key"] else "Recommendations", anchor='recommendations', divider="orange")
     tabs = st.tabs(rls)

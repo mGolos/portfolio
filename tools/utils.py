@@ -324,9 +324,9 @@ def once_load_images():
             ]
         }
         for name in [
-                'rl0_en', 'rl0_fr',
-                'rl1_en', 'rl1_fr',
-                'rl2_en', 'rl2_fr',
+                'rl_LinkedIn_en', 'rl_LinkedIn_fr',
+                'rl_XRator_en', 'rl_XRator_fr',
+                'rl_INS_en', 'rl_INS_fr',
             ]:
             sss['images'][name] = load_image(f"images/{name}.jpg")
 
