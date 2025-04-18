@@ -12,6 +12,47 @@ def main():
     ins = "[INS](https://ins-amu.fr/)"
 
     jobs = {
+        "refrasense": {
+            "name": "RefraSense",
+            "title": (
+                f"Data Scientist, {jl}",
+                f"Scientifique de la donnée, {jl}"),
+            "dateplace": (
+                "**2 months** / *2025* / **France**",
+                "**2 mois** / *2025* / **France**"),
+            "short": (
+                """`Freelance` · `Modeling` · `Analysis` · `Regression` · `WebApp`  
+                *Mission to develop, optimize and deploy predictive models in the medical sector.*""",
+                """`Freelance` · `Modélisation ` · `Analyse` · `Régression` · `WebApp`  
+                *Mission : Développer, optimiser et déployer des modèles prédictifs dans le médical.*"""),
+            "description": (
+                """
+                **GENERAL**
+                * Startup development of an AI-powered solution for automated eyeglass prescriptions.
+                ---
+                **COMPETENCIES**
+                """, """
+                **GÉNÉRAL**
+                * Développement d'une solution basée sur l'IA pour les prescriptions automatisées de lunettes.
+                ---
+                **COMPÉTENCES**
+                """),
+            "skills": (
+                """
+                - Technologies: `Python, Git, Windows, Jupyter, Pandas, Scikit-Learn, MLFlow, WandB,
+                Docker, Notion, Regular expressions, Web applications, Matplotlib, API REST`
+                - Expertise: `Data Analysis, Machine learning, 
+                Scientific analysis, Algorithmes, Regression modelling, Data cleaning, 
+                Problem solving, Data Visualization, Data exploration`
+                - Context: `Freelance, R&D, Independant`""", 
+                """
+                - Technologies : `Python, Git, Windows, Jupyter, Pandas, Scikit-Learn, MLFlow, WandB,
+                Docker, Notion, Expressions régulières, Applications web, Matplotlib, API REST`
+                - Savoir-faire : `Analyse de données, Apprentissage automatique, 
+                Analyses scientifiques, Algorithmes, Modèles de régression, Nettoyage de données, 
+                Résolution de problèmes, Visualisation de données, Exploration des données`
+                - Contexte : `Freelance, R&D, Indépendant`"""),
+        },
         "jl": {
             "name": "Jagger&Lewis",
             "title": (
