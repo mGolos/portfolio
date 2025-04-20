@@ -4,6 +4,7 @@ sss = st.session_state
 
 
 def main():
+    refrasense = "RefraSense"
     xrator = "[XRator](https://www.x-rator.com/)"
     lindera = "[Lindera](https://www.lindera.de/)"
     jl = "[Jagger&Lewis](https://www.jagger-lewis.com/)"
@@ -15,8 +16,8 @@ def main():
         "refrasense": {
             "name": "RefraSense",
             "title": (
-                f"Data Scientist, {jl}",
-                f"Scientifique de la donnée, {jl}"),
+                f"Data Scientist, {refrasense}",
+                f"Scientifique de la donnée, {refrasense}"),
             "dateplace": (
                 "**2 months** / *2025* / **France**",
                 "**2 mois** / *2025* / **France**"),
