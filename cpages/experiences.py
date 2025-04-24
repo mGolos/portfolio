@@ -22,10 +22,10 @@ def main():
                 "**2 months** / *2025* / **France**",
                 "**2 mois** / *2025* / **France**"),
             "short": (
-                """`Freelance` · `Modeling` · `Analysis` · `Regression` · `WebApp`  
-                *Mission to develop, optimize and deploy predictive models in the medical sector.*""",
-                """`Freelance` · `Modélisation ` · `Analyse` · `Régression` · `WebApp`  
-                *Mission : Développer, optimiser et déployer des modèles prédictifs dans le médical.*"""),
+                """`Freelance` · `Modeling` · `Analysis` · `Regression` · `API`  
+                *Develop, optimize and deploy predictive models in the medical sector.*""",
+                """`Freelance` · `Modélisation ` · `Analyse` · `Régression` · `API`  
+                *Développer, optimiser et déployer des modèles prédictifs dans le médical.*"""),
             "description": (
                 """
                 **GENERAL**
@@ -40,14 +40,14 @@ def main():
                 """),
             "skills": (
                 """
-                - Technologies: `Python, Git, Windows, Jupyter, Pandas, Scikit-Learn, MLFlow, WandB,
+                - Technologies: `Python, Git, Scaleway, Serverless, Windows, Jupyter, Pandas, Scikit-Learn, MLFlow, WandB,
                 Docker, Notion, Regular expressions, Web applications, Matplotlib, API REST`
                 - Expertise: `Data Analysis, Machine learning, 
                 Scientific analysis, Algorithmes, Regression modelling, Data cleaning, 
                 Problem solving, Data Visualization, Data exploration`
                 - Context: `Freelance, R&D, Independant`""", 
                 """
-                - Technologies : `Python, Git, Windows, Jupyter, Pandas, Scikit-Learn, MLFlow, WandB,
+                - Technologies : `Python, Git, Scaleway, Serverless, Windows, Jupyter, Pandas, Scikit-Learn, MLFlow, WandB,
                 Docker, Notion, Expressions régulières, Applications web, Matplotlib, API REST`
                 - Savoir-faire : `Analyse de données, Apprentissage automatique, 
                 Analyses scientifiques, Algorithmes, Modèles de régression, Nettoyage de données, 
