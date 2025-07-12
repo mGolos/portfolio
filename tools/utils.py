@@ -267,6 +267,9 @@ def styles():
         blockquote {{
             opacity: 1 !important;
         }}
+        [data-testid="stElementContainer"] {{
+            height: auto;
+        }} 
         </style>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">""", 
         unsafe_allow_html=True)
