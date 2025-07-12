@@ -92,7 +92,7 @@ def main():
         
         for container, tag in zip(containers, tags):
             img, title = container.columns((1,4), vertical_alignment='center')
-            img.image(sss['images'][tag])
+            img.image(sss['images'][tag], width=int(0.3 * sss['layout_width']))
             d_lines[tag] = title, container.empty(), container.empty()
     else:
         tabs = st.tabs([

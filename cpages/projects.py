@@ -403,7 +403,10 @@ def main():
     for ipart, part in enumerate(parts):
         for tag, c in d_lines[ipart].items():
             project = projects[ipart][tag]
-            c[0].image(sss['images'][tag])
+            if sss['layout'] == 'wide':
+                c[0].image(sss['images'][tag], width=int(0.3 * sss['layout_width']))
+            else:
+                c[0].image(sss['images'][tag])
             c[1].write('#### ' + project['title'][sss["lg_key"]])
             with c[2].expander(project['short'][sss["lg_key"]]):
                 before = '''

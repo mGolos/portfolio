@@ -632,7 +632,7 @@ def main():
     for container, job_tag in zip(containers, job_tags):
         if sss['layout'] == 'wide':
             img, title = container.columns((1,4), vertical_alignment='center')
-            img.image(sss['images'][job_tag.replace("2", "")])
+            img.image(sss['images'][job_tag.replace("2", "")], width=int(0.3 * sss['layout_width']))
             d_lines[job_tag] = title, container.empty(), container.empty()
         else:
             img, txt = container.columns((1,7))
@@ -647,7 +647,7 @@ def main():
     for job_tag, job in jobs.items():
         c = d_lines[job_tag]
         c[0].write('#### ' + job['title'][sss["lg_key"]])
-        c[1].markdown(job['dateplace'][sss["lg_key"]])
+        c[0].markdown(job['dateplace'][sss["lg_key"]])
         with c[2].expander(job['short'][sss["lg_key"]]):
             before = '''
                 <hr style="margin-top:0;">  

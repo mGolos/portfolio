@@ -71,8 +71,8 @@ def check_layout():
     Sleep a little to get the values from JS.
     Then define a layout state depending on which is bigger.
     '''
-    width = streamlit_js_eval(js_expressions='screen.width')
-    height = streamlit_js_eval(js_expressions='screen.height')
+    width = sss['layout_width'] = streamlit_js_eval(js_expressions='screen.width')
+    height = sss['layout_height'] = streamlit_js_eval(js_expressions='screen.height')
     inner_width = streamlit_js_eval(js_expressions="window.innerWidth")
     sleep(1)
         
@@ -110,15 +110,6 @@ def once_layout_toast():
         sss['layout_toasted'] = True
 
 
-def sidebar():
-    add_logo_N_styles()
-    language('2')
-    st.header("Mathieu Golos", divider="orange")
-    pages()
-    st.write('<hr style="margin-top:0;">', unsafe_allow_html=True)
-    st.markdown(contact)
-
-
 def countries(s: str):
     match s:
         case 'fr': return ':flag-fr: Français'
@@ -139,163 +130,175 @@ def language(keyp: str=''):
             sss["language"] = sqp["language"]
     
     index = sss["lg_key"] = languages.index(sss['language'])
-    sqp["language"] = language = st.radio(
-        'Language',
-        languages, 
-        key="radio_lang"+keyp, 
-        horizontal=True, 
-        label_visibility='hidden', 
-        index=index, 
-        format_func=countries,
-    )
-    if sqp["language"] != sss["language"]:
-        sss["language"] = language
-        st.rerun()
+    # sqp["language"] = language = st.radio(
+    #     'Language',
+    #     languages, 
+    #     key="radio_lang"+keyp, 
+    #     horizontal=True, 
+    #     label_visibility='hidden', 
+    #     index=index, 
+    #     format_func=countries,
+    # )
+    # if sqp["language"] != sss["language"]:
+    #     sss["language"] = language
+    #     st.rerun()
 
 
-def redirect_button(url: str, icon: str=None, text: str= None, color="transparent"):
-    st.markdown(f'''
-    <link rel="stylesheet" style="text-decoration: none;" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <a href="{url}" target="_self" style="color: inherit; text-decoration: none;">
-        <div style="
-                display: flex;
-                flex-direction: row;
-                -webkit-box-align: center;
-                align-items: center;
-                -webkit-box-pack: start;
-                justify-content: flex-start;
-                gap: 0.5rem;
-                border-radius: 0.25rem;
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-                margin-top: 0.125rem;
-                margin-bottom: 0.125rem;
-                line-height: 2;
-                background-color: {color};
-            ">
-            <span class="material-symbols-outlined" style="
-                    fill: currentcolor;
-                    display: inline-flex;
-                    -webkit-box-align: center;
-                    align-items: center;
-                    font-size: 1.25rem;
-                    width: 1.25rem;
-                    height: 1.25rem;
-                    flex-shrink: 0;
-                ">
-                {icon}
-            </span>
-            <span style="
-                    fcolor: rgb(250, 250, 250);
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    display: table-cell;
-                ">
-                {text}
-            </span>
-        </div>
-    </a>
-    ''',
-    unsafe_allow_html=True)
-
-
-def pages():
+def menubar():
     # https://fonts.google.com/icons?icon.set=Material+Symbols&icon.style=Outlined&icon.size=24&icon.color=%23e8eaed
     if sss["language"] == 'fr':
         sss['pages'] = {
             "#about": ("A propos", 'person'),
             "#experiences": ("Expériences", 'history'),
+            "#recommendations": ("Recommandations", 'mail'),
             "#education": ("Éducation", 'import_contacts'),
             "#skills": ("Compétences", 'handyman'),
             "#projects": ("Projets", 'content_paste'),
+            "#cv": ("CV", 'contact_page'),
             "#publications": ("Publications", 'history_edu'),
-            "#cv": ("Curriculum vitae", 'contact_page'),
-            "#recommendations": ("Recommandations", 'mail'),
+            "#contact": ("Contact", 'phone'),
         }
         
     elif sss["language"] == 'en':
         sss['pages'] = {
-            "#about": ("About propos", 'person'),
+            "#about": ("About me", 'person'),
             "#experiences": ("Experiences", 'history'),
+            "#recommendations": ("Recommendations", 'mail'),
             "#education": ("Education", 'import_contacts'),
             "#skills": ("Skills", 'handyman'),
             "#projects": ("Projects", 'content_paste'),
+            "#cv": ("CV", 'contact_page'),
             "#publications": ("Publications", 'history_edu'),
-            "#cv": ("Curriculum vitae", 'contact_page'),
-            "#recommendations": ("Recommendations", 'mail'),
+            "#contact": ("Contact", 'phone'),
         }
 
+    menu_html = '<div class="menu-bar"><div class="menu-inner">'
     for anchor, (label, icon) in sss['pages'].items():
-        redirect_button(anchor, icon=icon, text=label)
+        menu_html += (
+            f'''<a href="{anchor}" target="_self">
+            <span class="material-symbols-outlined">{icon}</span>
+            <span>{label}</span>
+            </a>'''
+        )
+    menu_html += '</div></div>'
+    st.markdown(menu_html, unsafe_allow_html=True)
 
 
-def add_logo_N_styles():
-    if 'profile_img' not in sss:
-        sss['profile_img'] = get_base64_image('images/profile.png')
-    
-    st.markdown(
-        f"""
+def styles():    
+
+    # Inject styles and fonts
+    layout = sss.get('layout')
+    menu_position = "bottom" if layout == "wide" else "top"
+    other_position = "top" if layout == "wide" else "bottom"
+    justify_content = "normal" if layout == 'wide' else "center"
+    st.markdown(f"""
         <style>
-            [data-testid="stSidebarUserContent"] {{
-                background-image: url(data:image/png;base64,{sss['profile_img']});
-                background-repeat: no-repeat;
-                padding-top: 80px;
-                background-size: 150px;
-                background-position: 20px 0px;
-            }}
-            [data-testid="stSidebarUserContent"]::before {{
-                content: "";
-                margin-left: 20px;
-                font-size: 10px;
-            }}
-            [data-testid="stSidebarHeader"] {{
-                padding: 0rem 0rem 0rem;
-                # padding: 0.5rem 0.5rem 0.5rem;
-            }}
-            [data-testid="stHeader"] {{
-                height: 0;
-            }}
-            [data-testid="stExpanderDetails"] {{
-                background: rgb(49 46 33 / 50%);
-            }}
-            [data-testid="stHeading"] {{
-                background: linear-gradient(5deg, rgb(237 111 19 / 70%), transparent, transparent)
-            }}
-            [class="subheader"] {{
-                background: linear-gradient(185deg, rgb(237 111 19 / 70%), transparent, transparent)
-            }}
-            [data-testid="stPopover"] {{
-                display: flex;
-                justify-content: flex-end;
-            }}
-            [data-testid="stToolbarActions"] {{
-                content-visibility: hidden; 
-            }}
-            [data-testid="StyledFullScreenButton"] {{
-                display: none;
-            }}
-            [data-testid="baseButton-headerNoPadding"] {{
-                color: #ed6f13;
-            }}
-            [data-testid="stExpanderToggleIcon"] {{
-                color: #ed6f13;
-            }}
-            [class="st-emotion-cache-1wsmgvh eqpbllx1"] {{
-                align-items: flex-end; 
-            }}
-            [class=".stPageLink"]::before {{
-                margin-top: -0.5rem;
-                margin-bottom: -0.5rem;
-            }}
-            [data-testid="stIFrame"] {{
-                width: 100%;
-                height: calc(min(475px, 48vw));
-            }}
+        .menu-bar {{
+            position: fixed;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: {justify_content};
+            overflow-x: auto;
+            padding: 0 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+            {menu_position}: 0;
+            border-{other_position}-left-radius: 0.5rem;
+            border-{other_position}-right-radius: 0.5rem;
+        }}
+        .menu-inner {{
+            background: linear-gradient(45deg, #001f51, #512400);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: {justify_content}  ;
+            overflow-x: auto;
+        }}
+        .menu-bar a {{
+            color: #ecf0f1;
+            text-decoration: none;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.75rem;
+            min-width: 5rem;
+        }}
+        .menu-bar .material-symbols-outlined {{
+            font-size: 1.5rem;
+            margin-bottom: 0.25rem;
+        }}
+
+        
+        [data-testid="stIFrame"] {{
+            border-radius: 0.5rem;
+            width: 100%;
+            height: calc(min(475px, 48vw));
+        }}
+        [data-testid="stExpanderDetails"] {{
+            background: rgb(49 46 33 / 50%);
+        }}
+        [data-testid="stHeading"] {{
+            # background: linear-gradient(5deg, rgb(237 111 19 / 70%), transparent, transparent)
+        }}
+        [class="subheader"] {{
+            background: linear-gradient(185deg, rgb(237 111 19 / 70%), transparent, transparent)
+        }}
+        [data-testid="stToolbarActions"] {{
+            content-visibility: hidden; 
+        }}
+        [data-testid="StyledFullScreenButton"] {{
+            display: none;
+        }}
+        [data-testid="baseButton-headerNoPadding"] {{
+            color: #ed6f13;
+        }}
+        [data-testid="stExpanderToggleIcon"] {{
+            color: #ed6f13;
+        }}
+        [class="st-emotion-cache-1wsmgvh eqpbllx1"] {{
+            align-items: flex-end; 
+        }}
+        [class=".stPageLink"]::before {{
+            margin-top: -0.5rem;
+            margin-bottom: -0.5rem;
+        }}
         </style>
-        """,
-        unsafe_allow_html=True,
-    )
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">""", 
+        unsafe_allow_html=True)
+    
+    
+    if layout == 'wide':
+        st.write('''
+        <style>
+            [data-testid="column"] {
+                width: calc(16.6666% - 1rem) !important;
+                flex: 1 1 calc(16.6666% - 1rem) !important;
+                min-width: calc(16.6666% - 1rem) !important;
+            }
+            .st-emotion-cache-1tpzimh {
+                max-width: 20% !important;
+            }
+            .main{
+                position: absolute !important;
+            }
+        </style>
+        ''', unsafe_allow_html=True)
+    else:
+        st.write('''
+        <style>
+            [data-testid="column"] {
+            }
+            .st-emotion-cache-1tpzimh {
+                max-width: inherit;
+            }
+            [data-testid="stMainBlockContainer"] {
+                max-width: 55rem;
+            }
+        </style>
+        ''', unsafe_allow_html=True)
 
 
 @st.cache_resource
@@ -359,11 +362,16 @@ def background():
         .stApp {{
             background: transparent !important;
         }}
-        .main {{
+        .stAppHeader {{
+            left: 95%;
+            background: rgb(0 0 0 / 0%);
+            z-index: 9990;
+        }}
+        .stMain {{
             position: relative;
             z-index: 1;
         }}
-        .main::before {{
+        .stMain::before {{
             content: '';
             position: fixed;
             top: 0;
@@ -435,44 +443,11 @@ def background():
     st.markdown(style_code, unsafe_allow_html=True)
 
 
-def fix_layout():
-    if sss['layout'] == 'wide':
-        st.write('''
-        <style>
-            [data-testid="column"] {
-                width: calc(16.6666% - 1rem) !important;
-                flex: 1 1 calc(16.6666% - 1rem) !important;
-                min-width: calc(16.6666% - 1rem) !important;
-            }
-            .st-emotion-cache-1tpzimh {
-                max-width: 20% !important;
-            }
-            .main{
-                position: absolute !important;
-            }
-        </style>
-        ''', unsafe_allow_html=True)
-    else:
-        st.write('''
-        <style>
-            [data-testid="column"] {
-            }
-            .st-emotion-cache-1tpzimh {
-                max-width: inherit;
-            }
-            div.block-container {
-                padding-top: 1.5rem;
-                max-width: 55rem;
-            }
-        </style>
-        ''', unsafe_allow_html=True)
-
-
 def always():
     once_set_layout()
-    state = st.set_page_config(
+    st.set_page_config(
         page_title='Golos Mathieu',
-        initial_sidebar_state="auto",
+        initial_sidebar_state="collapsed",
         page_icon=':scroll:',
         layout=sss['layout'],
         menu_items={
@@ -486,11 +461,8 @@ def always():
     # once_layout_toast()
     once_load_images()
     language()
-    
-    with st.sidebar:
-        sidebar()
-    
-    fix_layout()
+    styles()
+    menubar()
     
     # with open('.streamlit/style.css') as f:
     #     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
