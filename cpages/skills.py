@@ -87,7 +87,7 @@ def main():
         anchor='skills', divider="orange")
         
     for exp, sub in dico.items():
-        with st.expander(exp[sss["lg_key"]], expanded=False):
+        with st.expander(exp[sss["lg_key"]], expanded=True):
             skills = []
             for k, v in sub.items():
                 if sss['layout'] == "wide":
