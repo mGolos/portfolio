@@ -231,7 +231,6 @@ def styles():
             margin-bottom: 0.25rem;
         }}
 
-        
         [data-testid="stIFrame"] {{
             border-radius: 0.5rem;
             width: 100%;
@@ -264,6 +263,9 @@ def styles():
         [class=".stPageLink"]::before {{
             margin-top: -0.5rem;
             margin-bottom: -0.5rem;
+        }}
+        blockquote {{
+            opacity: 1 !important;
         }}
         </style>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">""", 
