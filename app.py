@@ -8,8 +8,7 @@ if __name__ == "__main__":
     utils.always()
     
     pages = [
-        'about', 'experiences', 'education', 'skills', 'projects', 
-        'publications', 'cv', 'recommendations']
+        'about', 'experiences', 'recommendations', 'education', 'skills', 'projects', 'cv', 'publications']
     for page in pages:
         submodule = importlib.import_module(f'cpages.{page}')
         submodule.main()

@@ -9,12 +9,12 @@ def main():
             "name": "Consommation",
             "title": (
                 f"Predicting cryptocurrency markets",
-                f"Prédiction du marché des crypto-monnaies"),
+                f"Prédiction du marché de crypto-monnaies"),
             "short": (
                 """`Regression` · `Signal processing` · `SOTA` · `Kaggle`  
-                *Predicting cryptocurrency markets.*""",
+                Predicting cryptocurrency markets.""",
                 """`Régression` · `Traitement du signal` · `État de l'art` · `Kaggle`  
-                *Prédiction du marché des crypto-monnaies.*"""),
+                Prédiction du marché de crypto-monnaies."""),
             "description": (
                 """
                 Ongoing...  
@@ -28,7 +28,7 @@ def main():
                 """, """
                 En cours...  
                 *Prédiction du marché des crypto-monnaies à partir des données amassées par différentes sources*
-                * État de l’art
+                * État de l'art
                 * Traitement du signal
                 * Ingénierie des caractéristiques (latences, agrégations)
                 * Régression (Linéaire, Light Gradient Boosting Machine, XGBoost)
@@ -44,9 +44,9 @@ def main():
                 f"Génération de comportement moteurs"),
             "short": (
                 """`Multi-stability` · `Simulation` · `Time Series`  
-                *Generation of motor behavior from neuronal models.*""",
+                Generation of motor behavior from neuronal models.""",
                 """`Multi-stabilité` · `Simulation` · `Séries Temporelles`  
-                *Génération de comportement moteurs à partir de modèles neuronaux.*"""),
+                Génération de comportement moteurs à partir de modèles neuronaux."""),
             "description": (
                 """
                 Ongoing...
@@ -62,9 +62,9 @@ def main():
                 f"Écriture d'un livre"),
             "short": (
                 """`Memetique` · `Writing`  
-                *Writing a book on the self-portrait of a meta-meme.*""",
+                Writing a book on the self-portrait of a meta-meme.""",
                 """`Mèmétique` · `Écriture` · `RAG` · `Streamlit`  
-                *Rédaction assistée d'un livre sur l'auto-portrait d'un méta-mème.*"""),
+                Rédaction assistée d'un livre sur l'auto-portrait d'un méta-mème."""),
             "description": (
                 """
                 Ongoing...  
@@ -84,9 +84,9 @@ def main():
                 f"Développement d'une expérience videoludique"),
             "short": (
                 """`Linguistics` · `Neural Networks` · `Python` · `Esperanto`  
-                *Development of a video game experience.*""",
+                Development of a video game experience.""",
                 """`Linguistique` · `Réseaux Neuronaux` · `Python` · `Esperanto`  
-                *Développement d'une expérience videoludique.*"""),
+                Développement d'une expérience videoludique."""),
             "description": (
                 """
                 Ongoing...  
@@ -98,8 +98,8 @@ def main():
                 """, """
                 En cours...  
                 - Etudes sur la linguistique fondamentale et la programmation linguistique
-                - Etudes sur la phonologie des langues, plus particulièrement l’Esperanto
-                - Etude bibliographique, création et soumission d’un projet : *"Tentative d'approche multiple (théorie/modèle/pratique) d'une langue parfaitement régulière sur les troubles de l'apprentissage (dyslexie/dysphasie)"*
+                - Etudes sur la phonologie des langues, plus particulièrement l'Esperanto
+                - Etude bibliographique, création et soumission d'un projet : *"Tentative d'approche multiple (théorie/modèle/pratique) d'une langue parfaitement régulière sur les troubles de l'apprentissage (dyslexie/dysphasie)"*
                 - Conceptualisation de génération automatisé de scénarisation/code
                 - Recherche sur la dynamique des comportements humains et moteurs
                 """),
@@ -114,9 +114,9 @@ def main():
                 f"Classification à Multiple Étiquette Extrème (XMC) de questions"),
             "short": (
                 """`SOTA` · `NLP` · `XMC` · `Deep Learning` · `Streamlit`  
-                *Produce an application to automatically multi-tag questions using state of the art algorithms.*""",
+                Produce an application to automatically multi-tag questions using state of the art algorithms.""",
                 """`État de l'art` · `NLP` · `XMC` · `Deep Learning` · `Streamlit`  
-                *Production d'une application pour l'automatisation d'étiquetage multiple de questions en utilisant l'état de l'art des algorithmes.*"""),
+                Production d'une application pour l'automatisation d'étiquetage multiple de questions en utilisant l'état de l'art des algorithmes."""),
             "description": (
                 """
                 Ongoing...  
@@ -138,10 +138,10 @@ def main():
                 * Classification multi-étiquette extrême XMC (Gaussian Naive Bayes, Decision Tree Classifier, Linear Support Vector Classification, Multilabel k-Nearest Neighbours)
                 * Méthodes (Word Embedding, Binary Relevance, Label Powerset, Classifier Chain)
                 * Optimisation des hyperparamètres
-                * Création d’un modèle personnel
-                * Étude bibliographique de l’état de l’art
+                * Création d'un modèle personnel
+                * Étude bibliographique de l'état de l'art
                 * Implémentation de modèles plus récents (XR-Linear, XR-Transformer)
-                * Création d’API sous forme d’une application en ligne (Streamlit)
+                * Création d'API sous forme d'une application en ligne (Streamlit)
                 """),
             "images": ['p_ocr7_2', 'p_ocr7_3'],
         },
@@ -152,9 +152,9 @@ def main():
                 f"Reconnaissance de race de chien"),
             "short": (
                 """`Deep Learning` · `Transfert Learning` · `Streamlit`  
-                *Produce an application for race recognition of dog images using deep learning algorithms.*""",
+                Produce an application for race recognition of dog images using deep learning algorithms.""",
                 """`Deep Learning` · `Transfert Learning` · `Streamlit`  
-                *Production d'une application de reconnaissance de race d'images de chiens à l'aide d'algorithmes de deep learning.*"""),
+                Production d'une application de reconnaissance de race d'images de chiens à l'aide d'algorithmes de deep learning."""),
             "description": (
                 """
                 Ongoing...  
@@ -168,12 +168,12 @@ def main():
                 """, """
                 En cours...  
                 *Utilisation de modèles de Deep Learning pour une association animalière souhaitant automatiser l'identification de races*
-                * Traitement d’images
+                * Traitement d'images
                 * Classification supervisée à classes multiples
                 * Création ou implémentation de Réseaux Neuronaux existants
                 * Apprentissage par transfert (MobileNetV2)
                 * Optimisation des hyperparamètres
-                * Création d’API sous forme d’une application en ligne (Streamlit)
+                * Création d'API sous forme d'une application en ligne (Streamlit)
                 """),
             "images": ['p_ocr6_1', 'p_ocr6_2'],
         },
@@ -184,9 +184,9 @@ def main():
                 f"Analyse de marché"),
             "short": (
                 """`k-means` · `HCA` · `DBSCAN` · `Unsupervised Classification`  
-                *Segmenting customers of an e-commerce website.*""",
+                Segmenting customers of an e-commerce website.""",
                 """`k-means` · `HCA` · `DBSCAN` · `Classification Non-supervisée`  
-                *Segmentation de clients d'un site e-commerce.*"""),
+                Segmentation de clients d'un site e-commerce."""),
             "description": (
                 """
                 Ongoing...  
@@ -214,9 +214,9 @@ def main():
                 f"Prédiction de consommation électrique et émissions CO²"),
             "short": (
                 """`SVM` · `Random Forest` · `Boosting` · `Imputation` · `Regression`  
-                *Anticipating a city's electricity consumption and CO² emissions of a city.*""",
+                Anticipating a city's electricity consumption and CO² emissions of a city.""",
                 """`SVM` · `Forêt aléatoires` · `Boosting` · `Imputation` · `Régression`  
-                *Anticipation de la consommation électrique et émissions CO² d'une ville.*"""),
+                Anticipation de la consommation électrique et émissions CO² d'une ville."""),
             "description": (
                 """
                 Ongoing...  
@@ -242,9 +242,9 @@ def main():
                 f"Webapp nutritionnelle"),
             "short": (
                 """`Imputation` · `Data Cleaning`, `Classification`  
-                *Design of an application on nutritional data for public health.*""",
+                Design of an application on nutritional data for public health.""",
                 """`Imputation` · `Nettoyage de données`, `Classification`  
-                *Conception d'une application sur des données nutritionnelles au service de la sante publique.*"""),
+                Conception d'une application sur des données nutritionnelles au service de la sante publique."""),
             "description": (
                 """
                 Ongoing...  
@@ -256,7 +256,7 @@ def main():
                 * Imputation (KNN Imputer), Classification (SGD)
                 """, """
                 En cours...  
-                *Proposition d’application basée sur des données nutritionnelles*
+                *Proposition d'application basée sur des données nutritionnelles*
                 * Gestion / Nettoyage de la base de données
                 * Exploration de données
                 * Recherche de concepts
@@ -272,9 +272,9 @@ def main():
                 f"Interface de Simulation Neuronale"),
             "short": (
                 """`Modeling` · `Neurosciences`  
-                *Creation of a simulation, processing and analysis interface for the recognition of activity patterns.*""",
+                Creation of a simulation, processing and analysis interface for the recognition of activity patterns.""",
                 """`Modélisation` · `Neurosciences`  
-                *Création d'une interface de simulation, traitement et analyse pour la reconnaissance de configurations d'activité.*"""),
+                Création d'une interface de simulation, traitement et analyse pour la reconnaissance de configurations d'activité."""),
             "description": (
                 """
                 Ongoing...
@@ -290,9 +290,9 @@ def main():
                 f"Géophysique de l'inclusion"),
             "short": (
                 """`Modeling` · `Geophysics`  
-                *Simulation of viscosity during deep rock inclusion.*""",
+                Simulation of viscosity during deep rock inclusion.""",
                 """`Modélisation` · `Géophysique`  
-                *Simulation de la viscosité lors d'une inclusion de roche en profondeur.*"""),
+                Simulation de la viscosité lors d'une inclusion de roche en profondeur."""),
             "description": (
                 """
                 Ongoing...
@@ -308,9 +308,9 @@ def main():
                 f"Nanofiltration de sels"),
             "short": (
                 """`Modeling` · `Nanofiltration`  
-                *Study of salt nanofiltration by a polyamide-type membrane: Creation of a membrane.*""",
+                Study of salt nanofiltration by a polyamide-type membrane: Creation of a membrane.""",
                 """`Modélisation` · `Nanofiltration`  
-                *Étude de la nanofiltration de sels par une membrane de type polyamide : Création d’une membrane.*"""),
+                Étude de la nanofiltration de sels par une membrane de type polyamide : Création d'une membrane."""),
             "description": (
                 """
                 Ongoing...
@@ -326,9 +326,9 @@ def main():
                 f"Transitions de phase - Ferromagnétisme"),
             "short": (
                 """`Modeling` · `Ferromagnetism`  
-                *Simulation of the Ising Model by ferromagnetic/paramagnetic phase transition.*""",
+                Simulation of the Ising Model by ferromagnetic/paramagnetic phase transition.""",
                 """`Modélisation` · `Ferromagnétisme`  
-                *Simulation du Modèle d'Ising par transitions de phase ferromagnétique / paramagnétique.*"""),
+                Simulation du Modèle d'Ising par transitions de phase ferromagnétique / paramagnétique."""),
             "description": (
                 """
                 Ongoing...
@@ -344,9 +344,9 @@ def main():
                 f"Capteur d'élévation du Biseau salé"),
             "short": (
                 """`Volcanology` · `Electronics`  
-                *Development of a measuring instrument specific to the height of a sodium salt bevel: The Biseometer.*""",
+                Development of a measuring instrument specific to the height of a sodium salt bevel: The Biseometer.""",
                 """`Volcanologie` · `Électronique`  
-                *Élaboration d’un instrument de mesures spécifique à la hauteur d’un biseau salé : Le Biseaumètre.*"""),
+                Élaboration d'un instrument de mesures spécifique à la hauteur d'un biseau salé : Le Biseaumètre."""),
             "description": (
                 """
                 Ongoing...
@@ -360,12 +360,12 @@ def main():
     header = st.empty()
     d_lines = {}
     tags = [
-        list(past_projects),
         list(present_projects),
+        list(past_projects),
     ]
     names = [
-        [p['name'] for _,p in past_projects.items()],
         [p['name'] for _,p in present_projects.items()],
+        [p['name'] for _,p in past_projects.items()],
     ]
     
     # Tabs or Containers
@@ -374,12 +374,12 @@ def main():
         st.container(),
     ]
     part_names = [
-        'Passés' if sss["lg_key"] else 'Past',
         'Présents' if sss["lg_key"] else 'Present',
+        'Passés' if sss["lg_key"] else 'Past',
     ]
     projects = [
-        past_projects, 
         present_projects,
+        past_projects, 
     ]
         
     for ipart, part in enumerate(parts):

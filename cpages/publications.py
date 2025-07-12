@@ -13,7 +13,7 @@ def main():
         t1.markdown(f"""
             * Golos M & al. (2015), *Multistabilité dans des modèles d'activité cérébrale à grande échelle*, PLOS Computational Biology 
             ([publication]{link1})  
-            `Systèmes dynamiques`, `Réseaux de neurones`, `Analyse des réseaux`, `Connectomique`, `Entropie`, `Imagerie par résonance magnétique fonctionnelle`, `Signaux des réseaux`, `Comportement`
+            `Systèmes dynamiques`, `Réseaux de neurones`, `Analyse des réseaux`, `Connectomique`, `Entropie`, `IRM fonctionnelle`, `Signaux des réseaux`, `Comportement`
             
             * Wirsich J & al. (2016), *Les mesures analytiques du cerveau entier de la communication en réseau révèlent
             une corrélation structure-fonction accrue dans l'épilepsie du lobe temporal droit*, Elsevier 
@@ -40,12 +40,12 @@ def main():
         t1.markdown(f"""
             * Golos M & al. (2015), *Multistability in large scale models of brain activity*, PLOS Computational Biology 
             ([publication]{link1})  
-            `Dynamical systems` , `Neural networks `, `Network analysis `, `Connectomics `, `Entropy `, `Functional magnetic resonance imaging `, `Signaling networks `, `Behavior`
+            `Dynamical systems`, `Neural networks`, `Network analysis`, `Connectomics`, `Entropy`, `Functional MRI`, `Signaling networks`, `Behavior`
             
             * Wirsich J & al. (2016), *Whole-brain analytic measures of network communication reveal increased
             structure-function correlation in right temporal lobe epilepsy*, Elsevier 
             ([publication]{link2})  
-            `Structural connectivity`, `Functional connectivity`, `Temporal lobe epilepsy` `Network communication`, `Rich club`, `Network based statistics`
+            `Structural connectivity`, `Functional connectivity`, `Temporal lobe epilepsy`, `Network communication`, `Rich club`, `Network based statistics`
         """)
         t2.write(f"""
             #### [Multistability in large scale models of brain activity]{link2}

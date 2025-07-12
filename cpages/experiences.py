@@ -1,6 +1,14 @@
 import streamlit as st
+from datetime import datetime
 from tools import utils
 sss = st.session_state
+
+
+def months_between_dates(date_str):
+    given_date = datetime.strptime(date_str, "%d-%m-%Y")
+    current_date = datetime.now()
+    months_diff = (current_date.year - given_date.year) * 12 + (current_date.month - given_date.month)
+    return months_diff
 
 
 def main():
@@ -11,21 +19,22 @@ def main():
     alpha = "[Alpha Conseil](https://www.alpha-conseils.fr/)"
     oc = "[OpenClassrooms](https://openclassrooms.com/fr/paths/794-machine-learning-engineer#projects)"
     ins = "[INS](https://ins-amu.fr/)"
+    m_rf = months_between_dates("20-02-2025")
 
     jobs = {
         "refrasense": {
             "name": "RefraSense",
             "title": (
-                f"Data Scientist, {refrasense}",
-                f"Scientifique de la donnée, {refrasense}"),
+                f"Data Scientist - {refrasense}",
+                f"Scientifique de la donnée - {refrasense}"),
             "dateplace": (
-                "**2 months** / *2025* / **France**",
-                "**2 mois** / *2025* / **France**"),
+                f"**{m_rf} months** (02/25 &rarr; today) - **France** (remote)",
+                f"**{m_rf} mois** (02/25 &rarr; aujourd'hui) - **France** (distanciel)"),
             "short": (
-                """`Freelance` · `Modeling` · `Analysis` · `Regression` · `API`  
-                *Develop, optimize and deploy predictive models in the medical sector.*""",
-                """`Freelance` · `Modélisation ` · `Analyse` · `Régression` · `API`  
-                *Développer, optimiser et déployer des modèles prédictifs dans le médical.*"""),
+                """`Freelance` · `Modeling` · `Serverless` · `Regression` · `API`  
+                Develop, optimize and deploy predictive models in the medical sector.""",
+                """`Freelance` · `Modélisation ` · `Serverless` · `Régression` · `API`  
+                Développer, optimiser et déployer des modèles prédictifs dans le médical."""),
             "description": (
                 """
                 **GENERAL**
@@ -40,33 +49,27 @@ def main():
                 """),
             "skills": (
                 """
-                - Technologies: `Python, Git, Scaleway, Serverless, Windows, Jupyter, Pandas, Scikit-Learn, MLFlow, WandB,
-                Docker, Notion, Regular expressions, Web applications, Matplotlib, API REST`
-                - Expertise: `Data Analysis, Machine learning, 
-                Scientific analysis, Algorithmes, Regression modelling, Data cleaning, 
-                Problem solving, Data Visualization, Data exploration`
+                - Technologies: `Python, Git, Scaleway, Serverless, Jupyter, Pandas, Scikit-Learn, MLFlow, WandB, Docker, Notion, Regular expressions, WebApp, Matplotlib, API REST`
+                - Expertise: `Data Cleaning - Exploration - Visualization - Analysis, Scientific analysis, Algorithmes, Regression, Problem solving`
                 - Context: `Freelance, R&D, Independant`""", 
                 """
-                - Technologies : `Python, Git, Scaleway, Serverless, Windows, Jupyter, Pandas, Scikit-Learn, MLFlow, WandB,
-                Docker, Notion, Expressions régulières, Applications web, Matplotlib, API REST`
-                - Savoir-faire : `Analyse de données, Apprentissage automatique, 
-                Analyses scientifiques, Algorithmes, Modèles de régression, Nettoyage de données, 
-                Résolution de problèmes, Visualisation de données, Exploration des données`
+                - Technologies : `Python, Git, Scaleway, Serverless, Jupyter, Pandas, Scikit-Learn, MLFlow, WandB, Docker, Notion, Expressions régulières, WebApp, Matplotlib, API REST`
+                - Savoir-faire : `Nettoyage - Exploration - Visualisation - Analyse de données, Analyses scientifiques, Algorithmes, Régression, Résolution de problèmes`
                 - Contexte : `Freelance, R&D, Indépendant`"""),
         },
         "jl": {
             "name": "Jagger&Lewis",
             "title": (
-                f"Data Scientist, {jl}",
-                f"Scientifique de la donnée, {jl}"),
+                f"Data Scientist - {jl}",
+                f"Scientifique de la donnée - {jl}"),
             "dateplace": (
-                "**1 year** / *2023* / **Lille, France**",
-                "**1 an** / *2023* / **Lille**"),
+                "**1 year** (05/23 &rarr; 05/24) - **Lille, France**",
+                "**1 an** (05/23 &rarr; 05/24) - **Lille**"),
             "short": (
                 """`R&D` · `Modeling` · `Analysis` · `BI` · `CI/CD` · `Software Development`  
-                *Verification, maintenance and development of pipelines and algorithms for canine behavior recognition from intelligent sensors for the well-being of the animal.*""",
+                Verification, maintenance and development of pipelines and algorithms for canine behavior recognition from intelligent sensors for the well-being of the animal.""",
                 """`R&D` · `Modélisation ` · `Analyse` · `BI` · `CI/CD` · `Développement Logiciel`  
-                *Vérification, maintien et développement des pipelines et algorithmes permettant la reconnaissance du comportement canin à partir de capteurs intelligents pour le bien-être de l'animal.*"""),
+                Vérification, maintien et développement des pipelines et algorithmes permettant la reconnaissance du comportement canin à partir de capteurs intelligents pour le bien-être de l'animal."""),
             "description": (
                 """
                 **GENERAL**
@@ -119,37 +122,33 @@ def main():
                 """),
             "skills": (
                 """
-                - Technologies: `Python, Git, Plotly, Bash, Linux, Windows, Jupyter, Pandas, Scikit-Learn, 
-                Docker, Seaborn, Kubernetes, Notion, Shell Scripting, Regular expressions, Web applications, 
+                - Technologies: `Python, Git, Plotly, Bash, Jupyter, Pandas, Scikit-Learn, 
+                Docker, Seaborn, Kubernetes, Notion, Shell Scripting, Regular expressions, WebApp, 
                 Scaleway, Matplotlib, API REST`
-                - Expertise: `Webscrapping, Data Analysis, Signal processing, Machine learning, 
-                Natural Language Processing, Numerical Simulation, Classification, 
-                Scientific analysis, Algorithmes, Regression modelling, Data cleaning, 
-                Time Series, Problem solving, Data Visualization, Data exploration`
+                - Expertise: `Data Cleaning - Exploration - Visualization - Analysis, Webscrapping, Signal processing, Natural Language Processing, 
+                Numerical Simulation, Classification, Scientific analysis, Algorithmes, Regression, Time Series, Problem solving`
                 - Context: `Agiles methods, R&D, DevOps, Independant`""", 
                 """
-                - Technologies : `Python, Git, Plotly, Bash, Linux, Windows, Jupyter, Pandas, Scikit-Learn, 
-                Docker, Seaborn, Kubernetes, Notion, Shell Scripting, Expressions régulières, Applications web, 
+                - Technologies : `Python, Git, Plotly, Bash, Jupyter, Pandas, Scikit-Learn, 
+                Docker, Seaborn, Kubernetes, Notion, Shell Scripting, Expressions régulières, WebApp, 
                 Scaleway, Matplotlib, API REST`
-                - Savoir-faire : `Grattage de données, Analyse de données, Traitement du signal, Apprentissage automatique, 
-                Traitement automatique du langage naturel, Simulation Numérique, Classification, 
-                Analyses scientifiques, Algorithmes, Modèles de régression, Nettoyage de données, 
-                Séries temporelles, Résolution de problèmes, Visualisation de données, Exploration des données`
+                - Savoir-faire : `Nettoyage - Exploration - Visualisation - Analyse de données, Grattage de données, Traitement du signal, Traitement automatique du langage naturel, 
+                Simulation Numérique, Classification, Analyses scientifiques, Algorithmes, Régression, Séries temporelles, Résolution de problèmes`
                 - Contexte : `Méthodes agiles, R&D, DevOps, Indépendant`"""),
         },
         "lindera": {
             "name": "Lindera",
             "title": (
-                f"Data Scientist Clinical, {lindera}",
-                f"Scientifique de la donnée Clinique, {lindera}"),
+                f"Data Scientist Clinical - {lindera}",
+                f"Scientifique de la donnée Clinique - {lindera}"),
             "dateplace": (
-                "**2 months** / *2023* / **Italy and Germany**",
-                "**2 mois** / *2023* / **Italie et Allemagne**"),
+                "**2 months** (02/23 &rarr; 04/23) - **Italy and Germany** (remote)",
+                "**2 mois** (02/23 &rarr; 04/23) - **Italie et Allemagne** (distanciel)"),
             "short": (
                 """`R&D` · `Healthcare` · `Analysis`  
-                *Intermediate between Clinical and Data Science teams for the development of a medical device to predict falls in elderly people.*""",
+                Intermediate between Clinical and Data Science teams for the development of a medical device to predict falls in elderly people.""",
                 """`R&D` · `Médical` · `Analyse`  
-                *Intermédiaire entre les équipes Clinique et Data Science pour le développement d'un dispositif médical de prédiction de chute des personnes agées.*"""),
+                Intermédiaire entre les équipes Clinique et Data Science pour le développement d'un dispositif médical de prédiction de chute des personnes agées."""),
             "description": (
                 """
                 **GENERAL**
@@ -166,29 +165,27 @@ def main():
                 """),
             "skills": (
                 """
-                - Technologies: `Python, Git, Matplotlib, Bash, Linux, Windows, Jupyter, Pandas, Microsoft Excel`
-                - Expertise: `Data Analysis, Adaptation, Unstructured data, Deep Learning, Problem solving, 
-                Data Visualization, Research, Data exploration, Data cleaning`
+                - Technologies: `Python, Git, Bash, Jupyter, Pandas, Excel`
+                - Expertise: `Data Cleaning - Exploration - Visualization - Analysis, Adaptation, Unstructured data, Deep Learning, Problem solving, Research`
                 - Context: `Agiles methods, Liaison agent`""", 
                 """
-                - Technologies : `Python, Git, Matplotlib, Bash, Linux, Windows, Jupyter, Pandas, Microsoft Excel`
-                - Savoir-faire : `Analyse de données, Adaptation, Données non structurées, Deep Learning, Résolution de problèmes, 
-                Visualisation de données, Recherche, Exploration des données, Nettoyage de données`
+                - Technologies : `Python, Git, Bash, Jupyter, Pandas, Excel`
+                - Savoir-faire : `Nettoyage - Exploration - Visualisation - Analyse de données, Adaptation, Données non structurées, Deep Learning, Résolution de problèmes, Recherche`
                 - Contexte : `Méthodes agiles, Agent de liaison`"""),
         },
         "xrator": {
             "name": "XRator",
             "title": (
-                f"Data Scientist, {xrator}",
-                f"Scientifique de la donnée, {xrator}"),
+                f"Data Scientist - {xrator}",
+                f"Scientifique de la donnée - {xrator}"),
             "dateplace": (
-                "**9 months** / *2022* / **France and Vietnam**",
-                "**9 mois** / *2022* / **France et Vietnam**"),
+                "**9 months** (03/22 &rarr; 11/22) - **France and Vietnam** (remote)",
+                "**9 mois** (03/22 &rarr; 11/22) - **France et Vietnam** (distanciel)"),
             "short": (
                 """`R&D` · `Cybersecurity` · `Analysis` · `Software Development`  
-                *Improve Cyber Risk Management for IT or RSSI by analyzing and managing data, developing information extraction tools.*""",
+                Improve Cyber Risk Management for IT or RSSI by analyzing and managing data, developing information extraction tools.""",
                 """`R&D` · `Cybersecurité` · `Analyse` · `Développement Logiciel`  
-                *Améliorer la gestion des risques cyber pour les IT ou RSSI en analysant et gérant les données, en développant des outils d'extraction de l'information.*"""),
+                Améliorer la gestion des risques cyber pour les IT ou RSSI en analysant et gérant les données, en développant des outils d'extraction de l'information."""),
             "description": (
                 """
                 **GENERAL**
@@ -205,45 +202,43 @@ def main():
                 * Étudier, Extraire, Nettoyer, Gérer et Analyser les données
                 * Création, Refactorisation et Optimisation de code
                 * Développement d'outils
-                * État de l’art du domaine
+                * État de l'art du domaine
                 ---
                 **COMPÉTENCES**
                 """),
             "skills": (
                 """
-                - Technologies: `Python, Git, GitLab, Matplotlib, Bash, Linux, Windows, Jupyter, Pandas, Django, 
-                Docker, Seaborn, Kubernetes, OVH, Shell Scripting, Regular expressions, Web applications, 
+                - Technologies: `Python, Git, GitLab, Matplotlib, Bash, Jupyter, Pandas, Django, 
+                Docker, Seaborn, Kubernetes, OVH, Shell Scripting, Regular expressions, WebApp, 
                 API REST, Prefect, NLTK, Spacy, JIRA, AWS, PyTorch, Plotly, Microsoft Azure, MySQL, 
                 Scikit-Learn, NoSQL`
-                - Expertise: `Webscrapping, Natural Language Processing, Data Analysis, Adaptation, 
-                Unstructured data, Imputation, Regression modelling, Classification, Algorithmes, 
-                Machine Learning, Deep Learning, Transfert Learning, Problem solving, Partitioning, 
-                Data visualization, Research, Data exploration, Data cleaning`
+                - Expertise: `Data Cleaning - Exploration - Visualization - Analysis, Webscrapping, Natural Language Processing, 
+                Unstructured data, Imputation, Regression, Classification, Algorithmes, 
+                Transfert Learning, Problem solving, Partitioning`
                 - Context: `Agiles methods, R&D, DevOps, Independant`""", 
                 """
-                - Technologies : `Python, Git, GitLab, Matplotlib, Bash, Linux, Windows, Jupyter, Pandas, Django, 
-                Docker, Seaborn, Kubernetes, OVH, Shell Scripting, Expressions régulières, Applications web, 
+                - Technologies : `Python, Git, GitLab, Matplotlib, Bash, Jupyter, Pandas, Django, 
+                Docker, Seaborn, Kubernetes, OVH, Shell Scripting, Expressions régulières, WebApp, 
                 API REST, Prefect, NLTK, Spacy, JIRA, AWS, PyTorch, Plotly, Microsoft Azure, MySQL, 
                 Scikit-Learn, NoSQL`
-                - Savoir-faire : `Grattage de données, Traitement automatique du langage naturel, Analyse de données, Adaptation, 
-                Données non structurées, Imputation, Modèles de régression, Classification, Algorithmes, 
-                Machine Learning, Deep Learning, Transfert Learning, Résolution de problèmes, Partitionnement, 
-                Visualisation de données, Recherche, Exploration des données, Nettoyage de données`
+                - Savoir-faire : `Nettoyage - Exploration - Visualisation - Analyse de données, Grattage de données, Traitement automatique du langage naturel, 
+                Données non structurées, Imputation, Régression, Classification, Algorithmes, 
+                Transfert Learning, Résolution de problèmes, Partitionnement`
                 - Contexte : `Méthodes agiles, R&D, DevOps, Indépendant`"""),
         },
         "oc": {
             "name": "OpenClassrooms",
             "title": (
-                f"Machine Learning Engineer (Internship), {oc}",
-                f"Stage Ingénieur Machine Learning, {oc}"),
+                f"Machine Learning Engineer (Internship) - {oc}",
+                f"Stage Ingénieur Machine Learning - {oc}"),
             "dateplace": (
-                "**8 month** / *2021* / **Lille, France**",
-                "**8 mois** / *2021* / **Lille**"),
+                "**8 month** (04/21 &rarr; 11/21) - **Lille, France** (remote)",
+                "**8 mois** (04/21 &rarr; 11/21) - **Lille** (distanciel)"),
             "short": (
                 """`Modeling` · `Healthcare` · `Energy` · `E-commerce` · `Computer Vision` · `Finance` · `Software Development`  
-                *A variety of concrete cases of companies managed independently with a weekly mentoring and systematically submitted reports, versioned code and presentations to a jury for validation.*""",
+                A variety of concrete cases of companies managed independently with a weekly mentoring and systematically submitted reports, versioned code and presentations to a jury for validation.""",
                 """`Modélisation` · `Santé` · `Énergie` · `E-commerce` · `Analyse d'Image` · `Finances` · `Développement Logiciel`  
-                *Différents cas concrets d’entreprise gérés indépendamment avec un mentorat hebdomadaire et soumis systématiquement par des rapports, codes versionnés et présentations en face d’un jury pour validation.*"""),
+                Différents cas concrets d'entreprise gérés indépendamment avec un mentorat hebdomadaire et soumis systématiquement par des rapports, codes versionnés et présentations en face d'un jury pour validation."""),
             "description": (
                 """
                 **PARTICIPATING IN A KAGGLE COMPETITION**  
@@ -303,7 +298,7 @@ def main():
                 """, """
                 **PARTICIPER À UNE COMPETITION KAGGLE**  
                 *Prédiction du marché des crypto-monnaies à partir des données amassées par G-Research*
-                * État de l’art
+                * État de l'art
                 * Traitement du signal
                 * Ingénierie des caractéristiques (latences, agrégations)
                 * Régression (Linéaire, Light Gradient Boosting Machine, XGBoost)
@@ -313,23 +308,23 @@ def main():
                 **CATÉGORISER AUTOMATIQUEMENT DES QUESTIONS**  
                 *Développer un système permettant de tagger automatiquement les questions des utilisateurs sur le site Stack Overflow*
                 * Nettoyage (NLTK) et exploration des données
-                * Ingénierie des caractéristiques (quantitatives et qualitatives) 
+                * Ingénierie des caractéristiques (quantitatives et qualitatives)
                 * Classification multi-étiquette extrême XMC (Gaussian Naive Bayes, Decision Tree Classifier, Linear Support Vector Classification, Multilabel k-Nearest Neighbours)
                 * Méthodes (Word Embedding, Binary Relevance, Label Powerset, Classifier Chain)
                 * Optimisation des hyperparamètres
-                * Création d’un modèle personnel
-                * Étude bibliographique de l’état de l’art
+                * Création d'un modèle personnel
+                * Étude bibliographique de l'état de l'art
                 * Implémentation de modèles plus récents (XR-Linear, XR-Transformer)
-                * Création d’API sous forme d’une application en ligne (Streamlit)
+                * Création d'API sous forme d'une application en ligne (Streamlit)
                 ---
                 **CLASSER DES IMAGES À L'AIDE D'ALGORITHMES DE DEEP LEARNING**  
                 *Utilisation de modèles de Deep Learning pour une association animalière souhaitant automatiser l'identification de races*
-                * Traitement d’images
+                * Traitement d'images
                 * Classification supervisée à classes multiples
                 * Création ou implémentation de Réseaux Neuronaux existants
                 * Apprentissage par transfert (MobileNetV2)
                 * Optimisation des hyperparamètres
-                * Création d’API sous forme d’une application en ligne (Streamlit)
+                * Création d'API sous forme d'une application en ligne (Streamlit)
                 ---
                 **SEGMENTER DES CLIENTS D'UN SITE E-COMMERCE**  
                 *Fournir aux équipes marketing une segmentation activable de leurs clients pour optimiser les campagnes de communication*
@@ -346,8 +341,8 @@ def main():
                 * Ingénierie des caractéristiques (quantitatives et qualitatives)
                 * Imputation et Régression (Linéaire, SVR, Random Forest, Gradient Boosting)
                 ---
-                **CONCEPTION D’UNE APPLICATION AU SERVICE DE LA SANTE PUBLIQUE**  
-                *Proposition d’application basée sur des données nutritionnelles*
+                **CONCEPTION D'UNE APPLICATION AU SERVICE DE LA SANTE PUBLIQUE**  
+                *Proposition d'application basée sur des données nutritionnelles*
                 * Gestion / Nettoyage de la base de données
                 * Exploration de données
                 * Recherche de concepts
@@ -358,22 +353,22 @@ def main():
                 """),
             "skills": (
                 """
-                - Technologies: `Python, Git, Matplotlib, Bash, Windows, Jupyter, Pandas, Django, Kaggle, k-means, Random forest, 
-                Boosting, Docker, Seaborn, Shell Scripting, Regular expressions, Web applications, HCA, SVM, 
+                - Technologies: `Python, Git, Matplotlib, Bash, Jupyter, Pandas, Django, Kaggle, k-means, Random forest, 
+                Boosting, Docker, Seaborn, Shell Scripting, Regular expressions, WebApp, HCA, SVM, 
                 API REST, NLTK, AWS, PyTorch, Plotly, MySQL, Scikit-Learn, TensorFlow, XMC, DBSCAN`
                 - Expertise: `Webscrapping, Natural Language Processing, Data Analysis, Adaptation, 
                 Unstructured data, Imputation, Regression modelling, Classification, Algorithmes, 
-                Machine Learning, Deep Learning, Transfert Learning, Problem solving, Partitioning, 
+                Deep Learning, Transfert Learning, Problem solving, Partitioning, 
                 Data visualization, Research, Data exploration, Data cleaning, Neural Networks, 
                 Inverse Problems, Image processing, Communication, Linear algebra, State of the art`
                 - Context: `Independant`""", 
                 """
-                - Technologies : `Python, Git, Matplotlib, Bash, Windows, Jupyter, Pandas, Django, Kaggle, k-means, Forêt aléatoire, 
-                Boosting, Docker, Seaborn, Shell Scripting, Expressions régulières, Applications web, HCA, SVM, 
+                - Technologies : `Python, Git, Matplotlib, Bash, Jupyter, Pandas, Django, Kaggle, k-means, Forêt aléatoire, 
+                Boosting, Docker, Seaborn, Shell Scripting, Expressions régulières, WebApp, HCA, SVM, 
                 API REST, NLTK, AWS, PyTorch, Plotly, MySQL, Scikit-Learn, TensorFlow, XMC, DBSCAN`
                 - Savoir-faire : `Grattage de données, Traitement automatique du langage naturel, Analyse de données, Adaptation, 
                 Données non structurées, Imputation, Modèles de régression, Classification, Algorithmes, 
-                Machine Learning, Deep Learning, Transfert Learning, Résolution de problèmes, Partitionnement, 
+                Deep Learning, Transfert Learning, Résolution de problèmes, Partitionnement, 
                 Visualisation de données, Recherche, Exploration des données, Nettoyage de données, Neural Networks, 
                 Inverse Problems, Traitement de l'image, Communication, Algèbre linéaire, État de l'art`
                 - Contexte : `Indépendant`"""),
@@ -381,16 +376,16 @@ def main():
         "alpha": {
             "name": "Alpha Conseil",
             "title": (
-                f"DevOps Engineer, {alpha}",
-                f"Ingénieur DevOps, {alpha}"),
+                f"DevOps Engineer - {alpha}",
+                f"Ingénieur DevOps - {alpha}"),
             "dateplace": (
-                "**7 months** / *2019* / **Paris, France**",
-                "**7 mois** / *2019* / **Paris**"),
+                "**7 months** (06/19 &rarr; 03/20) - **Paris, France**",
+                "**7 mois** (06/19 &rarr; 03/20) - **Paris**"),
             "short": (
                 """`Accounting Expertise` · `CI/CD` · `Web Design` · `Software Development`  
-                *Implementation and automation of an environment for a web-based platform to connect professionals with chartered accountants.*""",
+                Implementation and automation of an environment for a web-based platform to connect professionals with chartered accountants.""",
                 """`Expertise Comptable` · `CI/CD` · `Conception Web` · `Développement Logiciel`  
-                *Implémentation et automatisation de l'environnement pour une interface web de mise en relation entre professionnels et experts comptables.*"""),
+                Implémentation et automatisation de l'environnement pour une interface web de mise en relation entre professionnels et experts comptables."""),
             "description": (
                 """
                 **WORKING IN AGILE SCRUM METHODOLOGY**
@@ -422,26 +417,26 @@ def main():
                 """, """
                 **TRAVAIL EN MÉTHODE AGILE SCRUM**
                 * Sprint Planning Organisation et répartition des tickets du Backlog,
-                * Daily meeting point d’avancement, point bloquant, màj et suivi du Kanban
-                * Grooming (Story Review) réunion d’analyse des tickets, Préparation des sprints à venir
+                * Daily meeting point d'avancement, point bloquant, màj et suivi du Kanban
+                * Grooming (Story Review) réunion d'analyse des tickets, Préparation des sprints à venir
                 * Poker planning chiffrage des tickets
-                * Sprint Review réunion d’analyse du Sprint écoulé
+                * Sprint Review réunion d'analyse du Sprint écoulé
                 * Démo et Rétro
                 ---
                 **TAVAUX EN COMMUN DES ÉQUIPES**
                 * Participation au choix technologique, Appropriation des Framework et outils
-                * Développement d’application d’évolutions et de correctifs
+                * Développement d'application d'évolutions et de correctifs
                 * Création, Modification de pages et de formulaires en fonction des US
                 * Intégration de Bootstrap (responsive design), de slides et des Pop-ups en javascript
-                * Maitrise de l’architecture MVC (Modèles-Vue-Template pour Django)
+                * Maitrise de l'architecture MVC (Modèles-Vue-Template pour Django)
                 * Migration de Pipelines en Contrôleurs
                 * Contrôle du versioning, du déploiement et revu de documentations techniques et de code
                 ---
                 **PROJETS ET TRAVAUX INDIVIDUEL**
-                * Création de l’environnement de développement adapté pour tout environnement système
+                * Création de l'environnement de développement adapté pour tout environnement système
                 * Création, développement du code sous VS Code en Python / Django / HTML5 / CSS3
                 * Optimisation des différentes parties et types de code
-                * Rédaction de documentations techniques du code et de l’environnement de développement (Markdown) et automatisation de la documentation
+                * Rédaction de documentations techniques du code et de l'environnement de développement (Markdown) et automatisation de la documentation
                 * Formation des équipes aux différents outils (Django/Jupyter)
                 * Réalisation de test unitaires
                 ---
@@ -449,14 +444,14 @@ def main():
                 """),
             "skills": (
                 """
-                - Technologies: `Python, Git, Bash, Windows, Linux, Jupyter, Pandas, Django, Microsoft Azure, MySQL, 
-                Docker, JIRA, Shell Scripting, Regular expressions, Web applications, API REST, MongoDB, 
+                - Technologies: `Python, Git, Bash, Jupyter, Pandas, Django, Microsoft Azure, MySQL, 
+                Docker, JIRA, Shell Scripting, Regular expressions, WebApp, API REST, MongoDB, 
                 JavaScript, JQuery, Ajax, HTML5, CSS3, Bitbucket, Trello, Jira, Slack, VS Code`
                 - Expertise: `Front-end development, Webscrapping, Algorithmes, Communication`
                 - Context: `Agiles methods, DevOps`""", 
                 """
-                - Technologies : `Python, Git, Bash, Windows, Linux, Jupyter, Pandas, Django, Microsoft Azure, MySQL, 
-                Docker, JIRA, Shell Scripting, Expressions régulières, Applications web, API REST, MongoDB, 
+                - Technologies : `Python, Git, Bash, Jupyter, Pandas, Django, Microsoft Azure, MySQL, 
+                Docker, JIRA, Shell Scripting, Expressions régulières, WebApp, API REST, MongoDB, 
                 JavaScript, JQuery, Ajax, HTML5, CSS3, Bitbucket, Trello, Jira, Slack, VS Code`
                 - Savoir-faire : `Développement front-end, Grattage de données, Algorithmes, Communication`
                 - Contexte : `Méthodes agiles, DevOps`"""),
@@ -464,19 +459,20 @@ def main():
         "ins": {
             "name": "INS",
             "title": (
-                f"PhD Candidate in Computational Neurosciences, {ins}",
-                f"Doctorant en Neurosciences Computationnelles, {ins}"),
+                f"PhD Candidate in Computational Neurosciences - {ins}",
+                f"Doctorant en Neurosciences Computationnelles - {ins}"),
             "dateplace": (
-                "**4 years** / *2013* / **Marseille, France**",
-                "**4 ans** / *2013* / **Marseille**"),
+                "**4 years** (09/13 &rarr; 08/17) - **Marseille, France**",
+                "**4 ans** (09/13 &rarr; 08/17) - **Marseille**"),
             "short": (
                 """`Research` · `Neurosciences` · `Modeling` · `Simulation` · `Epilepsy` · `Time Series`  
-                *Experience in computational biology for neuroscience, with deep learning projects, neural model creation and signal processing.
-                Involved in various literature reviews, data treatment tools creations and visualizations.*
+                Experience in computational biology for neuroscience, with deep learning projects, neural model creation and signal processing.
+                Involved in various literature reviews, data treatment tools creations and visualizations.
                 """, 
                 """`Recherche` · `Neurosciences` · `Modélisation` · `Simulation` · `Epilepsie` · `Séries Temporelles`  
-                *Expérience dans le domaine de la biologie computationnelle en neurosciences, avec des projets d'apprentissage approfondi, création de modèles neuronaux et traitement du signal.
-                Impliqué dans diverses études bibliographiques, créations d'outils de traitements de données et visualisations.*"""),
+                Expérience dans le domaine de la biologie computationnelle en neurosciences, avec des projets d'apprentissage approfondi, création de modèles neuronaux et traitement du signal.
+                Impliqué dans diverses études bibliographiques, créations d'outils de traitements de données et visualisations.
+                """),
             "description": (
                 """
                 **GENERAL**
@@ -512,22 +508,22 @@ def main():
                 **COMPETENCIES**
                 """, """
                 **GÉNÉRAL**
-                * Étude bibliographique de l’état de l’art du domaine
+                * Étude bibliographique de l'état de l'art du domaine
                 * Étude de publications scientifiques externes au laboratoire et présentation au groupe
-                * Création d’outils de traitements de données et de visualisations
+                * Création d'outils de traitements de données et de visualisations
                 * Gestion des données de simulations réparties sur de multiples paramètres
                 * Procédure de lancement automatique de simulation et de traitement sur cluster de calcul
                 * Administration de certains aspects du cluster de calculs
                 ---
                 **PROJET D'APPRENTISSAGE APPROFONDI**
-                * Utilisation de modèles simples (dynamique) pour extraire les configurations d’activité (schémas) à partir d’une connectivité structurelle anatomique (réseau)
+                * Utilisation de modèles simples (dynamique) pour extraire les configurations d'activité (schémas) à partir d'une connectivité structurelle anatomique (réseau)
                 * Confrontation des configurations extraites avec des configurations observées chez des sujets humains sains
                 * Apprentissage automatique de configurations
-                * Modification et optimisation d’algorithmes d’apprentissage
+                * Modification et optimisation d'algorithmes d'apprentissage
                 ---
                 **PROJET MODÈLE NEURONAL**
-                * Création et analyse systémique d’un nouveau modèle de population de neurones, multi-stable à large échelle
-                * Création d’un logiciel de simulation (optimisation pour des calculs intensifs)
+                * Création et analyse systémique d'un nouveau modèle de population de neurones, multi-stable à large échelle
+                * Création d'un logiciel de simulation (optimisation pour des calculs intensifs)
                 * Recherche computationnelle intensive pour tester le modèle sur tous ses paramètres
                 * Confrontation des paramètres du modèle avec les théories biologiques du fonctionnement cérébral
                 ---
@@ -537,26 +533,26 @@ def main():
                 * Post-traitement des séries temporelles
                 * Analyse des réseaux dynamiques
                 * Apprentissage automatique non supervisé
-                * Recherche d’artefacts et études statistiques
-                * Étude et critique d’un nouvel outil d’analyse
-                * Création et étude d’un autre outil plus poussé
+                * Recherche d'artefacts et études statistiques
+                * Étude et critique d'un nouvel outil d'analyse
+                * Création et étude d'un autre outil plus poussé
                 ---
                 **COMPÉTENCES**
                 """),
             "skills": (
                 """
                 - Technologies: `Python, MATLAB, Git, Matplotlib, Bash, Jupyter, Pandas, k-means, PCA, ICA, LateX, 
-                Seaborn, Shell Scripting, Regular expression, Plotly, Scikit-Learn, FCD, HPC, Linux, Windows`
+                Seaborn, Shell Scripting, Regular expression, Plotly, Scikit-Learn, FCD, HPC`
                 - Expertise: `Signal processing, Webscrapping, Data Analysis, Adaptation, Classification, Medical imaging, 
-                Algorithms, Neural networks, Machine Learning, Problem solving, Data visualization, 
+                Algorithms, Neural networks, Problem solving, Data visualization, 
                 Research, Data exploration, Data cleaning, Communication, Linear algebra, State of the art, 
                 Mathematical modelling, Finite element method, Time series`
                 - Context: `Independant, R&D`""", 
                 """
                 - Technologies : `Python, MATLAB, Git, Matplotlib, Bash, Jupyter, Pandas, k-means, PCA, ICA, LateX, 
-                Seaborn, Shell Scripting, Expressions régulières, Plotly, Scikit-Learn, FCD, HPC, Linux, Windows`
+                Seaborn, Shell Scripting, Expressions régulières, Plotly, Scikit-Learn, FCD, HPC`
                 - Savoir-faire : `Traitement du signal, Grattage de données, Analyse de données, Adaptation, Classification, Imagerie Médicale, 
-                Algorithmes, Réseaux neuronaux, Machine Learning, Résolution de problèmes, Visualisation de données, 
+                Algorithmes, Réseaux neuronaux, Résolution de problèmes, Visualisation de données, 
                 Recherche, Exploration des données, Nettoyage de données, Communication, Algèbre linéaire, État de l'art, 
                 Modélisation mathématique, Méthode des éléments finis`
                 - Contexte : `Indépendant, R&D`"""),
@@ -564,16 +560,16 @@ def main():
         "ins2": {
             "name": "INS",
             "title": (
-                f"Assistant Engineer, {ins}",
-                f"Assistant Ingénieur, {ins}"),
+                f"Assistant Engineer - {ins}",
+                f"Assistant Ingénieur - {ins}"),
             "dateplace": (
-                "**9 months** / *2013* / **Marseille, France**",
-                "**9 mois** / *2013* / **Marseille**"),
+                "**8 months** (01/13 &rarr; 08/13) - **Marseille, France**",
+                "**8 mois** (01/13 &rarr; 08/13) - **Marseille**"),
             "short": (
                 """`Research` · `Neurosciences` · `Modeling` · `Simulation`  
-                *Study of neuro-dynamic models for the recognition of activity configurations in the resting state (Resting-State Networks).*""",
+                Study of neuro-dynamic models for the recognition of activity configurations in the resting state (Resting-State Networks).""",
                 """`Recherche` · `Neurosciences` · `Modélisation` · `Simulation`  
-                *Etude de modèles neuro-dynamiques pour la reconnaissance de configurations d'activité à l'état de repos (Resting-State Networks).*"""),
+                Etude de modèles neuro-dynamiques pour la reconnaissance de configurations d'activité à l'état de repos (Resting-State Networks)."""),
             "description": (
                 """
                 **GENERAL**
@@ -589,13 +585,13 @@ def main():
                 **COMPETENCIES**
                 """, """
                 **GÉNÉRAL**
-                * Étude bibliographique de l’état de l’art du domaine
+                * Étude bibliographique de l'état de l'art du domaine
                 * Étude de publications scientifiques externes au laboratoire et présentation au groupe
-                * Création d’outils de traitements de données et de visualisations
+                * Création d'outils de traitements de données et de visualisations
                 ---
                 **PROJET MODÈLE NEURONAL**
-                * Création et analyse systémique d’un nouveau modèle de population de neurones, multi-stable à large échelle
-                * Création d’un logiciel de simulation (optimisation pour des calculs intensifs)
+                * Création et analyse systémique d'un nouveau modèle de population de neurones, multi-stable à large échelle
+                * Création d'un logiciel de simulation (optimisation pour des calculs intensifs)
                 * Confrontation des paramètres du modèle avec les théories biologiques du fonctionnement cérébral
                 ---
                 **COMPÉTENCES**
@@ -603,7 +599,7 @@ def main():
             "skills": (
                 """
                 - Technologies: `Python, Git, Matplotlib, Bash, Jupyter, PCA, ICA, LateX, 
-                Shell Scripting, Regular expression, Scikit-Learn, HPC, Windows, Linux`
+                Shell Scripting, Regular expression, Scikit-Learn, HPC`
                 - Expertise: `Signal processing, Data Analysis, Adaptation, Classification, 
                 Algorithms, Neural networks, Problem solving, Data visualization, 
                 Research, Data exploration, Communication, Linear algebra, State of the art, 
@@ -611,7 +607,7 @@ def main():
                 - Context: `Independant, R&D`""", 
                 """
                 - Technologies : `Python, Git, Matplotlib, Bash, Jupyter, PCA, ICA, LateX, 
-                Shell Scripting, Expressions régulières, Scikit-Learn, HPC, Windows, Linux`
+                Shell Scripting, Expressions régulières, Scikit-Learn, HPC`
                 - Savoir-faire : `Traitement du signal, Analyse de données, Adaptation, Classification, 
                 Algorithmes, Réseaux neuronaux, Résolution de problèmes, Visualisation de données, 
                 Recherche, Exploration des données, Communication, Algèbre linéaire, État de l'art, 

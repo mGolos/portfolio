@@ -26,7 +26,7 @@ def main():
                 "*2021* / **Paris**"),
             "description": (
                 "API, Data cleaning/exploration, Algorithmics, Natural Language Processing, Feature engineering, Computer Vision, Imputation, Regression, Classification, Communication, Optimization, Extreme multi-tagging, State of the art, Image processing, Neural network, Transfer learning",
-                "API, Nettoyage/Exploration de données, Algorithmie, Traitement automatique du language, Ingénierie des caractéristiques, Computer Vision, Imputation, Regression, Classification, Communication, Optimisation, Multi-étiquetage extrême, État de l’art, Traitement d'image, Réseaux neuronaux, Apprentissage par transfert"),
+                "API, Nettoyage/Exploration de données, Algorithmie, Traitement automatique du language, Ingénierie des caractéristiques, Computer Vision, Imputation, Regression, Classification, Communication, Optimisation, Multi-étiquetage extrême, État de l'art, Traitement d'image, Réseaux neuronaux, Apprentissage par transfert"),
         },
         "edu": {
             "title": (
@@ -48,7 +48,7 @@ def main():
                 "*2013* / **Marseille**"),
             "description": (
                 "Temporal multistability, Dynamical systems, Cellular automata, Mathematical modeling, Statistics, Machine learning, Classification, Neuro-dynamics, Pattern recognition, Resting-State networks, Medical imaging, State of the art, Multi-threading, Epilepsy", 
-                "Multistabilité temporelle, Systèmes dynamiques, Automates cellulaires, Modélisation mathématique, Statistiques, Apprentissage automatique, Classification, Dynamique neuronale, Reconnaissance d'activité, Réseaux d'activité en état de repos, Imagerie médicale, État de l’art, Traitement en parallèle, Épilepsie"),
+                "Multistabilité temporelle, Systèmes dynamiques, Automates cellulaires, Modélisation mathématique, Statistiques, Apprentissage automatique, Classification, Dynamique neuronale, Reconnaissance d'activité, Réseaux d'activité en état de repos, Imagerie médicale, État de l'art, Traitement en parallèle, Épilepsie"),
         },
         "rennes": {
             "title": (
@@ -58,8 +58,8 @@ def main():
                 "*2012* / **Rennes, France**",
                 "*2012* / **Rennes**"),
             "description": (
-                "Methods and tools for numerical simulation, Medical imaging, Simulation, Modeling, Programming (C++, F90), High performance computing, Biomechanics, Inverse problems, Geophysics, Fluid-structure interactions, Multiphysics, Physics of granular environments, Mechanics",
-                "Méthodes et outils à la simulation numérique, Imagerie médicale, Simulation, Modélisation, Programmation (C++, f90), Calculs intensifs, Biomécanique, Problèmes inverses, Géophysique, Intéractions fluide-structure, Multiphysique, Physique des milieux granulaires, Mécanique"),
+                "Methods and tools for numerical simulation, Medical imaging, Simulation, Modeling, Programming (C++/F90), High performance computing, Biomechanics, Inverse problems, Geophysics, Fluid-structure interactions, Multiphysics, Physics of granular environments, Mechanics",
+                "Méthodes et outils à la simulation numérique, Imagerie médicale, Simulation, Modélisation, Programmation (C++/F90), Calculs intensifs, Biomécanique, Problèmes inverses, Géophysique, Intéractions fluide-structure, Multiphysique, Physique des milieux granulaires, Mécanique"),
         },
         "lille": {
             "title": (
@@ -81,7 +81,7 @@ def main():
                 "*2008* / **Valenciennes**"),
             "description": (
                 "Mathematics, Computer science, Programming, Signal processing, Metrology, Instrumentation electronics, Chemical analysis techniques, Thermodynamics, Material structure and properties, Optics, Fluid mechanics, Mechanics",
-                "Mathématiques, Informatique, Programmation, Traitement du signal, Métrologie, Electronique d’instrumentation, Techniques d’analyse chimique, Thermodynamique, Structure et propriétés des matériaux, Optique, Mécanique des fluides, Mécanique"),
+                "Mathématiques, Informatique, Programmation, Traitement du signal, Métrologie, Electronique d'instrumentation, Techniques d'analyse chimique, Thermodynamique, Structure et propriétés des matériaux, Optique, Mécanique des fluides, Mécanique"),
         },
     }
     

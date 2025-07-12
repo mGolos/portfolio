@@ -10,47 +10,44 @@ def main():
                 "📝 **Programmation / Collaboration**",
             ): {
             ("Languages", "Langages"): "`Python, SQL, Bash, Shell, MATLAB`",
-            ("Environments", "Environnements"): "`VS Code, Jupyter Notebooks, Deepnote, Google Colab, Kaggle, Python Anywhere`",
+            ("Environments", "Environnements"): "`VS Code, Jupyter, Deepnote, Google Colab, Kaggle`",
             ("Package Management", "Gestion des Packages"): "`Pip, Anaconda, Virtualenv`",
             ("Testing Frameworks", "Frameworks de Test"): "`PyTest, Unittest`",
             ("Version Control", "Contrôle de Version"): "`Git, GitHub, GitLab, Bitbucket`",
-            ("Collaboration Tools", "Outils de Collaboration"): "`Jira, Trello, Slack, Teams, Markdown, Confluence, Office, LaTeX`",
-            ("Operating System", "Système d'exploitation"): "`Windows, Linux (Debian, CentOs, Ubuntu), macOS`",
+            ("Collaboration", "Collaboration"): "`Jira, Trello, Slack, Teams, Confluence`",
+            ("Operating System", "Système d'exploitation"): "`Windows, Linux`",
         },
         (
                 "📊 **Analysis / Data Visualization**",
                 "📊 **Analyse / Visualisation de données**",
             ): {
             ("Python", "Python"): "`Pandas, NumPy, Matplotlib, Seaborn, Plotly`",
-            ("Excel", "Excel"): "`Advanced Functions, Pivot Tables, VBA`",
-            ("BI Tools", "Outils BI"): "`Tableau, Power BI, Dash, Streamlit, Xmind, Gephi`",
-            ("Significance Testing", "Test de Signification"): "`dummy, baseline, a priori, p-values, Confidence Intervals`",
-            ("Hypothesis Testing", "Test d'Hypothèse"): "`t-tests, ANOVA, Chi-Square Test`",
-            ("Statistical Modeling", "Modélisation Statistique"): "`Time Series Analysis, Bayesian Inference, Regression, Probability Distributions`",
-            ("Wrangling & Cleaning", "Nettoyage et Transformation"): "`Missing data handling, Outliers, Feature engineering, PCA, UMAP`",
-            ("Model Evaluation", "Évaluation de Modèle"): "`Cross-validation, Confusion Matrix, ROC-AUC, Precision-Recall, F1 Score`",
+            ("BI Tools", "Outils BI"): "`Tableau, Power BI, Dash, Streamlit, Drawio, Gephi`",
+            ("Testing", "Tests"): "`t-tests, ANOVA, Chi-Square Test`",
+            ("Statistics", "Statistique"): "`Time Series Analysis, Probability Distributions`",
+            ("Preparation", "Préparation"): "`Data cleaning, Feature engineering`",
+            ("Evaluation", "Évaluation"): "`Cross-validation, ROC-AUC, Precision-Recall`",
         },
         (
                 "🤖 **Machine Learning / NLP**",
                 "🤖 **Machine Learning / NLP**",
             ): {
             ("Frameworks", "Frameworks"): "`Scikit-learn, TensorFlow, Keras, PyTorch`",
-            ("Libraries", "Bibliothèques"): "`NLTK, SpaCy, Hugging Face Transformers, PIL, Scikit-image, BeautifulSoup`",
-            ("Supervised Learning", "Apprentissage Supervisé"): "`Linear Regression, Logistic Regression, SVMs, Decision Trees, Random Forests, k-NN`",
-            ("Unsupervised Learning", "Apprentissage Non Supervisé"): "`K-Means, PCA, DBSCAN`",
-            ("Deep Learning", "Apprentissage Profond"): "`Neural Networks, CNNs, RNNs, Transfer Learning`",
-            ("Text Processing", "Traitement de Texte"): "`Tokenization, Lemmatization, Stemming, Stopword Removal, Word2Vec`",
-            ("Model Tuning", "Ajustement de Modèle"): "`Grid Search, Random Search, Hyperparameter Optimization, TPOT`",
-            ("Optimization Methods", "Méthodes d'Optimisation"): "`Gradient Descent, Genetic Algorithms`",
+            ("Libraries", "Bibliothèques"): "`NLTK, SpaCy, BeautifulSoup`",
+            ("Supervised ML", "ML Supervisé"): "`Regression, Decision Trees, Random Forests`",
+            ("Unsupervised ML", "ML Non Supervisé"): "`K-Means, PCA`",
+            ("Deep Learning", "Deep Learning"): "`Neural Networks, CNNs, RNNs, Transfer Learning`",
+            ("Text Processing", "Traitement de Texte"): "`Tokenization, Lemmatization`",
+            ("Optimization", "Optimisation"): "`Gradient Descent, Genetic Algorithms`",
         },
         (
                 "🛠️ **DevOps / Data Engineering / Deployment**",
                 "🛠️ **DevOps / Data Engineering / Déploiement**",
             ): {
-            ("APIs for Deployment", "APIs pour Déploiement"): "`Flask, FastAPI, Django REST Framework`",
+            ("APIs", "APIs"): "`Flask, FastAPI, Django`",
             ("CI/CD", "CI/CD"): "`GitLab CI, GitHub Actions, Jenkins`",
-            ("Cloud Platforms", "Plateformes Cloud"): "`AWS, GCP, Microsoft Azure`",
-            ("Containerization & Orchestration", "Containerisation & Orchestration"): "`Docker, Kubernetes, Prefect`",
+            ("Cloud", "Cloud"): "`Scaleway, Azure, AWS, GCP`",
+            ("Orchestration", "Orchestration"): "`Docker, Kubernetes, Prefect`",
             ("Serverless", "Serverless"): "`AWS Lambda, Google Cloud Functions, Azure Functions`",
             ("Databases", "Bases de Données"): "`MySQL, PostgreSQL, SQLite, MongoDB, Redis`",
             ("Monitoring", "Surveillance"): "`Prometheus, Grafana, MLFlow`",
@@ -62,26 +59,26 @@ def main():
             "🧩 **Compétences Fonctionnelles**"),
         "description": (
             """
-            * Problem identification & Functional needs analysis
-            * Solution planning
-            * Exploratory analysis & Conceptual and analytical vision
-            * Data modeling and transformation for exploitation
-            * Creation of tools for data processing and visualizations
-            * Resolution of complex business problems
-            * Application of state-of-the-art in the field
+            * Identifying and analyzing needs
+            * Planning and implementing solutions
+            * Exploratory analysis and conceptual vision
+            * Data modeling and transformation
+            * Creating data visualization tools
+            * Solving business problems
+            * Applying industry best practices
             * Critical thinking and scientific rigor
-            * Ensuring responsibility for one or more functional processes
+            * Managing functional processes
             """,
             """
-            * Identification des problèmes & Analyse fonctionnelle des besoins
-            * Planification des solutions
-            * Analyse exploratoire & Vision analytique et conceptuelle
-            * Modélisation et transformation des données pour exploitation
-            * Création d’outils de traitements de données et de visualisations
+            * Identification et analyse des besoins
+            * Planification et mise en oeuvre des solutions
+            * Analyse exploratoire et vision conceptuelle
+            * Modélisation et transformation des données
+            * Création d'outils de traitement et visualisation
             * Résolution de problématiques métiers complexes
-            * Application de l’état de l’art du domaine
+            * Application de l'état de l'art du domaine
             * Raisonnement critique et rigueur scientifique
-            * Assurer la responsabilité d'un ou plusieurs processus fonctionnels
+            * Gestion de processus fonctionnels
             """),
     }
 
@@ -91,15 +88,19 @@ def main():
         
     for exp, sub in dico.items():
         with st.expander(exp[sss["lg_key"]], expanded=False):
+            skills = []
             for k, v in sub.items():
                 if sss['layout'] == "wide":
-                    st.write(" : ".join([k[sss["lg_key"]], v]))
+                    skills.append(" : ".join([k[sss["lg_key"]], v])  + "  ")
+                    # st.write(" : ".join([k[sss["lg_key"]], v]))
                 else:
                     cs = st.columns([1,3])
                     cs[0].write(k[sss["lg_key"]])
                     cs[1].write(v)
+            if sss['layout'] == "wide":
+                st.write("\n".join(skills))
     
-    with st.expander(func_skills['name'][sss["lg_key"]], expanded=False):
+    with st.expander(func_skills['name'][sss["lg_key"]], expanded=True):
         st.write(func_skills['description'][sss["lg_key"]])
     
 
