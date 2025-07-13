@@ -653,7 +653,7 @@ def main():
                 <hr style="margin-top:0;">  
             '''
             st.markdown(before + job['description'][sss["lg_key"]], unsafe_allow_html=True)
-            st.write(job['skills'][sss["lg_key"]].replace(', \n', '` · `').replace(', ', '` · `'))
+            st.write(job['skills'][sss["lg_key"]])
         # with c[2].popover(job['short'][sss["lg_key"]] + '\n\n...', use_container_width=True):
         #     st.write(job['description'][sss["lg_key"]])
         #     st.write(job['skills'][sss["lg_key"]].replace(', \n', '` · `').replace(', ', '` · `'))
