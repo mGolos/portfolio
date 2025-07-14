@@ -39,8 +39,8 @@ def main():
     # st.audio(f"audio/presentation_{sss['language']}.mp3")
     # st.image('images/photo1.jpg')
     image_comparison(
-        img1=utils.load_image("images/photo1b.jpg"),
-        img2=utils.load_image("images/photo1.jpg"),
+        img1=sss['images']['photo1b'],
+        img2=sss['images']['photo1'],
         label1="Style Transfer",
         label2="Original",
         # width=1920,

@@ -62,6 +62,8 @@ def download_pdf(lang: str, name: str):
 
 
 def iframe(src:str):
+    width, height = sss['images']['photo1b'].size
+    st.info(f"{width} - {height}")
     return components.iframe(src=src, width=sss['a4_width'], height=sss['a4_height'], scrolling=True)
 
     
@@ -128,20 +130,7 @@ def language(keyp: str=''):
         case _:
             sss["language"] = sqp["language"]
     
-    index = sss["lg_key"] = languages.index(sss['language'])
-    #TODO: put back languages
-    # sqp["language"] = language = st.radio(
-    #     'Language',
-    #     languages, 
-    #     key="radio_lang"+keyp, 
-    #     horizontal=True, 
-    #     label_visibility='hidden', 
-    #     index=index, 
-    #     format_func=countries,
-    # )
-    # if sqp["language"] != sss["language"]:
-    #     sss["language"] = language
-    #     st.rerun()
+    sss["lg_key"] = languages.index(sss['language'])
 
 
 def menubar():
@@ -172,12 +161,23 @@ def menubar():
             "#contact": ("Contact", 'phone'),
         }
 
-    menu_html = '<div class="menu-bar"><div class="menu-inner">'
+    menu_html = '''
+    <div class="menu-bar">
+      <div class="menu-inner">
+        <div class="lang-selector" style="display: flex; flex-direction: column; ">
+            <a href="?language=fr" target="_self" style="padding:4px;">
+                <img src="https://flagcdn.com/w40/fr.png" alt="Français" style="width:24px; height:auto;">
+            </a>
+            <a href="?language=en" target="_self" style="padding:4px;">
+                <img src="https://flagcdn.com/w40/gb.png" alt="English" style="width:24px; height:auto;">
+            </a>
+        </div>
+    '''
     for anchor, (label, icon) in sss['pages'].items():
         menu_html += (
-            f'''<a href="{anchor}" target="_self">
-            <span class="material-symbols-outlined">{icon}</span>
-            <span>{label}</span>
+            f'''<a class="menu-item" href="{anchor}" target="_self">
+                <span class="material-symbols-outlined">{icon}</span>
+                <span>{label}</span>
             </a>'''
         )
     menu_html += '</div></div>'
@@ -191,9 +191,11 @@ def styles():
     menu_position = "bottom" if layout == "wide" else "top"
     other_position = "top" if layout == "wide" else "bottom"
     justify_content = "normal" if layout == 'wide' else "center"
-    st.markdown(f"""
+    st.markdown((
+            ""
+        f"""
         <style>
-        .menu-bar {{
+            .menu-bar {{
             position: fixed;
             left: 0;
             width: 100%;
@@ -210,14 +212,24 @@ def styles():
             border-{other_position}-right-radius: 0.5rem;
         }}
         .menu-inner {{
-            background: linear-gradient(45deg, #001f51, #512400);
+            # background: linear-gradient(45deg, #001f51, #512400);
+            background: linear-gradient(90deg, #512400, black, black, #512400);
             height: 100%;
             display: flex;
             align-items: center;
-            justify-content: {justify_content}  ;
+            justify-content: {justify_content};
             overflow-x: auto;
         }}
-        .menu-bar a {{
+        .menu-inner .lang-selector {{
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: column;
+            margin-left: 0.5rem;
+        }}
+        .menu-inner .menu-item {{
+            # flex: 1 1 auto;
+            # text-align: center;
+            # padding: 0.5rem 0.75rem;
             color: #ecf0f1;
             text-decoration: none;
             display: inline-flex;
@@ -226,7 +238,10 @@ def styles():
             font-size: 0.75rem;
             min-width: 5rem;
         }}
-        .menu-bar .material-symbols-outlined {{
+        .menu-inner .menu-item img {{
+            vertical-align: middle;
+        }}
+        .menu-item .material-symbols-outlined {{
             font-size: 1.5rem;
             margin-bottom: 0.25rem;
         }}
@@ -271,16 +286,9 @@ def styles():
             height: auto;
         }} 
 
-        #! A INJECTER EN DEHORS DE L'IFRAME DE STREAMLIT
-        [class="_container_gzau3_1"] {{
-            display: none;
-        }}
-        [class=".profileContainer_gzau3_53"] {{
-            display: none;
-        }}
 
         </style>
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">""", 
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">"""), 
         unsafe_allow_html=True)
     
     if layout == 'wide':
@@ -324,6 +332,7 @@ def once_load_images():
         sss['images'] = {
             name.split('.')[0]: load_image(f"images/{name}")
             for name in [
+                'photo1b.jpg', 'photo1.jpg',
                 'refrasense.png', 'jl.jpeg', 'xrator.jpeg', 'oc.jpeg', 'lindera.jpeg', 'ins.jpeg', 'alpha.jpeg',
                 'rennes.jpeg', 'amu.jpeg', 'edu.jpeg', 'lille.jpeg', 'iut.jpeg', 'sup.jpeg',
                 'p_iut.jpeg', 'p_iut_1.jpeg',
