@@ -662,5 +662,4 @@ def main():
 if __name__ == "__main__":
     utils.always()
     main()
-    utils.footer()
     utils.background()
