@@ -73,7 +73,10 @@ def once_set_layout():
     '''Search for the device layout and rerun once set.
     '''
     if 'layout' not in sss:
-        with st.spinner('Checking your device layout...'):
+        with st.spinner(
+                'Réveil - Vérification de la disposition...  \n'
+                'Waking up - Checking your device layout...'
+            ):
             check_layout()
             st.rerun()
 
