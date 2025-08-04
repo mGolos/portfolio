@@ -12,7 +12,7 @@ def main():
             > Curieux et polyvalent, j'évolue à l'intersection de la science, de la programmation et de l'innovation.
             Avec mon expérience en Neurosciences Computationnelles, je me spécialise en Machine Learning et en analyse de séries temporelles, avec des applications variées allant de la cybersécurité et du biomédical au bien-être canin.
 
-            > 💡 Ce que je peux apporter :  
+            > Ce que je peux apporter :  
             ✔ Expertise multidisciplinaire en science et en programmation  
             ✔ Expérience en IA, science des données & modélisation prédictive  
             ✔ Passion pour les projets à fort impact  
@@ -27,7 +27,7 @@ def main():
             📊 Data Scientist | 🤖 AI Engineer | 💡 Problem Solver
             > Versatile and driven by curiosity, I thrive at the intersection of science, programming, and innovation. With an experience in Computational Neuroscience, I specialize in Machine Learning and Time Series Analysis, applying my expertise to diverse fields — from cybersecurity and biomedical research to canine well-being.
 
-            > 💡 What I can bring:  
+            > What I can bring:  
             ✔ Multidisciplinary expertise in science & programming  
             ✔ Experience in AI, data science & predictive modeling  
             ✔ Passion for meaningful, high-impact projects  
