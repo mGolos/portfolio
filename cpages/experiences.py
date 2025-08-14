@@ -647,7 +647,7 @@ def main():
     for job_tag, job in jobs.items():
         c = d_lines[job_tag]
         c[0].write('#### ' + job['title'][sss["lg_key"]])
-        c[1].markdown(job['dateplace'][sss["lg_key"]])
+        c[0].markdown(job['dateplace'][sss["lg_key"]])
         with c[2].expander(job['short'][sss["lg_key"]]):
             before = '''
                 <hr style="margin-top:0;">  

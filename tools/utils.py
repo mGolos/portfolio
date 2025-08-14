@@ -71,8 +71,8 @@ def check_layout():
     Sleep a little to get the values from JS.
     Then define a layout state depending on which is bigger.
     '''
-    width = streamlit_js_eval(js_expressions='screen.width')
-    height = streamlit_js_eval(js_expressions='screen.height')
+    width = sss['layout_width'] = streamlit_js_eval(js_expressions='screen.width')
+    height = sss['layout_height'] = streamlit_js_eval(js_expressions='screen.height')
     inner_width = streamlit_js_eval(js_expressions="window.innerWidth")
     sleep(1)
         
@@ -206,24 +206,24 @@ def pages():
         sss['pages'] = {
             "#about": ("A propos", 'person'),
             "#experiences": ("Expériences", 'history'),
+            "#recommendations": ("Recommandations", 'mail'),
             "#education": ("Éducation", 'import_contacts'),
             "#skills": ("Compétences", 'handyman'),
             "#projects": ("Projets", 'content_paste'),
+            "#cv": ("CV", 'contact_page'),
             "#publications": ("Publications", 'history_edu'),
-            "#cv": ("Curriculum vitae", 'contact_page'),
-            "#recommendations": ("Recommandations", 'mail'),
         }
         
     elif sss["language"] == 'en':
         sss['pages'] = {
-            "#about": ("About propos", 'person'),
+            "#about": ("About me", 'person'),
             "#experiences": ("Experiences", 'history'),
+            "#recommendations": ("Recommendations", 'mail'),
             "#education": ("Education", 'import_contacts'),
             "#skills": ("Skills", 'handyman'),
             "#projects": ("Projects", 'content_paste'),
+            "#cv": ("CV", 'contact_page'),
             "#publications": ("Publications", 'history_edu'),
-            "#cv": ("Curriculum vitae", 'contact_page'),
-            "#recommendations": ("Recommendations", 'mail'),
         }
 
     for anchor, (label, icon) in sss['pages'].items():

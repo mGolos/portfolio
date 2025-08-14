@@ -10,7 +10,7 @@ def main():
     # id_fr = "resid=08D406852E7AE31D%2193135&authkey=%21AFC4Y6OmO7-GL1g"
     # down_url = "https://onedrive.live.com/download?{id}&ithint=file%2cpdf"
     
-    st.header("Curriculum vitae", anchor='cv', divider="orange")
+    st.header("Curriculum Vitae", anchor='cv', divider="orange")
     # match lang:
     #     case "en":
     #         id_ = id_en
