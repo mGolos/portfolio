@@ -14,7 +14,7 @@ sqp = st.query_params
 
 
 contact = """
-    :globe_with_meridians: [LinkedIn](https://www.linkedin.com/in/mathieu-golos-25055b77/)  
+    :globe_with_meridians: [LinkedIn](https://www.linkedin.com/in/mathieu-golos-25055b77/) / [Malt](https://www.malt.fr/profile/mathieugolos)  
     :email: [mathieu.golos@gmail.com](mail:mathieu.golos@gmail.com)  
     :telephone_receiver: [+33611478901](tel:+33611478901)  
     :earth_africa: [Lille (FRANCE)](https://goo.gl/maps/eXC8BJh9qGXWBgZDA)  
@@ -22,13 +22,12 @@ contact = """
 
 
 def footer():
+    st.header("Contact", anchor='contact', divider="orange")
     if sss["language"] == "fr":
-        st.header("Comment me contacter ?", anchor='contact', divider="orange")
         st.markdown("""
             La meilleur façon de me joindre est par email.
         """)
     elif sss["language"] == "en":
-        st.header("How to reach me?", anchor='contact', divider="orange")
         st.markdown("""
             The best way to contact me is by email.
         """)
