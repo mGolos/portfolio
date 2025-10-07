@@ -54,7 +54,7 @@ def download_pdf(lang: str, name: str):
     
     # Convert to jpg
     # pdf = pdfium.PdfDocument(pdf_io)
-    pdf = pdfium.PdfDocument(f"tools/CV GOLOS {lang}.pdf")
+    pdf = pdfium.PdfDocument(f"tools/Mathieu_Golos_DataScientist.{lang}.pdf")
     page = pdf[0]
     # sss[name + '_date'] = parsedate(response.headers['Date']).date()
     sss[name] = image = page.render(scale=4).to_pil()
